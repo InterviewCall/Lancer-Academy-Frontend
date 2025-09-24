@@ -18,11 +18,11 @@ const mentorImages = [
   { id: 11, src: "/mentors/Group 19.svg" },
 ];
 
-export default function Carousel() {
+export default function Carousel({perView = 1}: {perView?: number}) {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     mode: "free-snap",
-    slides: { perView: 3 },
+    slides: { perView: perView },
   });
 
   useEffect(() => {
