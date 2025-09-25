@@ -1,4 +1,5 @@
 import Carousel from "@/components/Carousel";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import { FaCircleCheck } from "react-icons/fa6";
 
@@ -48,35 +49,7 @@ const companyImages = [
 export default function Page() {
   return (
     <div className="flex flex-col w-full h-full border">
-      <div className="bg-white text-black flex items-center justify-between p-1 ">
-        <div className="flex items-center gap-4 ">
-          <div>
-            <Image
-              alt=""
-              src={"/lancersFullLogo.png"}
-              height={90}
-              width={90}
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="rounded-full border px-3 py-1 flex items-center gap-2 font-semibold text-sm border-gray-400 shadow-2xl">
-            <div>Programs</div>
-          </div>
-        </div>
-        <div className="flex items-center gap-4 font-light text-sm">
-          <div>Intro</div>
-          <div>How we teach</div>
-          <div>Curriculum </div>
-          <div>Reviews</div>
-          <div>Tuition</div>
-          <div>FAQ</div>
-        </div>
-        <div className="flex items-center gap-4">
-          <button className="px-3 py-2 bg-black text-white rounded-md">
-            Book a call{" "}
-          </button>
-        </div>
-      </div>
+      <Navbar />
       <div className="flex-1 h-full overflow-y-hidden bg-red-100">
         <div className="w-full h-full overflow-y-scroll flex flex-col items-center text-black border">
           <div className="sm:flex items-start justify-center my-10 gap-5 w-8/10">
