@@ -37,12 +37,12 @@ export default function Navbar() {
         </button>
         {isNavbarOpen ? (
           <IoMdClose
-            className="block sm:hidden h-4 w-4 "
+            className="block sm:hidden h-4 w-4 hover:cursor-pointer"
             onClick={() => setIsNavbarOpen((prev) => !prev)}
           />
         ) : (
           <FiMenu
-            className="block sm:hidden h-4 w-4 "
+            className="block sm:hidden h-4 w-4 hover:cursor-pointer"
             onClick={() => setIsNavbarOpen((prev) => !prev)}
           />
         )}
@@ -68,7 +68,7 @@ export default function Navbar() {
           <div className="flex-1 h-full overflow-y-hidden mx-5">
             <div className="overflow-y-scroll h-full bg-transparent text-black px-6 py-4 space-y-4">
               <div className="border-b border-gray-300 pb-3">
-                <h2 className="text-xl font-bold">
+                  <h2 className="text-xl font-bold">
                   Software Engineering Bootcamp
                 </h2>
               </div>
