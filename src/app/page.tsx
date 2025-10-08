@@ -1,10 +1,13 @@
-import Carousel from "@/components/Carousel";
-import ExpandableModule from "@/components/ExpandableModule";
+import CareerCoachingBanner from "@/components/CareerCoachingBanner";
+import Certificate from "@/components/Certificate";
 import FlexCard from "@/components/FlexCard";
+import FreeBonusCourse from "@/components/FreeBonusCourse";
 import GetExperiemce from "@/components/GetExperience";
 import HeroSection from "@/components/HeroSection";
+import { MoneyBackGuaranteeBannerLaptop, MoneyBackGuaranteeBannerMobile } from "@/components/MoneyBackGuaranteeBanner";
 import Navbar from "@/components/Navbar";
-import { Eye, Hand, Heart } from "lucide-react";
+import SyllabusModules from "@/components/SyllabusModules";
+import TutorSection from "@/components/TutorSection";
 import Image from "next/image";
 import { FaCircleCheck } from "react-icons/fa6";
 
@@ -30,7 +33,7 @@ const companyImages = [
 
 export default function Page() {
   return (
-    <div className="flex flex-col w-full h-full border">
+    <div className="flex flex-col w-full h-full border overflow-x-clip">
       <Navbar />
       <div className="flex-1 h-full overflow-y-hidden bg-red-50">
         <div className="w-full h-full overflow-y-scroll flex flex-col items-center text-black border">
@@ -94,7 +97,7 @@ export default function Page() {
 
           <FlexCard />
 
-          <div className="my-10 w-7/10 sm:w-5/10 text-center text-4xl font-bold">
+          <div className="my-10 w-9/10 sm:w-5/10 text-center text-4xl font-bold">
             Select the pace that fits your life and goals
             <div className="my-8 justify-center items-end sm:grid grid-cols-2 space-y-3 sm:space-y-0 gap-3">
               <Image
@@ -135,9 +138,10 @@ export default function Page() {
             />
           </div>
 
-          <div className="font-semibold text-4xl my-10 w-6/10 text-center">
+          <div className="font-semibold text-4xl my-10 w-9/10 sm:w-6/10 text-center">
             Our grads get great jobs with both startups and industry giants
           </div>
+
           <div className="flex flex-wrap justify-center w-7/10 my-10 gap-6 sm:gap-10">
             {/* <Image
               alt=""
@@ -171,7 +175,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-9/10 sm:w-7/10 text-center my-10 rounded-4xl bg-white p-10 pb-0 flex flex-col items-center">
+          <div className="w-9/10 sm:w-9/10 text-center my-10 rounded-4xl bg-white p-10 pb-0 flex flex-col items-center">
             <div className="font-semibold text-4xl mb-2 w-9/10 sm:w-8/10">
               All in one flexible learning experience
             </div>
@@ -197,136 +201,21 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-9/10 sm:w-8/10 text-center my-10 rounded-4xl bg-white p-10 flex flex-col items-center">
-            <div className="font-semibold text-3xl mb-2 w-9/10 sm:w-8/10">
-              One on one tutoring from industry professionals
-            </div>
-            <div className="mb-5 w-9/10 sm:w-7/10 font-light text-xs">
-              Learn directly from the pros with one on one mentoring sessions,
-              daily office hours and a deep webinar library
-            </div>
-            <div>
-              <button className="rounded-lg bg-gray-200 px-5 py-3 font-semibold text-sm">
-                Take a look in how ours tutor can help
-              </button>
-            </div>
-            <div className="sm:flex justify-between w-full mt-10">
-              <div className="hidden sm:block basis-4/5  overflow-hidden rounded-2xl ">
-                <Carousel perView={3} />
-              </div>
-              <div className="sm:basis-1/5 text-center font-semibold text-sm">
-                {" "}
-                Backed by experience: Our tutors have 5+ years on experience in
-                their field and mentorship training from Lancrs academy
-              </div>
-              <div className="sm:hidden w-full overflow- rounded-2xl  h-fit mt-5">
-                <Carousel perView={2} />
-              </div>
-            </div>
-          </div>
+          <TutorSection />
 
           <GetExperiemce />
 
-          <div className="w-9/10 p-10 rounded-2xl bg-white flex flex-col items-center">
-            <div className="w-6/10 text-center font-semibold text-5xl">
-              Get the job with expert career coaching and AI tools
-            </div>
-            <div className="w-7/10 text-center">
-              Finding a Software Engineering job is much easier with
-              professional help. Prep for interviews with someone who knows the
-              point of every question. Perfect your resume with someone who’s
-              seen thousands. Automate the job search with AI.
-            </div>
-            <button className="flex items-center gap-x-3 hover:cursor-pointer rounded-xl bg-gray-200 px-5 py-3 font-medium mt-5 text-lg">
-              <Eye />
-              <div>See whats included</div>
-            </button>
-            <div>
-              <Image
-                alt=""
-                src={"/f1car.svg"}
-                height={100}
-                width={100}
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
+          <CareerCoachingBanner />
 
-          <div className="flex flex-col items-center">
-            <div className="mt-30 w-6/10 text-center text-5xl font-medium">
-              Will you be certified?
-            </div>
-            <div className="my-3 w-5/10 text-center text-4xl font-medium">
-              {"Of course! It’ll look great on your resume and LinkedIn :-)"}
-            </div>
-            <Image
-              alt=""
-              src={"/certificate.svg"}
-              width={100}
-              height={100}
-              className="w-1/3 h-auto"
-            />
-          </div>
+          <Certificate />
 
-          <div className="w-6/10 my-10 space-y-1">
-            <ExpandableModule />
-            <ExpandableModule />
-            <ExpandableModule />
-            <ExpandableModule />
-          </div>
+          <SyllabusModules />
 
-          <div className="bg-white flex items-center justify-center w-8/10 my-10 relative rounded-tr-[100px] rounded-bl-[100px]">
-            <div className="absolute -top-15 left-0 rounded-tl-2xl overflow-hidden">
-              <Image
-                alt=""
-                src={"/g2.svg"}
-                width={100}
-                height={100}
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="w-full  flex p-16">
-              <div className="basis-1/3"></div>
-              <div className="basis-2/3">
-                <div className="text-4xl font-medium ">
-                  We believe that you’ll get into tech in 10 months. In fact, we
-                  put money on it.
-                </div>
-                <div className="flex items-center justify-evenly gap-x-3 my-3">
-                  <div>
-                    <div className="font-semibold text-lg">1</div>
-                    Graduate and complete our included career prep and coaching
-                    programs
-                  </div>
-                  <div>
-                    <div className="font-semibold text-lg">2</div>Apply to
-                    relevant jobs and stay in touch with your career coach
-                  </div>
-                  <div>
-                    <div className="font-semibold text-lg">3</div>If you don’t
-                    have a job after 300 days, we will refund 100% of your
-                    tuition
-                  </div>
-                </div>
-                <div className="flex items-center justify-end  w-full text-xs">
-                  <div>
-                  </div>
-                  <div className="w-4/10 px-3 py-2 rounded-md bg-red-100">
-                    <Hand />
-                    The TripleTen money-back guarantee is legally binding. For
-                    details, please see our Terms of use
-                  </div>
-                </div>
-                <div className="bg-red-300 rounded-lg p-2 w-fit">
-                  <Heart />
-                </div>
-                <div className="flex items-center ">
-                  <div className="basis-1/3 font-medium text-xl">We also have fair refund policy</div>
-                  <div className="basis-2/3 text-xs">After starting our Software Engineering bootcamp, you have 2 weeks to withdraw with a 100% refund. After that, you can get a partial refund on a transparent schedule. Check our Terms of Use for more info.</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FreeBonusCourse />
+
+          <MoneyBackGuaranteeBannerLaptop />
+          <MoneyBackGuaranteeBannerMobile />
+
 
           {/* end scrollable  */}
         </div>

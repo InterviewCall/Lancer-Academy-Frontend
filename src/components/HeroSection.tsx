@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div className="sm:flex items-start justify-center my-10 gap-5 w-8/10">
-      <div className="sm:basis-2/5">
+      <div className="sm:basis-2/5 w-full flex items-center justify-center">
         <Image
           alt=""
           src={"/HeroSecitionImage.png"}

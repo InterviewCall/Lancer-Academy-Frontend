@@ -66,8 +66,8 @@ export default function ProjectCarousel() {
 
   const [count, dispatch] = useReducer(counterReducer, 0);
   return (
-    <div className=" flex w-full rounded-xl bg-gray-100 my-10 py-5">
-      <div className="basis-3/5 w-9/10  h-96 flex items-center justify-center rounded-xl">
+    <div className=" sm:flex w-full rounded-xl bg-gray-100 my-10 py-5">
+      <div className="sm:basis-3/5 w-full sm:w-9/10 h-[50vh] sm:h-[70vh] flex items-center justify-center rounded-xl">
         <Image
           alt=""
           src={projectContent[count].src}
@@ -76,20 +76,20 @@ export default function ProjectCarousel() {
           className={projectContent[count].className}
         />
       </div>
-      <div className="basis-2/5 py-7 flex flex-col justify-between">
+      <div className="sm:basis-2/5 py-7 px-3 flex flex-col justify-between">
         <div>
-          <div className="font-medium text-2xl">
+          <div className="font-medium text-2xl ">
             {projectContent[count].heading}
           </div>
-          <div className="w-6/10">{projectContent[count].content}</div>
+          <div className="w-full sm:w-6/10">{projectContent[count].content}</div>
         </div>
 
-        <div className="mt-15 flex items-center gap-x-2">
+        <div className="mt-15 flex items-center justify-center sm:justify-start gap-x-2">
           <div
             onClick={() => {
               dispatch({ type: "decrement" });
             }}
-            className="w-fit p-3 px-5 rounded-lg bg-gray-200"
+            className="hover:cursor-pointer hover:bg-gray-300 w-fit p-3 px-5 rounded-lg bg-gray-200"
           >
             <ArrowLeft />
           </div>
@@ -97,7 +97,7 @@ export default function ProjectCarousel() {
             onClick={() => {
               dispatch({ type: "increment" });
             }}
-            className="w-fit p-3 px-5 rounded-lg bg-gray-200"
+            className="hover:cursor-pointer hover:bg-gray-300 w-fit p-3 px-5 rounded-lg bg-gray-200"
           >
             <ArrowRight />
           </div>

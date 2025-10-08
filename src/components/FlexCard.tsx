@@ -31,7 +31,7 @@ export default function FlexCard() {
       </div>
 
       <div className="bg-white sm:grid sm:grid-cols-[4fr_2fr_2fr] gap-4">
-        <div className=" p-4">
+        <div className=" sm:p-4">
           <div className=" flex items-center justify-start gap-4">
             <div>
               <Image alt="" src={"/pfp.svg"} width={110} height={110} />
@@ -60,12 +60,12 @@ export default function FlexCard() {
           </div>
         </div>
         <div className=" py-4 text-start text-sm">
-          <div className="mb-1">Education</div>
+          <div className="mb-1 mt-5 sm:mt-0">Education</div>
           <div className="font-semibold text-lg">
             Lancrs academy software engineering bootcamp
           </div>
           <div className="mb-5">Jan-Sept 2025</div>
-          <div className="mb-3 mt-14">Soft Skills</div>
+          <div className="mb-3 mt-10 sm:mt-14">Soft Skills</div>
           <div className="flex flex-wrap gap-2 text-sm font-medium h-8 items-center">
             <div className="bg-gray-200 rounded-md px-2 py-1 ">
               {" "}
@@ -90,10 +90,10 @@ export default function FlexCard() {
             </div>
           </div>
         </div>
-        <div className=" p-4 text-start">
-          <div className="font-medium mb-2">Expected Salary</div>
+        <div className="mt-10 sm:mt-0 sm:p-4 text-start">
+          <div className="font-medium mt-10 sm:mt-0 mb-2">Expected Salary</div>
           <div className="font-semibold mb-5">$75,000</div>
-          <div className="font-medium mb-2 mt-24 text-sm">Projects</div>
+          <div className="font-medium mb-2 mt-10 sm:mt-24 text-sm">Projects</div>
           <div className="font-semibold">Web Marketplace</div>
           <div className="text-gray-500 text-sm">
             740+ hours of coding in Javascript, ReactJs, NodeJs, HTML5, CSS3,
