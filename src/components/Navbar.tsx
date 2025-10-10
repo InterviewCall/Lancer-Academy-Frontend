@@ -1,14 +1,30 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 
 export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(()=>{
+    const handleScroll = () => {
+      console.log(window.scrollY)
+      if( window.scrollY > 10){
+        console.log("object")
+        setIsScrolled(true);
+      }else{
+        console.log("2")
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return ()=> window.removeEventListener("scroll", handleScroll);
+  },[])  
   return (
-    <div className="bg-white text-black flex items-center justify-between p-1 px-5 sm:px-2">
+    <div className={"sticky top-0  text-black w-full flex items-center justify-between p-1 px-5 sm:px-2 " + (isScrolled ? "bg-white" : "bg-transparent")}>
       <div className="flex items-center gap-4 ">
         <div>
           <Image
