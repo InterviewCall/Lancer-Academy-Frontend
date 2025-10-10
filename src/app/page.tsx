@@ -4,7 +4,10 @@ import FlexCard from "@/components/FlexCard";
 import FreeBonusCourse from "@/components/FreeBonusCourse";
 import GetExperiemce from "@/components/GetExperience";
 import HeroSection from "@/components/HeroSection";
-import { MoneyBackGuaranteeBannerLaptop, MoneyBackGuaranteeBannerMobile } from "@/components/MoneyBackGuaranteeBanner";
+import {
+  MoneyBackGuaranteeBannerLaptop,
+  MoneyBackGuaranteeBannerMobile,
+} from "@/components/MoneyBackGuaranteeBanner";
 import Navbar from "@/components/Navbar";
 import SyllabusModules from "@/components/SyllabusModules";
 import TutorSection from "@/components/TutorSection";
@@ -32,11 +35,14 @@ const companyImages = [
 ];
 
 export default function Page() {
+
   return (
-    <div className="flex flex-col w-full h-full border overflow-x-clip">
+    <div className="bg-red-50 flex flex-col w-full h-full border overflow-x-clip">
       <Navbar />
       <div className="flex-1 h-full overflow-y-hidden bg-red-50">
-        <div className="w-full h-full overflow-y-scroll flex flex-col items-center text-black border">
+        <div
+          className="w-full relative h-full overflow-y-scroll flex flex-col items-center text-black "
+        >
           <HeroSection />
 
           <div className="w-2/3 my-10 relative">
@@ -215,7 +221,6 @@ export default function Page() {
 
           <MoneyBackGuaranteeBannerLaptop />
           <MoneyBackGuaranteeBannerMobile />
-
 
           {/* end scrollable  */}
         </div>
