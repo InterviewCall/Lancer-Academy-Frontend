@@ -37,11 +37,11 @@ const companyImages = [
 export default function Page() {
 
   return (
-    <div className="bg-red-50 flex flex-col w-full h-full border overflow-x-clip">
+    <div className="bg-red-50 flex flex-col min-h-screen">
       <Navbar />
-      <div className="flex-1 h-full overflow-y-hidden bg-red-50">
+      <div className="flex-1 h-full bg-red-50 z-[1]">
         <div
-          className="w-full relative h-full overflow-y-scroll flex flex-col items-center text-black "
+          className="w-full h-full flex flex-col items-center text-black bg-red-50"
         >
           <HeroSection />
 

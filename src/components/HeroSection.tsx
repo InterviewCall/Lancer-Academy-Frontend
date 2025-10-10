@@ -31,7 +31,7 @@ export default function HeroSection() {
         )}
         <div className="absolute w-full h-fit flex items-center justify-center bottom-[10%]">
           <div
-            className=" bg-[#65bd82] p-9 rounded-full flex items-center justify-center "
+            className=" bg-[#65bd82] p-9 rounded-full flex items-center justify-center cursor-pointer"
             onClick={() => {
               setIsVideoActive((prev) => !prev);
             }}
