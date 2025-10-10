@@ -9,8 +9,10 @@ export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(()=>{
+    console.log('use effect called');
     const handleScroll = () => {
-      console.log(window.scrollY)
+      console.log(window.scrollY);
+      console.log('function called')
       if( window.scrollY > 10){
         console.log("object")
         setIsScrolled(true);
@@ -24,7 +26,7 @@ export default function Navbar() {
     return ()=> window.removeEventListener("scroll", handleScroll);
   },[])  
   return (
-    <div className={"sticky top-0  text-black w-full flex items-center justify-between p-1 px-5 sm:px-2 " + (isScrolled ? "bg-white" : "bg-transparent")}>
+    <div className={"sticky z-[10] top-2  text-black w-[98%] mx-auto flex items-center justify-between p-1 px-5 sm:px-3 rounded-xl " + (isScrolled ? "bg-white shadow-lg" : "bg-transparent")}>
       <div className="flex items-center gap-4 ">
         <div>
           <Image
