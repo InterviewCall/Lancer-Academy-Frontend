@@ -25,8 +25,8 @@ const techLogos = [
 
 export default function FlexCard() {
   return (
-    <div className="w-9/10 text-center my-10 rounded-4xl bg-white p-15 flex flex-col items-center">
-      <div className="text-5xl text-center font-semibold mb-5">
+    <div className="w-full sm:w-9/10 text-center my-10 rounded-4xl bg-white p-5 sm:p-15 flex flex-col items-center">
+      <div className="text-5xl text-start sm:text-center font-semibold mb-5">
         You after lancrs academy
       </div>
 
@@ -44,6 +44,10 @@ export default function FlexCard() {
               </div>
             </div>
           </div>
+          <div className="text-start text-xl font-medium mt-10 sm:mt-0 mb-2 flex items-center gap-x-2">
+            <div>Expected Salary:</div> <div className="text-4xl">75,000</div>
+          </div>
+
           <div className="text-start my-5 mt-10">Hard skills</div>
           <div className="flex flex-wrap gap-1 text-xs font-medium">
             {techLogos.map((logo) => (
@@ -91,9 +95,13 @@ export default function FlexCard() {
           </div>
         </div>
         <div className="mt-10 sm:mt-0 sm:p-4 text-start">
-          <div className="font-medium mt-10 sm:mt-0 mb-2">Expected Salary</div>
-          <div className="font-semibold mb-5">$75,000</div>
-          <div className="font-medium mb-2 mt-10 sm:mt-24 text-sm">Projects</div>
+          <div className="hidden sm:block font-medium mt-10 sm:mt-0 mb-2">
+            Expected Salary
+          </div>
+          <div className="hidden sm:block font-semibold mb-5">$75,000</div>
+          <div className="font-medium mb-2 mt-10 sm:mt-24 text-sm">
+            Projects
+          </div>
           <div className="font-semibold">Web Marketplace</div>
           <div className="text-gray-500 text-sm">
             740+ hours of coding in Javascript, ReactJs, NodeJs, HTML5, CSS3,

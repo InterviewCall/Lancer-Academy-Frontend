@@ -44,11 +44,12 @@ import React from "react";
 
 interface PercentageBadgeProps {
   value: string;
+  textSize?: string;
 }
 
-export const PercentageBadge: React.FC<PercentageBadgeProps> = ({ value }) => {
+export const PercentageBadge: React.FC<PercentageBadgeProps> = ({ value, textSize="5xl" }) => {
   return (
-    <div className="inline-block bg-[#FF9363] text-black font-extrabold text-5xl px-5 py-2 rounded-xl shadow-[4px_4px_0_#e26f3e]">
+    <div className={`inline-block bg-[#FF9363] text-black font-extrabold text-${textSize} px-3 sm:px-5 py-1 sm:py-2 rounded-xl shadow-[4px_4px_0_#e26f3e]`}>
       {value}
     </div>
   );

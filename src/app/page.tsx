@@ -13,6 +13,8 @@ import {
   MoneyBackGuaranteeBannerMobile,
 } from "@/components/MoneyBackGuaranteeBanner";
 import Navbar from "@/components/Navbar";
+import StatsAfterCourse from "@/components/StatsAfterCourse";
+import SuccessStoryBanner from "@/components/SuccessStoryBanner";
 import SuccessStoryCard from "@/components/SuccessStoryCard";
 import SyllabusModules from "@/components/SyllabusModules";
 import TutorSection from "@/components/TutorSection";
@@ -63,13 +65,13 @@ export default function Page() {
           </div>
 
           <div>
-            <button className="px-4 py-3 border border-gray-500 hover:border-blue-100 text-gray-500 hover:text-blue-100 hover:cursor-pointer rounded-2xl">
+            <button className="px-4 py-3 border font-semibold border-gray-500 hover:border-blue-100 text-gray-500 hover:text-blue-100 hover:cursor-pointer rounded-2xl">
               All numbers come form our 2024 graduate outcomes report
             </button>
           </div>
 
-          <div className="w-9/10 sm:w-7/10 text-center my-10 rounded-4xl bg-transparent pt-20 pb-10 px-10">
-            <div className="text-4xl sm:text-6xl font-semibold mb-5">
+          <div className="w-full sm:w-7/10 text-center my-10 rounded-4xl bg-transparent pt-20 pb-10 px-10">
+            <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-5">
               Become a software engineer with Triple Ten
             </div>
             <div className="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-start text gap-x-15 my-10 text-center">
@@ -93,7 +95,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-7/10">
+          {/* <div className="w-7/10">
             <Image
               alt=""
               src={"/stats.svg"}
@@ -101,7 +103,9 @@ export default function Page() {
               width={100}
               className="w-full h-auto"
             />
-          </div>
+          </div> */}
+
+          <StatsAfterCourse />
 
           <FlexCard />
 
@@ -183,8 +187,8 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-9/10 sm:w-9/10 text-center my-10 rounded-4xl bg-white p-10 pb-0 flex flex-col items-center">
-            <div className="font-semibold text-4xl mb-2 w-9/10 sm:w-8/10">
+          <div className="w-full sm:w-9/10 text-center my-10 rounded-4xl bg-white pt-10 px-2 sm:px-10 sm:p-10 pb-0 flex flex-col items-center">
+            <div className="font-semibold text-4xl mb-2 w-full sm:w-8/10">
               All in one flexible learning experience
             </div>
             <div className="mb-5 w-9/10 sm:w-7/10 font-light text-sm">
@@ -198,13 +202,13 @@ export default function Page() {
               </button>
             </div>
 
-            <div className="mt-10 w-9/10 rounded-2xl flex justify-center gap-10">
+            <div className="relative overflow-x-clip mt-10 w-full h-44 sm:h-fit sm:w-9/10 rounded-2xl flex justify-center gap-10">
               <Image
                 alt=""
                 src={"/allinone.svg"}
                 height={100}
                 width={100}
-                className="w-full h-auto"
+                className="absolute bottom-0 w-auto sm:w-full h-40 sm:h-auto max-w-none"
               />
             </div>
           </div>
@@ -222,10 +226,10 @@ export default function Page() {
             text="Ready to learn the skills that will get you into tech? Book a call with
                   one of our career advisors!"
           />
-          <div className="w-7/10 flex flex-col items-center text-6xl font-bold my-10 leading-20">
+          <div className="w-7/10 flex flex-col items-center text-4xl sm:text-6xl font-bold my-10  sm:leading-20 tracking-tighter">
             <div className="flex items-center justify-center">
               <span>1.1K+</span>
-              <span className="px-5">
+              <span className="sm:px-5 h-10 sm:h-16 w-10 sm:w-16 ">
                 <Image
                   alt=""
                   src={"./heart.svg"}
@@ -238,10 +242,12 @@ export default function Page() {
             </div>
             <div className="flex gap-3 items-center justify-center">
               <div className="-rotate-12">
-                <PercentageBadge value="80%" />
+                <PercentageBadge value="80%" textSize="3xl"/>
               </div>
-              <div>From a non STEM </div>
+              <div className="sm:block hidden ">From a non STEM </div>
+              <div className="block sm:hidden"> from </div>
             </div>
+            <div className="sm:hidden block">a non stem</div>
             <div>background</div>
           </div>
 
@@ -268,6 +274,8 @@ export default function Page() {
               quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
             />
           </div>
+            <SuccessStoryBanner image="/testimonial_LA.png" name="John Doe" quote="
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto vel dolorum, quia eum deleniti quisquam animi ." />
 
           <BookACallReminder text="Ready to start with one of the highest-rated bootcamps in the India? Book a call today!" />
           <FreeBonusCourse />

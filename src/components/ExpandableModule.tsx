@@ -9,8 +9,8 @@ export default function ExpandableModule() {
     <div className="w-full  p-7 px-10 bg-white">
       <div className="w-full flex items-center justify-between">
         <div>
-          <div className="font-semibold text-2xl">Introductory Module</div>
-          <div className="font-medium text-xl text-gray-600">
+          <div className="font-semibold text-xl sm:text-2xl">Introductory Module</div>
+          <div className="font-medium text-lg sm:text-xl text-gray-600">
             10 hours, 1 project, 7 live lessons
           </div>
         </div>
@@ -25,7 +25,7 @@ export default function ExpandableModule() {
         </div>
       </div>
       <div
-        className={`pt-5 text-lg font-medium transition-all duration-300 transform origin-top
+        className={`pt-5 text-md sm:text-lg font-medium transition-all duration-300 transform origin-top
             ${
               isOpen
                 ? "translate-y-0 opacity-100 scale-100 block"
