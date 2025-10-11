@@ -1,5 +1,6 @@
 "use client";
 
+import { handleClickBookACallButton } from "@/utits/onClickHandlers";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
@@ -8,25 +9,25 @@ import { IoMdClose } from "react-icons/io";
 export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  useEffect(()=>{
-    console.log('use effect called');
+
+  useEffect(() => {
     const handleScroll = () => {
-      console.log(window.scrollY);
-      console.log('function called')
-      if( window.scrollY > 10){
-        console.log("object")
+      if (window.scrollY > 10) {
         setIsScrolled(true);
-      }else{
-        console.log("2")
+      } else {
         setIsScrolled(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-    return ()=> window.removeEventListener("scroll", handleScroll);
-  },[])  
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <div className={"sticky z-[10] top-2  text-black w-[98%] mx-auto flex items-center justify-between p-1 px-5 sm:px-3 rounded-xl " + (isScrolled ? "bg-white shadow-lg" : "bg-transparent")}>
+    <div
+      className={
+        "sticky z-[10] top-2  text-black w-[98%] mx-auto flex items-center justify-between p-1 px-5 sm:px-3 rounded-xl " +
+        (isScrolled ? "bg-white shadow-lg" : "bg-transparent")
+      }
+    >
       <div className="flex items-center gap-4 ">
         <div>
           <Image
@@ -50,8 +51,13 @@ export default function Navbar() {
         <div>FAQ</div>
       </div>
       <div className="flex items-center gap-4">
-        <button className="hidden sm:block px-3 py-2 bg-black text-white rounded-md">
-          Book a call{" "}
+        <button
+          onClick={() => {
+            handleClickBookACallButton();
+          }}
+          className="hidden sm:block px-3 py-2 bg-black text-white rounded-md"
+        >
+          Book a call
         </button>
         {isNavbarOpen ? (
           <IoMdClose
@@ -67,61 +73,61 @@ export default function Navbar() {
       </div>
       {isNavbarOpen && (
         <div className="absolute border z-15 bg-white h-full w-full top-0 right-0">
-        <div className="flex flex-col w-full h-full">
-          <div className="flex items-center justify-between p-2 px-5 ">
-            <div>
-              <Image
-                alt=""
-                src={"/lancersFullLogo.png"}
-                height={90}
-                width={90}
-                className="w-full h-auto"
+          <div className="flex flex-col w-full h-full">
+            <div className="flex items-center justify-between p-2 px-5 ">
+              <div>
+                <Image
+                  alt=""
+                  src={"/lancersFullLogo.png"}
+                  height={90}
+                  width={90}
+                  className="w-full h-auto"
+                />
+              </div>
+              <IoMdClose
+                className="block sm:hidden h-4 w-4 "
+                onClick={() => setIsNavbarOpen((prev) => !prev)}
               />
             </div>
-            <IoMdClose
-              className="block sm:hidden h-4 w-4 "
-              onClick={() => setIsNavbarOpen((prev) => !prev)}
-            />
-          </div>
-          <div className="flex-1 h-full overflow-y-hidden mx-5">
-            <div className="overflow-y-scroll h-full bg-transparent text-black px-6 py-4 space-y-4">
-              <div className="border-b border-gray-300 pb-3">
+            <div className="flex-1 h-full overflow-y-hidden mx-5">
+              <div className="overflow-y-scroll h-full bg-transparent text-black px-6 py-4 space-y-4">
+                <div className="border-b border-gray-300 pb-3">
                   <h2 className="text-xl font-bold">
-                  Software Engineering Bootcamp
-                </h2>
-              </div>
+                    Software Engineering Bootcamp
+                  </h2>
+                </div>
 
-              <ul className="space-y-2 text-base font-medium pl-5">
-                <li>Intro</li>
-                <li>How we teach</li>
-                <li>Curriculum</li>
-                <li>Reviews</li>
-                <li>Tuition</li>
-                <li>FAQ</li>
-              </ul>
+                <ul className="space-y-2 text-base font-medium pl-5">
+                  <li>Intro</li>
+                  <li>How we teach</li>
+                  <li>Curriculum</li>
+                  <li>Reviews</li>
+                  <li>Tuition</li>
+                  <li>FAQ</li>
+                </ul>
 
-              <div className="border-b border-gray-300 pt-4 pb-3">
-                <h2 className="text-xl font-bold">Programs</h2>
-              </div>
+                <div className="border-b border-gray-300 pt-4 pb-3">
+                  <h2 className="text-xl font-bold">Programs</h2>
+                </div>
 
-              <ul className="space-y-2 text-base font-medium pl-5">
-                <li>AI and Machine Learning</li>
-                <li>Web Development</li>
-                <li>Data Science</li>
-                <li>Cybersecurity</li>
-                <li>Cloud Computing</li>
-                <li>DevOps</li>
-              </ul>
+                <ul className="space-y-2 text-base font-medium pl-5">
+                  <li>AI and Machine Learning</li>
+                  <li>Web Development</li>
+                  <li>Data Science</li>
+                  <li>Cybersecurity</li>
+                  <li>Cloud Computing</li>
+                  <li>DevOps</li>
+                </ul>
 
-              <div className="pt-4">
-                <button className="w-full bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition">
-                  Book a Demo
-                </button>
+                <div className="pt-4">
+                  <button className="w-full bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition">
+                    Book a Demo
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       )}
     </div>
   );

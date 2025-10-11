@@ -12,7 +12,7 @@ import { advisorImage } from "@/utits/externalUrls";
 import { Rhombus } from "./DesignDivs";
 export default function BookACallForm() {
   return (
-    <div className="relative w-9/10 sm:flex items-stretch justify-evenly bg-[#d35723] shadow-2xl  p-6 py-10 rounded-2xl my-10">
+    <div id="book-a-call" className="relative w-9/10 sm:flex items-stretch justify-evenly bg-[#d35723] shadow-2xl  p-6 py-10 rounded-2xl my-10">
       <Rhombus background="#d35723" />
       <div className="sm:basis-2/5 ">
         <div className="h-2/10 mb-5">
