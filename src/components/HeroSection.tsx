@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { FaCircleHalfStroke, FaPause, FaPlay } from "react-icons/fa6";
 import { WiMoonFull } from "react-icons/wi";
+import BookACallButton from "./BookACallButton";
 
 export default function HeroSection() {
   const [isVideoActive, setIsVideoActive] = useState(false);
@@ -82,9 +83,7 @@ export default function HeroSection() {
           <span className="font-semibold"> ~$75,000 to start</span>
         </div>
         <div className="my-10 flex flex-col sm:flex-row items-center gap-y-11 gap-x-8 justify-center">
-          <button className="px-12 sm:px-15 hover:cursor-pointer py-3 bg-black text-white text-xl sm:text-2xl rounded-xl mt-5">
-            Book a call
-          </button>
+          <BookACallButton />
           <div>
             <Image alt="" src={'/Cohort start.svg'} width={100} height={100} className="h-full w-auto"/>
           </div>
