@@ -51,11 +51,11 @@ export default function HeroSection() {
         )}
       </div>
       <div className="sm:basis-3/5 w-full sm:w-auto">
-        <div className="flex items-center justify-center sm:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-full sm:w-fit px-3 divide-x divide-gray-500  ">
-          <div className="text-sm font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-2 my-1.5 ">
+        <div className="flex items-center justify-center sm:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-full sm:w-fit px-1 sm:px-3 divide-x divide-gray-500  ">
+          <div className="text-sm font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-1.5 ">
             <FaCircleHalfStroke
               size={30}
-              className="inline-block pr-2 "
+              className="inline-block pr-1 sm:pr-2 "
             />
             <div className="flex items-center justify-around">
               <div className="text-center">Internship:</div>
@@ -63,8 +63,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="text-sm font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-2 my-1.5 ">
-            <WiMoonFull size={30} className="inline-block pr-2 " />
+          <div className="text-sm font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-1.5 ">
+            <WiMoonFull size={30} className="inline-block pr-1 sm:pr-2 " />
             <div className="flex items-center justify-around">
               <div className="text-center">Full Time:</div>
               <div className="text-green-900 ml-1">4 months</div>

@@ -3,7 +3,7 @@ import ExpandableModule from "./ExpandableModule";
 
 export default function SyllabusModules(){
     return (
-        <div className="w-95/100 sm:w-6/10 my-10 space-y-1">
+        <div className="w-95/100 sm:w-6/10 my-10 px-1  space-y-1">
             <ExpandableModule />
             <ExpandableModule />
             <ExpandableModule />
