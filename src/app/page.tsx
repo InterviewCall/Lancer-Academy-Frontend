@@ -1,5 +1,9 @@
+import BookACallForm from "@/components/BookACallForm";
+import BookACallReminder from "@/components/BookACallReminder";
 import CareerCoachingBanner from "@/components/CareerCoachingBanner";
 import Certificate from "@/components/Certificate";
+import { PercentageBadge } from "@/components/FAQOptions";
+import FAQSection from "@/components/FAQSection";
 import FlexCard from "@/components/FlexCard";
 import FreeBonusCourse from "@/components/FreeBonusCourse";
 import GetExperiemce from "@/components/GetExperience";
@@ -9,6 +13,7 @@ import {
   MoneyBackGuaranteeBannerMobile,
 } from "@/components/MoneyBackGuaranteeBanner";
 import Navbar from "@/components/Navbar";
+import SuccessStoryCard from "@/components/SuccessStoryCard";
 import SyllabusModules from "@/components/SyllabusModules";
 import TutorSection from "@/components/TutorSection";
 import Image from "next/image";
@@ -35,14 +40,11 @@ const companyImages = [
 ];
 
 export default function Page() {
-
   return (
     <div className="bg-red-50 flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-1 h-full bg-red-50 z-[1]">
-        <div
-          className="w-full h-full flex flex-col items-center text-black bg-red-50"
-        >
+        <div className="w-full h-full flex flex-col items-center text-black bg-red-50">
           <HeroSection />
 
           <div className="w-2/3 my-10 relative">
@@ -216,11 +218,66 @@ export default function Page() {
           <Certificate />
 
           <SyllabusModules />
+          <BookACallReminder
+            text="Ready to learn the skills that will get you into tech? Book a call with
+                  one of our career advisors!"
+          />
+          <div className="w-7/10 flex flex-col items-center text-6xl font-bold my-10 leading-20">
+            <div className="flex items-center justify-center">
+              <span>1.1K+</span>
+              <span className="px-5">
+                <Image
+                  alt=""
+                  src={"./heart.svg"}
+                  height={100}
+                  width={100}
+                  className="h-full w-auto"
+                />
+              </span>
+              <span>Alumni.</span>
+            </div>
+            <div className="flex gap-3 items-center justify-center">
+              <div className="-rotate-12">
+                <PercentageBadge value="80%" />
+              </div>
+              <div>From a non STEM </div>
+            </div>
+            <div>background</div>
+          </div>
 
+          <div className=" w-9/10 grid grid-cols-1 sm:grid-cols-3 gap-1">
+            <SuccessStoryCard
+              before="Track Driver"
+              image="/testimonial_LA.png"
+              name="John Doe"
+              now="Full Stack Developer"
+              quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
+            />
+            <SuccessStoryCard
+              before="Track Driver"
+              image="/testimonial_LA.png"
+              name="John Doe"
+              now="Full Stack Developer"
+              quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
+            />
+            <SuccessStoryCard
+              before="Track Driver"
+              image="/testimonial_LA.png"
+              name="John Doe"
+              now="Full Stack Developer"
+              quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
+            />
+          </div>
+
+          <BookACallReminder text="Ready to start with one of the highest-rated bootcamps in the India? Book a call today!" />
           <FreeBonusCourse />
 
           <MoneyBackGuaranteeBannerLaptop />
           <MoneyBackGuaranteeBannerMobile />
+
+          <BookACallForm />
+
+          <FAQSection />
 
           {/* end scrollable  */}
         </div>

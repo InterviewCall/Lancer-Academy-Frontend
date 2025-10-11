@@ -14,7 +14,7 @@ export default function Certificate(){
               src={"/certificate.svg"}
               width={100}
               height={100}
-              className="w-2/3 sm:w-1/3 h-auto"
+              className="w-2/3 sm:w-1/2 h-auto"
             />
           </div>
     )

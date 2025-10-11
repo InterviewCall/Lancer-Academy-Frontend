@@ -4,7 +4,7 @@ import { TiTick } from "react-icons/ti";
 export function MoneyBackBannerImageLaptop() {
   return (
     <div className="relative w-full">
-      <div className="absolute top-10 left-0 w-full z-9 border-0">
+      <div className="absolute top-10 left-0 w-7/10 z-9 border-0">
         <div className="relative bg-[#ff9363] gap-x-3 flex items-center justify-end rounded-tl-2xl text-center text-black font-semibold  px-8 py-2 h-16 text-sm sm:text-base w-full">
           <div className="w-1/2 flex items-center justify-start gap-x-5 text-xl font-semibold">
           <TiTick size={30}/>
