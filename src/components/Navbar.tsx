@@ -25,7 +25,8 @@ export default function Navbar() {
     <div
       className={
         "sticky z-[10] text-black w-[98%] mx-auto flex items-center justify-between p-1 px-5 sm:px-3 rounded-xl " +
-        (isScrolled ? "bg-white shadow-lg" : "bg-transparent") + (isNavbarOpen ? " h-[100vh] sm:h-auto top-0 sm:top-2 ": " top-2 ")
+        (isScrolled ? "bg-white shadow-lg" : "bg-transparent") +
+        (isNavbarOpen ? " h-[100vh] sm:h-auto top-0 sm:top-2 " : " top-2 ")
       }
     >
       <div className="flex items-center gap-4 ">
@@ -53,9 +54,10 @@ export default function Navbar() {
       <div className="flex items-center gap-4">
         <button
           onClick={() => {
+            setIsNavbarOpen(false);
             handleClickBookACallButton();
           }}
-          className="hidden sm:block px-3 py-2 bg-black text-white rounded-md"
+          className="hidden hover:cursor-pointer sm:block px-3 py-2 bg-black text-white rounded-md"
         >
           Book a call
         </button>
@@ -120,7 +122,13 @@ export default function Navbar() {
                 </ul>
 
                 <div className="pt-4">
-                  <button className="w-full bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition">
+                  <button
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      handleClickBookACallButton(1.1);
+                    }}
+                    className="w-full bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition hover:cursor-pointer"
+                  >
                     Book a Demo
                   </button>
                 </div>
