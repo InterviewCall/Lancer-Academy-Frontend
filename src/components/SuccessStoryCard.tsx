@@ -17,7 +17,7 @@ const SuccessStoryCard: React.FC<SuccessStoryCardProps> = ({
   name,
 }) => {
   return (
-    <div className="w-full bg-white rounded-2xl shadow-sm border border-gray-200 p-6 flex flex-col gap-4">
+    <div className="flex-shrink-0 snap-center w-full bg-white rounded-2xl shadow-sm border border-gray-200 p-6 flex flex-col gap-4">
       {/* Top Section */}
       <div className=" items-start gap-4">
         <Image

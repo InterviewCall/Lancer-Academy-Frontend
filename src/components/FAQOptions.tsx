@@ -19,7 +19,7 @@ export default function FAQOptions({
     <div className=" px-3">
       {startingDivider && <FAQDivider />}
       <div className="flex items-center justify-between">
-        <div className="py-5 text-4xl font-medium">{heading}</div>
+        <div className="py-3 sm:py-5 text-xl sm:text-4xl font-medium">{heading}</div>
         <div
           className={
             `hover:cursor-pointer transition-transform duration-300 ease-in-out ` +
@@ -44,12 +44,13 @@ import React from "react";
 
 interface PercentageBadgeProps {
   value: string;
+  className?: string;
   textSize?: string;
 }
 
 export const PercentageBadge: React.FC<PercentageBadgeProps> = ({ value, textSize="5xl" }) => {
   return (
-    <div className={`inline-block bg-[#FF9363] text-black font-extrabold text-${textSize} px-3 sm:px-5 py-1 sm:py-2 rounded-xl shadow-[4px_4px_0_#e26f3e]`}>
+    <div className={`inline-block bg-[#FF9363] text-black font-extrabold text-${textSize} px-3 sm:px-5 py-1.5 sm:py-2 rounded-xl shadow-[4px_4px_0_#e26f3e]`}>
       {value}
     </div>
   );

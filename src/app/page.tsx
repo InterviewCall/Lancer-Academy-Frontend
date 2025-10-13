@@ -226,7 +226,7 @@ export default function Page() {
             text="Ready to learn the skills that will get you into tech? Book a call with
                   one of our career advisors!"
           />
-          <div className="w-7/10 flex flex-col items-center text-4xl sm:text-6xl font-bold my-10  sm:leading-20 tracking-tighter">
+          <div className="w-7/10 flex flex-col items-center text-5xl sm:text-6xl font-bold my-10  sm:leading-20 tracking-tighter">
             <div className="flex items-center justify-center">
               <span>1.1K+</span>
               <span className="sm:px-5 h-10 sm:h-16 w-10 sm:w-16 ">
@@ -251,7 +251,7 @@ export default function Page() {
             <div>background</div>
           </div>
 
-          <div className=" w-9/10 grid grid-cols-1 sm:grid-cols-3 gap-1">
+          <div className="flex sm:grid sm:grid-cols-3 gap-4 overflow-x-auto sm:overflow-visible max-w-full scrollbar-hide px-4">
             <SuccessStoryCard
               before="Track Driver"
               image="/testimonial_LA.png"

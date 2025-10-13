@@ -25,8 +25,8 @@ const techLogos = [
 
 export default function FlexCard() {
   return (
-    <div className="w-full sm:w-9/10 text-center my-10 rounded-4xl bg-white p-5 sm:p-15 flex flex-col items-center">
-      <div className="text-5xl text-start sm:text-center font-semibold mb-5">
+    <div className="w-full sm:w-9/10 text-center my-10 rounded-4xl bg-white p-8 py-15 sm:p-15 flex flex-col items-center">
+      <div className="text-3xl sm:text-5xl text-start sm:text-center font-semibold mb-5">
         You after lancrs academy
       </div>
 
@@ -36,16 +36,16 @@ export default function FlexCard() {
             <div>
               <Image alt="" src={"/pfp.svg"} width={110} height={110} />
             </div>
-            <div className="mx-3">
-              <div className="text-2xl font-semibold">Software Engineer</div>
+            <div className="sm:mx-3">
+              <div className="text-lg sm:text-2xl font-semibold">Software Engineer</div>
               <div className="flex items-center justify-center gap-3">
                 <div>Linked in </div>
                 <div>Github</div>
               </div>
             </div>
           </div>
-          <div className="text-start text-xl font-medium mt-10 sm:mt-0 mb-2 flex items-center gap-x-2">
-            <div>Expected Salary:</div> <div className="text-4xl">75,000</div>
+          <div className="sm:hidden text-start text-xl font-medium mt-10 sm:mt-0 mb-2 flex items-center gap-x-2">
+            <div>Expected Salary:</div> <div className="text-3xl">$75,000</div>
           </div>
 
           <div className="text-start my-5 mt-10">Hard skills</div>
@@ -70,7 +70,7 @@ export default function FlexCard() {
           </div>
           <div className="mb-5">Jan-Sept 2025</div>
           <div className="mb-3 mt-10 sm:mt-14">Soft Skills</div>
-          <div className="flex flex-wrap gap-2 text-sm font-medium h-8 items-center">
+          <div className="flex flex-wrap gap-2 text-sm font-medium items-center">
             <div className="bg-gray-200 rounded-md px-2 py-1 ">
               {" "}
               Problem Solving

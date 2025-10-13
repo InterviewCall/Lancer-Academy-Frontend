@@ -20,3 +20,9 @@ body {
   color: var(--foreground);
   /* font-family: Arial, Helvetica, sans-serif; */
 }
+
+@layer utilities {
+  .text-f9xl {
+    @apply text-[clamp(3rem,9vw,300rem)];
+  }
+}

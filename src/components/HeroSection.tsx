@@ -52,9 +52,9 @@ export default function HeroSection() {
       </div>
       <div className="sm:basis-3/5 w-full sm:w-auto">
         <div className="flex items-center justify-center sm:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-full sm:w-fit px-1 sm:px-3 divide-x divide-gray-500  ">
-          <div className="text-sm font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-1.5 ">
+          <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
             <FaCircleHalfStroke
-              size={30}
+              size={20}
               className="inline-block pr-1 sm:pr-2 "
             />
             <div className="flex items-center justify-around">
@@ -63,8 +63,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="text-sm font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-1.5 ">
-            <WiMoonFull size={30} className="inline-block pr-1 sm:pr-2 " />
+          <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
+            <WiMoonFull size={20} className="inline-block pr-1 sm:pr-2 " />
             <div className="flex items-center justify-around">
               <div className="text-center">Full Time:</div>
               <div className="text-green-900 ml-1">4 months</div>
@@ -74,10 +74,14 @@ export default function HeroSection() {
             <span>Money Back Guarantee</span>
           </div> */}
         </div>
-        <div className="text-5xl text-center sm:text-start sm:text-9xl font-[700] my-10 leading-[82%]">
+        {/* className="text-5xl text-center sm:text-start sm:text-9xl font-[700] my-10 leading-[82%]" */}
+        {/* className=" text-center sm:text-start text-[clamp(3rem,9vw,300rem)] font-[700] my-10 leading-[82%]" */}
+        <div className="  text-center sm:text-start text-f9xl font-[700] my-10 leading-[82%]">
           Software Engineering Bootcamp
         </div>
-        <div className="font-[400] text-center sm:text-start leading-[100%] tracking-[-1.5%] px-10 sm:px-0 w-full text-lg sm:text-2xl">
+        {/* className="font-[400] text-center sm:text-start leading-[100%] tracking-[-1.5%] px-10 sm:px-0 w-full text-lg sm:text-2xl" */}
+        {/* className="font-[400] text-center sm:text-start leading-[100%] tracking-[-1.5%] px-10 sm:px-0 w-full text-lg sm:text-[clamp(1.5rem,2vw,150rem)]" */}
+        <div className="font-[400] text-center sm:text-start leading-[100%] tracking-[-1.5%] px-10 sm:px-0 w-full text-lg sm:text-[clamp(1.5rem,2vw,150rem)]">
           Join our Software Engineering Bootcamp part-time or full-time to learn
           a remote-friendly job that pays{" "}
           <span className="font-semibold"> ~$75,000 to start</span>

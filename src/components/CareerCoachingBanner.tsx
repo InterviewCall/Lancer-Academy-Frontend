@@ -3,7 +3,7 @@ import { Eye } from "lucide-react";
 
 export default function CareerCoachingBanner(){
     return (
-        <div className="w-full sm:w-9/10 pb-0 p-10 rounded-2xl bg-white flex flex-col items-center">
+        <div className="w-full overflow-x-hidden sm:w-9/10 pb-0 p-10 rounded-2xl bg-white flex flex-col items-center">
             <div className="sm:w-6/10 mb-3 text-center font-semibold text-4xl sm:text-5xl">
               Get the job with expert career coaching and AI tools
             </div>
@@ -17,13 +17,13 @@ export default function CareerCoachingBanner(){
               <Eye />
               <div>See whats included</div>
             </button>
-            <div className="relative h-72 flex justify-center">
+            <div className="relative  flex sm:block justify-center h-72 w-full">
               <Image
                 alt=""
                 src={"/f1car.svg"}
                 height={100}
                 width={100}
-                className="absolute bottom-0 w-auto sm:w-full h-66 sm:h-auto max-w-none"
+                className="absolute bottom-0 sm:w-full w-auto h-60 sm:h-66  max-w-none"
               />
             </div>
           </div>

@@ -6,11 +6,11 @@ import { useState } from "react";
 export default function ExpandableModule() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full  p-7 px-10 bg-white">
+    <div className="w-full p-7 px-5 sm:px-10 bg-white">
       <div className="w-full flex items-center justify-between">
         <div>
-          <div className="font-semibold text-xl sm:text-2xl">Introductory Module</div>
-          <div className="font-medium text-lg sm:text-xl text-gray-600">
+          <div className="font-semibold text-lg sm:text-2xl">Introductory Module</div>
+          <div className="font-medium text-base sm:text-xl text-gray-600">
             10 hours, 1 project, 7 live lessons
           </div>
         </div>
