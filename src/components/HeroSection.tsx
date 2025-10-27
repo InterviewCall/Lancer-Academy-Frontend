@@ -25,7 +25,7 @@ export default function HeroSection() {
           <video
             className="w-full h-full rounded-xl object-cover"
             src={heroSectionVideoUrl}
-            autoPlay={false}
+            autoPlay={true}
             loop
             ref={videoRef}
           ></video>
