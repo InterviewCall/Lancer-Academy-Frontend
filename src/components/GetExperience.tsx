@@ -2,7 +2,7 @@ import ProjectCarousel from "./ProjectCarousel";
 
 export default function GetExperiemce() {
   return (
-    <div className="w-9/10 rounded-xl p-4 bg-white my-3 flex flex-col items-center">
+    <div className="w-full sm:w-9/10 rounded-xl p-4 bg-white my-3 flex flex-col items-center">
       <div className="text-4xl text-center font-semibold mt-10 sm:mt-15">
         Get Real Experience
       </div>

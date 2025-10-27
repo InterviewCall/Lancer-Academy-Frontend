@@ -3,11 +3,11 @@ import { Eye } from "lucide-react";
 
 export default function CareerCoachingBanner(){
     return (
-        <div className="w-9/10 p-10 rounded-2xl bg-white flex flex-col items-center">
-            <div className="sm:w-6/10 mb-3 text-center font-semibold text-5xl">
+        <div className="w-full overflow-x-hidden sm:w-9/10 pb-0 p-10 rounded-2xl bg-white flex flex-col items-center">
+            <div className="sm:w-6/10 mb-3 text-center font-semibold text-4xl sm:text-5xl">
               Get the job with expert career coaching and AI tools
             </div>
-            <div className="sm:w-7/10 text-center">
+            <div className="sm:w-7/10 sm:text-lg text-center">
               Finding a Software Engineering job is much easier with
               professional help. Prep for interviews with someone who knows the
               point of every question. Perfect your resume with someone who’s
@@ -17,13 +17,13 @@ export default function CareerCoachingBanner(){
               <Eye />
               <div>See whats included</div>
             </button>
-            <div>
+            <div className="relative  flex sm:block justify-center h-72 w-full">
               <Image
                 alt=""
                 src={"/f1car.svg"}
                 height={100}
                 width={100}
-                className="w-full h-auto"
+                className="absolute bottom-0 sm:w-full w-auto h-60 sm:h-66  max-w-none"
               />
             </div>
           </div>

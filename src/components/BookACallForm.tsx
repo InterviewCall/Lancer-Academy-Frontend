@@ -7,15 +7,15 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { z } from "zod";
-import { TiTick } from "react-icons/ti";
 import { advisorImage } from "@/utits/externalUrls";
 import { Rhombus } from "./DesignDivs";
+import { FaCircleCheck } from "react-icons/fa6";
 export default function BookACallForm() {
   return (
-    <div id="book-a-call" className="relative w-9/10 sm:flex items-stretch justify-evenly bg-[#d35723] shadow-2xl  p-6 py-10 rounded-2xl my-10">
+    <div id="book-a-call" className="relative w-full sm:w-9/10 flex sm:flex-row flex-col items-center sm:items-stretch sm:justify-evenly bg-[#d35723] shadow-2xl  p-6 py-10 rounded-2xl my-10">
       <Rhombus background="#d35723" />
       <div className="sm:basis-2/5 ">
-        <div className="h-2/10 mb-5">
+        <div className="h-4/10 sm:h-2/10 my-5 flex justify-center">
           <Image
             alt=""
             src={advisorImage}
@@ -24,26 +24,26 @@ export default function BookACallForm() {
             className="h-full w-auto"
           />
         </div>
-        <div className="text-6xl mb-10 w-9/10 font-semibold">
+        <div className="text-4xl sm:text-6xl mb-10 text-center sm:text-start w-full sm:w-9/10 font-semibold">
           Book a call with advisor by 23rd October
         </div>
-        <div className="flex items-start justify-between space-x-5 font-semibold text-lg">
+        <div className="hidden sm:flex items-start justify-between space-x-5 font-semibold text-lg">
           <div>
             <div>
-              <TiTick />
+              <FaCircleCheck />
             </div>
             <div>Guarantee: Job or 100% money back</div>
           </div>
           <div>
             <div>
-              <TiTick />
+              <FaCircleCheck />
             </div>
 
             <div>No IT or STEM background needed</div>
           </div>
           <div>
             <div>
-              <TiTick />
+              <FaCircleCheck />
             </div>
 
             <div>Flexible program with personal support</div>
@@ -54,6 +54,28 @@ export default function BookACallForm() {
         {" "}
         <ContactForm />{" "}
       </div>
+       <div className="flex flex-col mt-10 sm:hidden items-stretch text-center justify-between space-y-5 font-semibold text-lg">
+          <div>
+            <div className="flex items-center justify-center mt-5 mb-2">
+              <FaCircleCheck />
+            </div>
+            <div>Guarantee: Job or 100% money back</div>
+          </div>
+          <div>
+            <div className="flex items-center justify-center my-5 mb-2">
+              <FaCircleCheck />
+            </div>
+
+            <div>No IT or STEM background needed</div>
+          </div>
+          <div>
+            <div className="flex items-center justify-center my-5 mb-2">
+              <FaCircleCheck />
+            </div>
+
+            <div>Flexible program with personal support</div>
+          </div>
+        </div>
     </div>
   );
 }

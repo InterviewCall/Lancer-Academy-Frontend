@@ -70,7 +70,7 @@ export function MoneyBackGuaranteeBannerLaptop() {
 
 export function MoneyBackGuaranteeBannerMobile() {
   return (
-    <div className="sm:hidden  bg-white relaive items-center justify-center w-8/10 my-10 relative rounded-tr-[50px] rounded-bl-[50px] ">
+    <div className="sm:hidden  bg-white relaive items-center justify-center w-full my-10 relative rounded-tr-[50px] rounded-bl-[50px] ">
       <div className="absolute top-[27%] -left-20 w-screen z-9 ">
         <div className="relative bg-[#ff9363] -rotate-12 text-center text-black font-semibold pl-72 px-8 py-2 h-10 text-sm sm:text-base w-full">
           Money Back Guarantee
@@ -79,10 +79,10 @@ export function MoneyBackGuaranteeBannerMobile() {
           {/* <div className="absolute right-0 top-0 h-full w-4 bg-[#1e1e1e] clip-path-[polygon(100%_0,0%_50%,100%_100%)]"></div> */}
         </div>
       </div>
-      <div className="w-full p-16">
+      <div className="w-full p-10">
         <div className=""></div>
         <div className="w-full">
-          <div className="text-4xl font-medium ">
+          <div className="text-3xl sm:text-4xl w-8/10 font-medium ">
             We believe that you’ll get into tech in 10 months. In fact, we put
             money on it.
           </div>
@@ -107,7 +107,7 @@ export function MoneyBackGuaranteeBannerMobile() {
           </div>
           <div className="flex items-center justify-end  w-full text-xs">
             <div></div>
-            <div className="w-6/10 px-3 py-2 rounded-md bg-red-100">
+            <div className="w-8/10 px-3 py-2 rounded-md bg-red-100">
               <Hand />
               The TripleTen money-back guarantee is legally binding. For
               details, please see our Terms of use
@@ -117,10 +117,15 @@ export function MoneyBackGuaranteeBannerMobile() {
             <Heart />
           </div>
           <div className=" items-center ">
-            <div className=" font-medium text-xl">
+            <div className=" font-medium text-xl flex justify-start">
+              <div className="w-8/10">
               We also have fair refund policy
+              </div>
             </div>
-            <div className=" text-xs">
+            <div className="mt-2 flex justify-end sm:justify-start text-xs">
+              <div className="w-8/10 ">
+
+              </div>
               After starting our Software Engineering bootcamp, you have 2 weeks
               to withdraw with a 100% refund. After that, you can get a partial
               refund on a transparent schedule. Check our Terms of Use for more

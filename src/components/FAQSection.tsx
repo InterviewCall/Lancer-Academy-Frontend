@@ -3,10 +3,10 @@ import FAQOptions from "./FAQOptions";
 
 export default function FAQSection() {
   return (
-    <div className="w-9/10 sm:w-6/10 my-10">
-      <div className="flex items-center justify-between ">
-        <div className="text-5xl font-semibold">FAQ</div>
-        <div className="rounded-lg bg-gray-300 px-4 py-3 text-lg hover:cursor-pointer flex items-center justify-evenly">
+    <div className="w-full sm:w-6/10 my-10">
+      <div className="flex items-center justify-between p-3">
+        <div className="text-3xl sm:text-5xl font-semibold">FAQ</div>
+        <div className="rounded-lg bg-gray-300 px-3 sm:px-4 py-2 sm:py-3 text-base sm:text-lg hover:cursor-pointer flex items-center justify-evenly">
           <div>Complete FAQ</div>
           <div className="mx-2">
             <ArrowRight />
