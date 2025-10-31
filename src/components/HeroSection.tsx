@@ -79,7 +79,7 @@ export default function HeroSection() {
         <div className="relative">
           {/* <div className="pointer-events-none absolute inset-x-0 -top-6 h-64 sm:h-72
                   mx-4 rounded-[48px] bg-[#F8D2C1]/35 blur-2xl z-[1]"></div> */}
-          <div className="text-center sm:text-start text-9xl font-[700] my-10 leading-[82%] z-[10]">
+          <div className="text-center sm:text-start text-2xl sm:text-9xl font-[700] my-10 leading-[82%] z-[10]">
             Software Engineering Bootcamp
           </div>
 
