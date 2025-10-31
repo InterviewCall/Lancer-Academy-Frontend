@@ -49,18 +49,26 @@ export default function Page() {
         <div className="w-full h-full flex flex-col items-center text-black bg-red-50">
           <HeroSection />
 
-          <div className="w-2/3 my-10 relative">
+          <div className="w-[80%] lg:w-2/3 my-10 relative">
             <div className="absolute w-full top-75/100 flex items-center justify-center">
-              <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
+              {/* <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 All numbers come from our 2024 graduate outcomes report
-              </div>
+              </div> */}
             </div>
             <Image
               src={"/courseStats.svg"}
               alt="Example"
               width={100}
               height={100}
-              className="w-full h-auto"
+              className="w-full h-auto lg:block hidden"
+            />
+
+            <Image
+              src={"/courseStatsMobile.svg"}
+              alt="Example"
+              width={100}
+              height={100}
+              className="w-full h-full lg:hidden block"
             />
           </div>
 
@@ -131,7 +139,7 @@ export default function Page() {
 
           <div className="w-9/10 rounded-2xl flex justify-center gap-10 relative">
             <div className="absolute  w-full top-85/100 flex items-center justify-around">
-              <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
+              {/* <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 Tell me more
               </div>
               <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
@@ -139,12 +147,20 @@ export default function Page() {
               </div>
               <div className="mr-15 text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 Wow! Whats that?
-              </div>
+              </div> */}
             </div>
             <Image
-              className="w-full h-auto"
+              className="w-full h-auto lg:block hidden"
               alt=""
               src={"/howtogetnewcareer.svg"}
+              width={100}
+              height={100}
+            />
+
+            <Image
+              className="w-full h-auto lg:hidden block"
+              alt=""
+              src={"/howtogetnewcareerMobile.svg"}
               width={100}
               height={100}
             />
@@ -182,7 +198,15 @@ export default function Page() {
                 src={"/onlinetrainingandsupport.svg"}
                 height={100}
                 width={100}
-                className="w-full h-auto"
+                className="w-full h-auto lg:block hidden"
+              />
+
+              <Image
+                alt=""
+                src={"/onlinetrainingandsupportMobile.svg"}
+                height={100}
+                width={100}
+                className="w-full h-auto lg:hidden block"
               />
             </div>
           </div>

@@ -22,14 +22,15 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div
+    <div className="fixed z-[10] w-full flex gap-x-3 pl-3 pr-1 pt-2">
+      <div
       className={
-        "sticky z-[10] text-black w-[98%] mx-auto flex items-center justify-between p-1 px-5 sm:px-3 rounded-xl " +
+        "text-black w-[92%] flex items-center justify-between px-1 rounded-xl " +
         (isScrolled ? "bg-white shadow-lg" : "bg-transparent") +
         (isNavbarOpen ? " h-[100vh] sm:h-auto top-0 sm:top-2 " : " top-2 ")
       }
     >
-      <div className="flex items-center gap-4 ">
+      <div className="flex items-center gap-4 pl-2 py-1">
         <div>
           <Image
             alt=""
@@ -39,19 +40,22 @@ export default function Navbar() {
             className="w-full h-auto"
           />
         </div>
-        <div className="rounded-full border px-3 py-1 hidden sm:flex items-center gap-2 font-semibold text-sm border-gray-400 shadow-2xl">
+        {/* <div className="rounded-full border px-3 py-1 hidden sm:flex items-center gap-2 font-semibold text-sm border-gray-400 shadow-2xl">
           <div>Programs</div>
-        </div>
+        </div> */}
       </div>
-      <div className="hidden sm:flex items-center gap-4 font-light text-sm">
-        <div>Intro</div>
+      <div className="hidden sm:flex items-center gap-4 font-light text-sm pl-20">
+        {['Intro', 'How we teach', 'Curriculum', 'Reviews', 'Tuition', 'FAQ'].map((item, index) => (
+                    <div key={index} className="cursor-pointer hover:bg-[#dcdcdc] p-2 hover:rounded-lg">{item}</div>
+                  ))}
+        {/* <div>Intro</div>
         <div>How we teach</div>
         <div>Curriculum </div>
         <div>Reviews</div>
         <div>Tuition</div>
-        <div>FAQ</div>
+        <div>FAQ</div> */}
       </div>
-      <div className="flex items-center gap-4">
+      <div className=" items-center opacity-0">
         <button
           onClick={() => {
             setIsNavbarOpen(false);
@@ -100,12 +104,15 @@ export default function Navbar() {
                 </div>
 
                 <ul className="space-y-2 text-base font-medium pl-5">
-                  <li>Intro</li>
+                  {['Intro', 'How we teach', 'Curriculum', 'Reviews', 'Tuition', 'FAQ'].map((item, index) => (
+                    <li key={index} className="cursor-pointer">{item}</li>
+                  ))}
+                  {/* <li>Intro</li>
                   <li>How we teach</li>
                   <li>Curriculum</li>
                   <li>Reviews</li>
                   <li>Tuition</li>
-                  <li>FAQ</li>
+                  <li>FAQ</li> */}
                 </ul>
 
                 <div className="border-b border-gray-300 pt-4 pb-3">
@@ -137,6 +144,30 @@ export default function Navbar() {
           </div>
         </div>
       )}
+    </div>
+
+    <div className="flex items-center">
+        <button
+          onClick={() => {
+            setIsNavbarOpen(false);
+            handleClickBookACallButton();
+          }}
+          className="hidden hover:cursor-pointer sm:block py-3 px-4 bg-[linear-gradient(180deg,#3A3A3A_0%,#1A1A1A_80%)] text-[17px] font-semibold text-white rounded-xl"
+        >
+          Book a call
+        </button>
+        {isNavbarOpen ? (
+          <IoMdClose
+            className="block sm:hidden h-4 w-4 hover:cursor-pointer"
+            onClick={() => setIsNavbarOpen((prev) => !prev)}
+          />
+        ) : (
+          <FiMenu
+            className="block sm:hidden h-4 w-4 hover:cursor-pointer"
+            onClick={() => setIsNavbarOpen((prev) => !prev)}
+          />
+        )}
+      </div>
     </div>
   );
 }

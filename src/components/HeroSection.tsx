@@ -19,7 +19,7 @@ export default function HeroSection() {
     }
   }, [isVideoActive]);
   return (
-    <div className="sm:flex items-start justify-center my-10 gap-x-15 w-9/10">
+    <div className="sm:flex items-start justify-center my-10 gap-x-15 w-9/10 py-14">
       <div className="hidden sm:basis-2/5 w-full sm:flex items-center justify-center relative">
         {isVideoActive && (
           <video
@@ -54,20 +54,20 @@ export default function HeroSection() {
         <div className="flex items-center justify-center sm:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-full sm:w-fit px-1 sm:px-3 divide-x divide-gray-500  ">
           <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
             <FaCircleHalfStroke
-              size={20}
+              size={22}
               className="inline-block pr-1 sm:pr-2 "
             />
-            <div className="flex items-center justify-around">
+            <div className="flex items-center justify-around text-[16px]">
               <div className="text-center">Internship:</div>
-              <div className="text-green-900 ml-1">10 months</div>
+              <div className="text-[#318f51] ml-1">10 months</div>
             </div>
           </div>
 
           <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
-            <WiMoonFull size={20} className="inline-block pr-1 sm:pr-2 " />
-            <div className="flex items-center justify-around">
+            <WiMoonFull size={22} className="inline-block pr-1 sm:pr-2 " />
+            <div className="flex items-center justify-around text-[16px]">
               <div className="text-center">Full Time:</div>
-              <div className="text-green-900 ml-1">4 months</div>
+              <div className="text-[#318f51] ml-1">4 months</div>
             </div>
           </div>
           {/* <div className="hidden text-sm font-semibold bg-[#B8E9C8] w-fit px-2 my-1.5 ">
@@ -76,8 +76,14 @@ export default function HeroSection() {
         </div>
         {/* className="text-5xl text-center sm:text-start sm:text-9xl font-[700] my-10 leading-[82%]" */}
         {/* className=" text-center sm:text-start text-[clamp(3rem,9vw,300rem)] font-[700] my-10 leading-[82%]" */}
-        <div className="  text-center sm:text-start text-f9xl font-[700] my-10 leading-[82%]">
-          Software Engineering Bootcamp
+        <div className="relative">
+          {/* <div className="pointer-events-none absolute inset-x-0 -top-6 h-64 sm:h-72
+                  mx-4 rounded-[48px] bg-[#F8D2C1]/35 blur-2xl z-[1]"></div> */}
+          <div className="text-center sm:text-start text-9xl font-[700] my-10 leading-[82%] z-[10]">
+            Software Engineering Bootcamp
+          </div>
+
+          {/* <Image alt="" src={'/behindEclips_2.svg'} width={100} height={100} className="absolute w-full h-full top-10 z-[1]" /> */}
         </div>
         {/* className="font-[400] text-center sm:text-start leading-[100%] tracking-[-1.5%] px-10 sm:px-0 w-full text-lg sm:text-2xl" */}
         {/* className="font-[400] text-center sm:text-start leading-[100%] tracking-[-1.5%] px-10 sm:px-0 w-full text-lg sm:text-[clamp(1.5rem,2vw,150rem)]" */}
@@ -86,12 +92,12 @@ export default function HeroSection() {
           a remote-friendly job that pays{" "}
           <span className="font-semibold"> ~$75,000 to start</span>
         </div>
-        <div className="my-10 flex flex-col sm:flex-row items-center gap-y-11 gap-x-8 justify-center">
+        <div className="my-16 relative">
           <BookACallButton />
           <div>
-            <Image alt="" src={'/Cohort start.svg'} width={100} height={100} className="h-full w-auto"/>
+            <Image alt="" src={'/Cohort start.svg'} width={100} height={100} className="h-[80%] w-[80%] absolute -top-14 right-32"/>
           </div>
-        </div>
+          </div>
         <div className="sm:hidden w-full flex items-center justify-center relative px-2 sm:px-0">
         {isVideoActive && (
           <video
