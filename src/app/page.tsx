@@ -5,13 +5,17 @@ import Certificate from "@/components/Certificate";
 import { PercentageBadge } from "@/components/FAQOptions";
 import FAQSection from "@/components/FAQSection";
 import FlexCard from "@/components/FlexCard";
+import Footer from "@/components/Footer";
 import FreeBonusCourse from "@/components/FreeBonusCourse";
 import GetExperiemce from "@/components/GetExperience";
+import GuaranteeBar from "@/components/GuaranteeBar";
 import HeroSection from "@/components/HeroSection";
 import {
   MoneyBackGuaranteeBannerLaptop,
   MoneyBackGuaranteeBannerMobile,
 } from "@/components/MoneyBackGuaranteeBanner";
+
+import { FaRegEye } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
 import StatsAfterCourse from "@/components/StatsAfterCourse";
 import SuccessStoryBanner from "@/components/SuccessStoryBanner";
@@ -48,6 +52,10 @@ export default function Page() {
       <div className="flex-1 h-full bg-red-50 z-[1]">
         <div className="w-full h-full flex flex-col items-center text-black bg-red-50">
           <HeroSection />
+
+            <GuaranteeBar />
+          <div className="w-9/10 ">
+          </div>
 
           <div className="w-[80%] lg:w-2/3 my-10 relative">
             <div className="absolute w-full top-75/100 flex items-center justify-center">
@@ -211,17 +219,18 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full sm:w-9/10 text-center my-10 rounded-4xl bg-white pt-10 px-2 sm:px-10 sm:p-10 pb-0 flex flex-col items-center">
-            <div className="font-semibold text-4xl mb-2 w-full sm:w-8/10">
-              All in one flexible learning experience
+          <div className="w-full sm:w-9/10 text-center my-10 rounded-4xl bg-white pt-10 px-2 sm:px-10 sm:p-10 sm:pb-0 pb-0 flex flex-col items-center">
+            <div className="font-semibold text-5xl mb-2 w-full sm:w-5/10">
+              <div>All in one learing experience</div>
             </div>
-            <div className="mb-5 w-9/10 sm:w-7/10 font-light text-sm">
+            <div className="mb-5 w-9/10 sm:w-4/10 font-light text-md">
               Learn conceots prctice cosing, build projects, schedule 1 on 1
               tutoring and get feedback all in one place
             </div>
 
             <div>
-              <button className="rounded-lg bg-gray-200 px-5 py-3 font-semibold text-sm">
+              <button className="rounded-lg flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
+              <FaRegEye size={20} />
                 This is how you will learn to code like a pro
               </button>
             </div>
@@ -232,7 +241,7 @@ export default function Page() {
                 src={"/allinone.svg"}
                 height={100}
                 width={100}
-                className="absolute bottom-0 w-auto sm:w-full h-40 sm:h-auto max-w-none"
+                className=" absolute sm:static bottom-0 w-auto sm:w-full h-40 sm:h-auto max-w-none"
               />
             </div>
           </div>
@@ -310,6 +319,8 @@ export default function Page() {
           <BookACallForm />
 
           <FAQSection />
+
+          <Footer/>
 
           {/* end scrollable  */}
         </div>
