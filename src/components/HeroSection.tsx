@@ -50,39 +50,41 @@ export default function HeroSection() {
           />
         )}
       </div>
-      <div className="sm:basis-3/5 w-full sm:w-auto">
-        <div className="flex items-center justify-center sm:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-full sm:w-fit px-1 sm:px-3 divide-x divide-gray-500  ">
-          <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
-            <FaCircleHalfStroke
-              size={22}
-              className="inline-block pr-1 sm:pr-2 "
-            />
-            
-            <div className="flex items-center justify-around text-sm sm:text-[16px]">
-              <div className="text-center">Internship:</div>
-              <div className="text-[#318f51] ml-1">10 months</div>
-            </div>
-          </div>
+      <div className="sm:basis-3/5 w-auto">
+        <div className="w-full flex justify-center">
+          <div className="flex items-center justify-center sm:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-fit sm:w-fit px-1 sm:px-3 divide-x divide-gray-500  ">
+            <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
+              <FaCircleHalfStroke
+                size={22}
+                className="inline-block pr-1 sm:pr-2 "
+              />
 
-          <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
-            <WiMoonFull size={22} className="inline-block pr-1 sm:pr-2 " />
-            {/* <WiMoonFull size={17} className="inline-block pr-1 sm:pr-2 sm:hidden" /> */}
-
-            <div className="flex items-center justify-around text-sm sm:text-[16px]">
-              <div className="text-center">Full Time:</div>
-              <div className="text-[#318f51] ml-1">4 months</div>
+              <div className="flex items-center justify-around text-sm sm:text-[16px]">
+                <div className="text-center">Intermediate:</div>
+                <div className="text-[#318f51] ml-1">6 months</div>
+              </div>
             </div>
-          </div>
-          {/* <div className="hidden text-sm font-semibold bg-[#B8E9C8] w-fit px-2 my-1.5 ">
+
+            <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
+              <WiMoonFull size={22} className="inline-block pr-1 sm:pr-2 " />
+              {/* <WiMoonFull size={17} className="inline-block pr-1 sm:pr-2 sm:hidden" /> */}
+
+              <div className="flex items-center justify-around text-sm sm:text-[16px]">
+                <div className="text-center">Advanced:</div>
+                <div className="text-[#318f51] ml-1">4 months</div>
+              </div>
+            </div>
+            {/* <div className="hidden text-sm font-semibold bg-[#B8E9C8] w-fit px-2 my-1.5 ">
             <span>Money Back Guarantee</span>
           </div> */}
+          </div>
         </div>
         {/* className="text-5xl text-center sm:text-start sm:text-9xl font-[700] my-10 leading-[82%]" */}
         {/* className=" text-center sm:text-start text-[clamp(3rem,9vw,300rem)] font-[700] my-10 leading-[82%]" */}
         <div className="relative">
           {/* <div className="pointer-events-none absolute inset-x-0 -top-6 h-64 sm:h-72
                   mx-4 rounded-[48px] bg-[#F8D2C1]/35 blur-2xl z-[1]"></div> */}
-          <div className="text-center sm:text-start text-2xl sm:text-9xl font-[700] my-10 leading-[82%] z-[10]">
+          <div className="text-center sm:text-start text-6xl sm:text-9xl font-[700] my-10 leading-[82%] z-[10]">
             Software Engineering Bootcamp
           </div>
 
@@ -91,9 +93,12 @@ export default function HeroSection() {
         {/* className="font-[400] text-center sm:text-start leading-[100%] tracking-[-1.5%] px-10 sm:px-0 w-full text-lg sm:text-2xl" */}
         {/* className="font-[400] text-center sm:text-start leading-[100%] tracking-[-1.5%] px-10 sm:px-0 w-full text-lg sm:text-[clamp(1.5rem,2vw,150rem)]" */}
         <div className="font-[400] text-center sm:text-start leading-[100%] tracking-[-1.5%] px-10 sm:px-0 w-full text-lg sm:text-[clamp(1.5rem,2vw,150rem)]">
-          Join our Software Engineering Bootcamp part-time or full-time to learn
-          a remote-friendly job that pays{" "}
-          <span className="font-semibold"> ~$75,000 to start</span>
+          Join our Software Engineering Bootcamp to learn a remote-friendly job
+          that pays  
+          <span className="font-semibold"> ₹10,00,000 </span>
+          
+          to start. Choose between a 4‑months Advanced
+          Program or a 6‑months, Intermediate Program for more flexibility.
         </div>
         <div className="my-16 flex flex-col sm:block items-center justify-center relative">
           <div className="flex justify-center pr-[5%]">

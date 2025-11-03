@@ -32,6 +32,8 @@ import {
   Clock,
   GraduationCap,
 } from "lucide-react";
+import { FaLink } from "react-icons/fa6";
+import AIToolsSection from "@/components/AiToolsSection";
 
 const companyImages = [
   { id: 1, src: "/companies/Mask-group-1.svg" },
@@ -85,32 +87,47 @@ export default function Page() {
               height={100}
               className="w-full h-full lg:hidden block"
             />
-            <div className="absolute bottom-[10%] flex items-center justify-center w-full">
-              <button className="rounded-lg flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
-                All numbers come from our 2024 graduate outcomes report
+            <div className="absolute hover:cursor-pointer bottom-[5%] sm:bottom-[10%] flex items-center justify-center w-full">
+              <button className="rounded-lg hidden sm:flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
+                <div>
+                  All numbers come from our 2024 graduate outcomes report
+                </div>{" "}
+                <FaLink />
+              </button>
+              <button className="rounded-lg flex sm:hidden justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-sm">
+                <div>2024 graduate outcomes report</div>
+                <FaLink />
               </button>
             </div>
           </div>
 
-          <div className="w-full sm:w-7/10 text-center my-10 rounded-4xl bg-transparent pt-20 pb-10 px-10">
+          <div className="w-full  text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-10">
+            <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-2">
+              Become a Software Engineer with
+            </div>
+
             <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-5">
-              Become a software engineer with Triple Ten
+              Lancrs Academy
             </div>
-            <div className="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-start text gap-x-15 my-10 text-center">
-              <div className="text-lg font-semibold w-2/3 sm:w-full my-5 flex flex-col items-center justify-start">
-                <FaCircleCheck />
-                <div>Our guarantee: job in tech or 100% money back*</div>
-              </div>
-              <div className="text-lg font-semibold w-2/3 sm:w-full my-5 flex flex-col items-center">
-                <FaCircleCheck />
-                No IT or STEM background needed
-              </div>
-              <div className="text-lg font-semibold w-2/3 sm:w-full my-5 flex flex-col items-center">
-                <FaCircleCheck />
-                4.8/5 rating across 1k+ reviews
+
+            <div className="w-full flex justify-center">
+              <div className="w-6/10 flex flex-col sm:flex-row items-start justify-center sm:justify-start text gap-x-15 my-10 text-center">
+                <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center justify-start">
+                  <FaCircleCheck />
+                  <div>Our guarantee: job in tech or 100% money back*</div>
+                </div>
+                <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center">
+                  <FaCircleCheck />
+                  No IT or STEM background needed
+                </div>
+                <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center">
+                  <FaCircleCheck />
+                  <div>4.8/5 rating across</div>
+                  <div>1k+ reviews</div>
+                </div>
               </div>
             </div>
-            <div className="text-sm text-gray-600">
+            <div className=" hidden text-sm text-gray-600">
               *Get a relevant job in 10 months or your tuition back when you
               complete our included Career Services package and make a
               good-faith effort to find a job. Details in our Terms of Use.
@@ -335,8 +352,13 @@ export default function Page() {
             <div className="sm:hidden block">a non stem</div>
             <div>background</div>
           </div>
-
-          <div className="flex sm:grid sm:grid-cols-3 gap-4 overflow-x-auto sm:overflow-visible max-w-full scrollbar-hide px-4">
+          <SuccessStoryBanner
+            image="/testimonial_LA.png"
+            name="John Doe"
+            quote="
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto vel dolorum, quia eum deleniti quisquam animi ."
+          />
+          <div className="flex sm:grid sm:grid-cols-3 gap-4 overflow-x-auto sm:overflow-visible max-w-full sm:max-w-65/100 scrollbar-hide">
             <SuccessStoryCard
               before="Track Driver"
               image="/testimonial_LA.png"
@@ -359,12 +381,16 @@ export default function Page() {
               quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
             />
           </div>
-          <SuccessStoryBanner
-            image="/testimonial_LA.png"
-            name="John Doe"
-            quote="
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto vel dolorum, quia eum deleniti quisquam animi ."
-          />
+          <div className="hidden sm:block text-center my-20 font-bold text-2xl sm:text-6xl">
+            <div>4.8/5 across 1,200+ reviews</div>
+            <div>on trusted platforms</div>
+          </div>
+
+          <div className="block sm:hidden text-center my-20 font-bold text-3xl leading-6.5">
+            <div>4.8/5 across </div>
+            <div>1,200+ reviews on</div>
+            <div>trusted platforms</div>
+          </div>
 
           <BookACallReminder text="Ready to start with one of the highest-rated bootcamps in the India? Book a call today!" />
           <FreeBonusCourse />
@@ -373,6 +399,8 @@ export default function Page() {
           <MoneyBackGuaranteeBannerMobile />
 
           <BookACallForm />
+
+          <AIToolsSection />
 
           <FAQSection />
 

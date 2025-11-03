@@ -45,7 +45,7 @@ export default function FlexCard() {
             </div>
           </div>
           <div className="sm:hidden text-start text-xl font-medium mt-10 sm:mt-0 mb-2 flex items-center gap-x-2">
-            <div>Expected Salary:</div> <div className="text-3xl">$75,000</div>
+            <div>Expected Salary:</div> <div className="text-3xl"> ₹10,00,000 </div>
           </div>
 
           <div className="text-start my-5 mt-10">Hard skills</div>
@@ -98,7 +98,7 @@ export default function FlexCard() {
           <div className="hidden sm:block font-medium mt-10 sm:mt-0 mb-2">
             Expected Salary
           </div>
-          <div className="hidden sm:block font-semibold mb-5">$75,000</div>
+          <div className="hidden sm:block font-semibold mb-5"> ₹10,00,000 </div>
           <div className="font-medium mb-2 mt-10 sm:mt-24 text-sm">
             Projects
           </div>

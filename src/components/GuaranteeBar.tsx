@@ -4,7 +4,7 @@ import { MdStarRate } from "react-icons/md";
 export default function GuaranteeBar() {
   const items = [
     "Our guarantee: job or 100% money back",
-    "82% grad employment rate",
+    "94% grad employment rate",
     "No IT or STEM background needed",
   ];
 
