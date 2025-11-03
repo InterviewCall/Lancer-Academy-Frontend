@@ -57,7 +57,8 @@ export default function HeroSection() {
               size={22}
               className="inline-block pr-1 sm:pr-2 "
             />
-            <div className="flex items-center justify-around text-[16px]">
+            
+            <div className="flex items-center justify-around text-sm sm:text-[16px]">
               <div className="text-center">Internship:</div>
               <div className="text-[#318f51] ml-1">10 months</div>
             </div>
@@ -65,7 +66,9 @@ export default function HeroSection() {
 
           <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
             <WiMoonFull size={22} className="inline-block pr-1 sm:pr-2 " />
-            <div className="flex items-center justify-around text-[16px]">
+            {/* <WiMoonFull size={17} className="inline-block pr-1 sm:pr-2 sm:hidden" /> */}
+
+            <div className="flex items-center justify-around text-sm sm:text-[16px]">
               <div className="text-center">Full Time:</div>
               <div className="text-[#318f51] ml-1">4 months</div>
             </div>
@@ -92,42 +95,48 @@ export default function HeroSection() {
           a remote-friendly job that pays{" "}
           <span className="font-semibold"> ~$75,000 to start</span>
         </div>
-        <div className="my-16 relative">
+        <div className="my-16 flex flex-col sm:block items-center justify-center relative">
+          <div className="flex justify-center pr-[5%]">
+            <Image
+              alt=""
+              src={"/Cohort start.svg"}
+              width={100}
+              height={100}
+              className="h-auto sm:h-[80%] w-9/10 sm:w-[80%] sm:absolute sm:-top-14 sm:right-32"
+            />
+          </div>
           <BookACallButton />
-          <div>
-            <Image alt="" src={'/Cohort start.svg'} width={100} height={100} className="h-[80%] w-[80%] absolute -top-14 right-32"/>
-          </div>
-          </div>
-        <div className="sm:hidden w-full flex items-center justify-center relative px-2 sm:px-0">
-        {isVideoActive && (
-          <video
-            className="w-full h-full rounded-xl object-cover"
-            src={heroSectionVideoUrl}
-            autoPlay={false}
-            loop
-            ref={videoRef}
-          ></video>
-        )}
-        <div className="absolute w-full h-fit flex items-center justify-center bottom-[10%]">
-          <div
-            className=" bg-[#65bd82] p-9 rounded-full flex items-center justify-center "
-            onClick={() => {
-              setIsVideoActive((prev) => !prev);
-            }}
-          >
-            {isVideoActive ? <FaPause size={30} /> : <FaPlay size={30} />}
-          </div>
         </div>
-        {!isVideoActive && (
-          <Image
-            alt=""
-            src={"/hero_image_2.svg"}
-            width={60}
-            height={60}
-            className="w-full h-auto"
-          />
-        )}
-      </div>
+        <div className="sm:hidden w-full flex items-center justify-center relative px-2 sm:px-0">
+          {isVideoActive && (
+            <video
+              className="w-full h-full rounded-xl object-cover"
+              src={heroSectionVideoUrl}
+              autoPlay={false}
+              loop
+              ref={videoRef}
+            ></video>
+          )}
+          <div className="absolute w-full h-fit flex items-center justify-center bottom-[10%]">
+            <div
+              className=" bg-[#65bd82] p-9 rounded-full flex items-center justify-center "
+              onClick={() => {
+                setIsVideoActive((prev) => !prev);
+              }}
+            >
+              {isVideoActive ? <FaPause size={30} /> : <FaPlay size={30} />}
+            </div>
+          </div>
+          {!isVideoActive && (
+            <Image
+              alt=""
+              src={"/hero_image_2.svg"}
+              width={60}
+              height={60}
+              className="w-full h-auto"
+            />
+          )}
+        </div>
       </div>
     </div>
   );

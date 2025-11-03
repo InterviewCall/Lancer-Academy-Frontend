@@ -24,6 +24,14 @@ import SyllabusModules from "@/components/SyllabusModules";
 import TutorSection from "@/components/TutorSection";
 import Image from "next/image";
 import { FaCircleCheck } from "react-icons/fa6";
+import CourseTypeCard from "@/components/CourseTypeCard";
+import {
+  BookOpen,
+  Calendar,
+  CheckCircle,
+  Clock,
+  GraduationCap,
+} from "lucide-react";
 
 const companyImages = [
   { id: 1, src: "/companies/Mask-group-1.svg" },
@@ -53,11 +61,10 @@ export default function Page() {
         <div className="w-full h-full flex flex-col items-center text-black bg-red-50">
           <HeroSection />
 
-            <GuaranteeBar />
-          <div className="w-9/10 ">
-          </div>
+          <GuaranteeBar />
+          <div className="w-9/10 "></div>
 
-          <div className="w-[80%] lg:w-2/3 my-10 relative">
+          <div className="w-[80%] relative lg:w-2/3 my-10">
             <div className="absolute w-full top-75/100 flex items-center justify-center">
               {/* <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 All numbers come from our 2024 graduate outcomes report
@@ -78,12 +85,11 @@ export default function Page() {
               height={100}
               className="w-full h-full lg:hidden block"
             />
-          </div>
-
-          <div>
-            <button className="px-4 py-3 border font-semibold border-gray-500 hover:border-blue-100 text-gray-500 hover:text-blue-100 hover:cursor-pointer rounded-2xl">
-              All numbers come form our 2024 graduate outcomes report
-            </button>
+            <div className="absolute bottom-[10%] flex items-center justify-center w-full">
+              <button className="rounded-lg flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
+                All numbers come from our 2024 graduate outcomes report
+              </button>
+            </div>
           </div>
 
           <div className="w-full sm:w-7/10 text-center my-10 rounded-4xl bg-transparent pt-20 pb-10 px-10">
@@ -125,23 +131,69 @@ export default function Page() {
 
           <FlexCard />
 
-          <div className="my-10 w-9/10 sm:w-5/10 text-center text-4xl font-bold">
+          <div className="my-10 w-9/10 sm:w-7/10 text-center text-4xl font-bold">
             Select the pace that fits your life and goals
             <div className="my-8 justify-center items-end sm:grid grid-cols-2 space-y-3 sm:space-y-0 gap-3">
-              <Image
+              {/* <Image
                 className="w-full h-fit"
                 alt=""
                 src={"/courseType1.svg"}
                 width={100}
                 height={100}
+              /> */}
+
+              <CourseTypeCard
+                recommended={true}
+                title="Full-time"
+                items={[
+                  { icon: Calendar, text: "4 months" },
+                  { icon: Clock, text: "40-50 hours/week" },
+                  {
+                    icon: CheckCircle,
+                    iconColor: "text-green-600",
+                    text: '<span class="text-green-600 font-medium">Structured</span> schedule to fit your life',
+                  },
+                  {
+                    icon: GraduationCap,
+                    text: "Learning and career support",
+                    subpoints: [
+                      'Career prep starts <span class="text-green-600 font-medium">day 1 in</span>',
+                      "Fixed full-time schedule with 2 live lectures daily",
+                    ],
+                  },
+                  { icon: BookOpen, text: "Learn at your own pace" },
+                ]}
               />
-              <Image
+
+              <CourseTypeCard
+                title="Part-time"
+                items={[
+                  { icon: Calendar, text: "10 months" },
+                  { icon: Clock, text: "20–25 hours/week" },
+                  {
+                    icon: CheckCircle,
+                    iconColor: "text-green-600",
+                    text: '<span class="text-green-600 font-medium">Flexible</span> schedule to fit your life',
+                  },
+                  {
+                    icon: GraduationCap,
+                    text: "Learning and career support",
+                    subpoints: [
+                      'Career prep begins <span class="text-red-500 font-medium">three months in</span>',
+                      "Weekly live sessions and regular office hours",
+                    ],
+                  },
+                  { icon: BookOpen, text: "Learn at your own pace" },
+                ]}
+              />
+
+              {/* <Image
                 className="w-full h-auto"
                 alt=""
                 src={"/courseType2.svg"}
                 width={100}
                 height={100}
-              />
+              /> */}
             </div>
           </div>
 
@@ -214,7 +266,7 @@ export default function Page() {
                 src={"/onlinetrainingandsupportMobile.svg"}
                 height={100}
                 width={100}
-                className="w-full h-auto lg:hidden block"
+                className="w-full h-auto lg:hidden block bg-transparent"
               />
             </div>
           </div>
@@ -230,7 +282,7 @@ export default function Page() {
 
             <div>
               <button className="rounded-lg flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
-              <FaRegEye size={20} />
+                <FaRegEye size={20} />
                 This is how you will learn to code like a pro
               </button>
             </div>
@@ -275,7 +327,7 @@ export default function Page() {
             </div>
             <div className="flex gap-3 items-center justify-center">
               <div className="-rotate-12">
-                <PercentageBadge value="80%" textSize="3xl"/>
+                <PercentageBadge value="80%" textSize="3xl" />
               </div>
               <div className="sm:block hidden ">From a non STEM </div>
               <div className="block sm:hidden"> from </div>
@@ -307,8 +359,12 @@ export default function Page() {
               quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
             />
           </div>
-            <SuccessStoryBanner image="/testimonial_LA.png" name="John Doe" quote="
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto vel dolorum, quia eum deleniti quisquam animi ." />
+          <SuccessStoryBanner
+            image="/testimonial_LA.png"
+            name="John Doe"
+            quote="
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto vel dolorum, quia eum deleniti quisquam animi ."
+          />
 
           <BookACallReminder text="Ready to start with one of the highest-rated bootcamps in the India? Book a call today!" />
           <FreeBonusCourse />
@@ -320,7 +376,7 @@ export default function Page() {
 
           <FAQSection />
 
-          <Footer/>
+          <Footer />
 
           {/* end scrollable  */}
         </div>
