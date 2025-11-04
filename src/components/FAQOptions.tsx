@@ -19,7 +19,7 @@ export default function FAQOptions({
     <div className=" px-3">
       {startingDivider && <FAQDivider />}
       <div className="flex items-center justify-between">
-        <div className="py-3 sm:py-5 text-xl sm:text-4xl font-medium">{heading}</div>
+        <div className="py-2 sm:py-5 text-xl sm:text-3xl font-medium">{heading}</div>
         <div
           className={
             `hover:cursor-pointer transition-transform duration-300 ease-in-out ` +
@@ -30,7 +30,7 @@ export default function FAQOptions({
           <Plus size={30} />
         </div>
       </div>
-      {isOpen && <div className="pb-5 text-lg hover:cursor-pointer">{content}</div>}
+      {isOpen && <div className="pb-4 sm:pb-5 text-base sm:text-xl hover:cursor-pointer">{content}</div>}
       {endingDivider && <FAQDivider />}
     </div>
   );

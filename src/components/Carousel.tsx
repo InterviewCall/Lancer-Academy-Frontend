@@ -43,7 +43,7 @@ export default function Carousel({perView = 1}: {perView?: number}) {
       {/* Slider */}
       <div
         ref={sliderRef}
-        className="component-landingPage-Carousel flex keen-slider rounded-lg overflow-hidden"
+        className="component-landingPage-Carousel max-w-full flex keen-slider rounded-lg overflow-hidden"
       >
         {mentorImages.map((image) => (
           <div

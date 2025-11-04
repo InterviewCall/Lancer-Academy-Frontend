@@ -22,11 +22,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="fixed z-[10] w-full flex gap-x-3 pl-3 pr-1 pt-2">
+    <div className="fixed z-[10]  w-full flex sm:pl-3 sm:pr-1 pt-2">
       <div
       className={
-        "text-black w-[92%] flex items-center justify-between px-1 rounded-xl " +
-        (isScrolled ? "bg-white shadow-lg" : "bg-transparent") +
+        "text-black  w-[90%] flex items-center justify-between px-1 rounded-xl " +
+        (isScrolled ? `bg-white shadow-lg ${isNavbarOpen ? " " : " hidden "} sm:flex` : "bg-transparent ") +
         (isNavbarOpen ? " h-[100vh] sm:h-auto top-0 sm:top-2 " : " top-2 ")
       }
     >
@@ -44,7 +44,7 @@ export default function Navbar() {
           <div>Programs</div>
         </div> */}
       </div>
-      <div className="hidden sm:flex items-center gap-4 font-light text-sm pl-20">
+      <div className="hidden sm:flex items-center gap-4 font-light text-sm pl-20 ">
         {['Intro', 'How we teach', 'Curriculum', 'Reviews', 'Tuition', 'FAQ'].map((item, index) => (
                     <div key={index} className="cursor-pointer hover:bg-[#dcdcdc] p-2 hover:rounded-lg">{item}</div>
                   ))}
@@ -146,7 +146,8 @@ export default function Navbar() {
       )}
     </div>
 
-    <div className="flex items-center">
+    <div className="w-full sm:w-auto flex justify-end">
+      <div className={"flex rounded-lg p-4 sm:p-0 items-center " + (isScrolled ? " bg-white sm:bg-transparent shadow-lg " : " bg-transparent ")}>
         <button
           onClick={() => {
             setIsNavbarOpen(false);
@@ -158,16 +159,17 @@ export default function Navbar() {
         </button>
         {isNavbarOpen ? (
           <IoMdClose
-            className="block sm:hidden h-4 w-4 hover:cursor-pointer"
+            className="block text-black sm:hidden h-4 w-4 hover:cursor-pointer"
             onClick={() => setIsNavbarOpen((prev) => !prev)}
           />
         ) : (
           <FiMenu
-            className="block sm:hidden h-4 w-4 hover:cursor-pointer"
+            className="block text-black sm:hidden h-4 w-4 hover:cursor-pointer"
             onClick={() => setIsNavbarOpen((prev) => !prev)}
           />
         )}
       </div>
+    </div>
     </div>
   );
 }
