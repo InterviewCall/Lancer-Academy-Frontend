@@ -114,11 +114,13 @@ export default function Page() {
               <div className="w-8/10 sm:w-6/10 flex flex-col sm:flex-row sm:items-start items-center justify-center sm:justify-start text gap-x-15 my-10 text-center">
                 <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center justify-start">
                   <FaCircleCheck />
-                  <div>Our guarantee: job in tech or 100% money back*</div>
+                  <div>Our guarantee: job in tech </div>
+                  <div>or 100% money back*</div>
                 </div>
                 <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center">
                   <FaCircleCheck />
-                  No IT or STEM background needed
+                  <div>No IT or STEM</div>
+                  <div> background needed</div>
                 </div>
                 <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center">
                   <FaCircleCheck />
@@ -150,7 +152,7 @@ export default function Page() {
 
           <div className="my-10 w-9/10 sm:w-7/10 text-center text-4xl font-bold">
             Select the pace that fits your life and goals
-            <div className="my-8 justify-center items-end sm:grid grid-cols-2 space-y-3 sm:space-y-0 gap-3">
+            <div className="my-8 justify-center items-end sm:items-stretch sm:grid grid-cols-2 space-y-3 sm:space-y-0 gap-3">
               {/* <Image
                 className="w-full h-fit"
                 alt=""
@@ -160,7 +162,7 @@ export default function Page() {
               /> */}
 
               <CourseTypeCard
-                recommended={true}
+                recommended={false}
                 title="Full-time"
                 items={[
                   { icon: Calendar, text: "4 months" },
@@ -242,6 +244,9 @@ export default function Page() {
               height={100}
             />
           </div>
+
+          <AIToolsSection />
+
 
           <div className="font-semibold text-4xl my-10 w-9/10 sm:w-6/10 text-center">
             Our grads get great jobs with both startups and industry giants
@@ -405,7 +410,6 @@ export default function Page() {
 
           <BookACallForm />
 
-          <AIToolsSection />
 
           <FAQSection />
 

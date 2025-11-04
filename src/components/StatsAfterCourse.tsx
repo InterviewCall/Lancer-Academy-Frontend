@@ -22,7 +22,7 @@ export default function StatsAfterCourse() {
         </div> */}
         <div className="absolute font-medium w-8/10 rounded-md top-[95%] sm:top-[24%] text-start sm:text-center bg-[#6cc989] -right-[0%] sm:-right-[64%] text-xs p-3">
           <div className="relative">
-            <div className="absolute  top-[95%] sm:-top-[49%] right-[75%] sm:right-[75%]">
+            <div className="absolute translate-y-[1px] top-[95%] sm:-top-[49%] right-[75%] sm:right-[75%]">
               <Image
                 alt=""
                 src={"/green_top_arrow.svg"}

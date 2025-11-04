@@ -22,10 +22,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="fixed z-[10]  w-full flex sm:pl-3 sm:pr-1 pt-2">
+    <div className="fixed z-[10] sm:justify-between w-full flex sm:pl-3 sm:pr-1 pt-2">
       <div
       className={
-        "text-black  w-[90%] flex items-center justify-between px-1 rounded-xl " +
+        "text-black basis-9/10 flex items-center justify-between px-1 rounded-xl " +
         (isScrolled ? `bg-white shadow-lg ${isNavbarOpen ? " " : " hidden "} sm:flex` : "bg-transparent ") +
         (isNavbarOpen ? " h-[100vh] sm:h-auto top-0 sm:top-2 " : " top-2 ")
       }
@@ -146,14 +146,25 @@ export default function Navbar() {
       )}
     </div>
 
-    <div className="w-full sm:w-auto flex justify-end">
-      <div className={"flex rounded-lg p-4 sm:p-0 items-center " + (isScrolled ? " bg-white sm:bg-transparent shadow-lg " : " bg-transparent ")}>
+    <div className="w-full sm:basis-9/100 flex items-stretch justify-end">
+        <div className="mr-1 sm:hidden">
+           <button
+            onClick={() => {
+              setIsNavbarOpen(false);
+              handleClickBookACallButton();
+            }}
+            className=" w-full hover:cursor-pointer sm:block py-3 px-4 bg-[linear-gradient(180deg,#3A3A3A_0%,#1A1A1A_80%)] text-[17px] font-semibold text-white rounded-xl"
+          >
+            Book a call
+          </button>
+        </div>
+      <div className={"flex sm:w-full rounded-lg p-4 sm:p-0 items-center " + (isScrolled ? " bg-white sm:bg-transparent shadow-lg " : " bg-transparent ")}>
         <button
           onClick={() => {
             setIsNavbarOpen(false);
             handleClickBookACallButton();
           }}
-          className="hidden hover:cursor-pointer sm:block py-3 px-4 bg-[linear-gradient(180deg,#3A3A3A_0%,#1A1A1A_80%)] text-[17px] font-semibold text-white rounded-xl"
+          className="hidden w-full hover:cursor-pointer sm:block py-3 px-4 bg-[linear-gradient(180deg,#3A3A3A_0%,#1A1A1A_80%)] text-[17px] font-semibold text-white rounded-xl"
         >
           Book a call
         </button>

@@ -25,7 +25,7 @@ export default function CareerCoachingBanner(){
                 src={"/f1car2.svg"}
                 height={100}
                 width={100}
-                className=" bottom-0 w-full sm:w-1/2  h-60 sm:h-auto sm:-bottom-8 z-20 max-w-none"
+                className=" bottom-0 w-full sm:w-1/2 h-auto sm:-bottom-8 z-20 max-w-none"
               />
             </div>
           </div>

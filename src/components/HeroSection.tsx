@@ -51,7 +51,7 @@ export default function HeroSection() {
         )}
       </div>
       <div className="sm:basis-3/5 w-auto">
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center sm:justify-start">
           <div className="flex items-center justify-center sm:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-fit sm:w-fit px-1 sm:px-3 divide-x divide-gray-500  ">
             <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 sm:px-2 my-2 ">
               <FaCircleHalfStroke
