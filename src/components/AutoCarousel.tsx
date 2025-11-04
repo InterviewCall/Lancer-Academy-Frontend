@@ -63,7 +63,7 @@ export default function AutoCarousel() {
     >
       <div
         ref={containerRef}
-        className="component-landingPage-AutoCarousel flex gap-3 animate-scroll w-max"
+        className="component-landingPage-AutoCarousel flex gap-3 animate-scroll max-w-full"
       >
         {[...autoCarouselItems, ...autoCarouselItems].map((item, idx) => (
           <span key={idx} className="component-landingPage-AutoCarousel rounded-2xl ">

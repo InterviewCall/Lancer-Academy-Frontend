@@ -101,7 +101,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full  text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-10">
+          <div className="w-full tracking-tighter text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-5 sm:px-10">
             <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-2">
               Become a Software Engineer with
             </div>
@@ -111,7 +111,7 @@ export default function Page() {
             </div>
 
             <div className="w-full flex justify-center">
-              <div className="w-6/10 flex flex-col sm:flex-row items-start justify-center sm:justify-start text gap-x-15 my-10 text-center">
+              <div className="w-8/10 sm:w-6/10 flex flex-col sm:flex-row sm:items-start items-center justify-center sm:justify-start text gap-x-15 my-10 text-center">
                 <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center justify-start">
                   <FaCircleCheck />
                   <div>Our guarantee: job in tech or 100% money back*</div>
@@ -300,7 +300,12 @@ export default function Page() {
             <div>
               <button className="rounded-lg flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
                 <FaRegEye size={20} />
-                This is how you will learn to code like a pro
+                <div className="hidden sm:block">
+                  This is how you will learn to code like a pro
+                </div>
+                <div className="block sm:hidden">
+                  Learn to code like a pro
+                </div>
               </button>
             </div>
 

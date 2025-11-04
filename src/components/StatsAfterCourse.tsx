@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function StatsAfterCourse() {
   return (
-    <div className="w-6/10 grid grid-cols-1 sm:grid-cols-3 gap-3 items-stretch">
+    <div className="w-9/10 sm:w-6/10 grid grid-cols-1 sm:grid-cols-3 gap-3 items-stretch">
       <div className="flex items-end justify-end w-full ">
         <Image
           alt=""
@@ -20,9 +20,9 @@ export default function StatsAfterCourse() {
         {/* <div className="absolute top-[95%] sm:top-[20%] -right-[5%] sm:-right-[5%]">
           <Image alt="" src={"/green_top_arrow.svg"} height={50} width={50} />
         </div> */}
-        <div className="absolute font-medium w-full sm:w-8/10 rounded-md top-[95%] sm:top-[24%] text-start sm:text-center bg-[#6cc989] -right-[10%] sm:-right-[64%] text-xs p-3">
+        <div className="absolute font-medium w-8/10 rounded-md top-[95%] sm:top-[24%] text-start sm:text-center bg-[#6cc989] -right-[0%] sm:-right-[64%] text-xs p-3">
           <div className="relative">
-            <div className="absolute top-[95%] sm:-top-[49%] right-[75%] sm:right-[75%]">
+            <div className="absolute  top-[95%] sm:-top-[49%] right-[75%] sm:right-[75%]">
               <Image
                 alt=""
                 src={"/green_top_arrow.svg"}
@@ -43,7 +43,7 @@ export default function StatsAfterCourse() {
       </div>
       <div className="flex flex-col justify-end rounded-2xl bg-white p-5">
         <div>
-          <div className="h-20 sm:hidden"></div>
+          <div className="h-12 sm:hidden"></div>
           <div className="font-semibold text-3xl">₹10,00,000</div>
           <div className="font-medium">Our {`grad's`} staring pay</div>
           <div className="h-2.5 w-5/10 bg-[#6CC98A] rounded-r-full"></div>

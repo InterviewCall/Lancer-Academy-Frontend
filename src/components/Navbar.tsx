@@ -22,7 +22,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="fixed z-[10] w-full flex gap-x-3 pl-3 pr-1 pt-2">
+    <div className="fixed z-[10]  w-full flex sm:pl-3 sm:pr-1 pt-2">
       <div
       className={
         "text-black  w-[90%] flex items-center justify-between px-1 rounded-xl " +
