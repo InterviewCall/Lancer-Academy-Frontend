@@ -55,7 +55,7 @@ export default function CourseTypeCard({ title, items, recommended=false }: Part
               )}
 
               {item.subpoints && (
-                <ul className="list-disc list-inside text-sm sm:text-lg md:text-xl text-gray-600 mt-1 flex flex-col items-start">
+                <ul className="list-disc text-start text-sm sm:text-lg md:text-xl text-gray-600 mt-1 flex flex-col items-start">
                   {item.subpoints.map((sub, subIndex) => (
                     <li
                       key={subIndex}
