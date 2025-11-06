@@ -150,7 +150,7 @@ export default function Page() {
 
           <FlexCard />
 
-          <div className="my-10 w-9/10 sm:w-7/10 text-center text-4xl font-bold">
+          <div className="my-10 w-9/10 sm:w-2/3 text-center text-4xl font-bold">
             Select the pace that fits your life and goals
             <div className="my-8 justify-center items-end sm:items-stretch sm:grid grid-cols-2 space-y-3 sm:space-y-0 gap-3">
               {/* <Image
@@ -216,7 +216,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-9/10 rounded-2xl flex justify-center gap-10 relative">
+          <div className="w-9/10 lg:w-2/3 rounded-2xl flex justify-center gap-10 relative">
             <div className="absolute  w-full top-85/100 flex items-center justify-around">
               {/* <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 Tell me more
@@ -293,7 +293,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full sm:w-9/10 text-center my-10 rounded-4xl bg-white pt-10 px-2 sm:px-10 sm:p-10 sm:pb-0 pb-0 flex flex-col items-center">
+          <div className="w-full sm:w-2/3 text-center my-10 rounded-4xl bg-white pt-10 px-2 sm:px-10 sm:p-10 sm:pb-0 pb-0 flex flex-col items-center">
             <div className="font-semibold text-5xl mb-2 w-full sm:w-5/10">
               <div>All in one learing experience</div>
             </div>

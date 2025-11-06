@@ -4,7 +4,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 export default function AIToolsSection() {
   return (
-    <div className="w-full sm:w-6/10 space-y-16 border-black bg-[#ffffff] rounded-2xl px-4 sm:px-10 pt-10 my-10 mt-20">
+    <div className="w-full sm:w-2/3 space-y-16 border-black bg-[#ffffff] rounded-2xl px-4 sm:px-10 pt-10 my-10 mt-20">
       <div className="sm:flex space-y-10 justify-evenly items-center">
         <div className="sm:w-30/50 text-4xl sm:text-5xl font-semibold sm:leading-10 tracking-tight pr-16">
           <span className="text-[#ea6e39] ">Learn AI tools</span> used by 76%* of

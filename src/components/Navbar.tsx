@@ -22,10 +22,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="fixed z-[10] sm:justify-between w-full flex sm:pl-3 sm:pr-1 pt-2">
+    <div className="fixed z-[10] sm:justify-between w-full flex sm:grid sm:gap-3 sm:grid-cols-[9fr_1fr] sm:pl-3 sm:pr-1 pt-2">
       <div
       className={
-        "text-black basis-9/10 flex items-center justify-between px-1 rounded-xl " +
+        "text-black  flex items-center justify-between px-1 rounded-xl " +
         (isScrolled ? `bg-white shadow-lg ${isNavbarOpen ? " " : " hidden "} sm:flex` : "bg-transparent ") +
         (isNavbarOpen ? " h-[100vh] sm:h-auto top-0 sm:top-2 " : " top-2 ")
       }
@@ -146,7 +146,7 @@ export default function Navbar() {
       )}
     </div>
 
-    <div className="w-full sm:basis-9/100 flex items-stretch justify-end">
+    <div className="w-full  flex items-stretch justify-end">
         <div className="mr-1 sm:hidden">
            <button
             onClick={() => {

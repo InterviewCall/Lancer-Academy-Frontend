@@ -25,7 +25,7 @@ const techLogos = [
 
 export default function FlexCard() {
   return (
-    <div className="w-full sm:w-9/10 text-center my-10 rounded-4xl bg-white p-8 py-15 sm:p-15 flex flex-col items-center">
+    <div className="w-full sm:w-2/3 text-center my-10 rounded-4xl bg-white p-8 py-15 sm:p-15 flex flex-col items-center">
       <div className="text-3xl sm:text-5xl text-start sm:text-center font-semibold mb-5">
         You after lancrs academy
       </div>

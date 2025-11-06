@@ -6,7 +6,7 @@ import {
 
 export function MoneyBackGuaranteeBannerLaptop() {
   return (
-    <div className="hidden bg-white sm:flex items-center justify-center w-8/10 my-10 relative sm:rounded-tr-[100px] sm:rounded-bl-[100px]">
+    <div className="hidden bg-white sm:flex items-center justify-center w-2/3 my-10 relative sm:rounded-tr-[100px] sm:rounded-bl-[100px]">
       <div className="sm:absolute w-full -top-15 left-0 rounded-tl-2xl overflow-hidden">
         {/* <Image
                 alt=""

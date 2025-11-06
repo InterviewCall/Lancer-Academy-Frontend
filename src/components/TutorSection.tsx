@@ -2,7 +2,7 @@ import Carousel from "./Carousel";
 
 export default function TutorSection(){
     return(
-        <div className="w-9/10 sm:w-9/10 text-center my-10 rounded-4xl bg-white px-5 sm:px-10 p-10 flex flex-col items-center">
+        <div className="w-9/10 sm:w-2/3 text-center my-10 rounded-4xl bg-white px-5 sm:px-10 p-10 flex flex-col items-center">
             <div className="font-semibold text-3xl mb-2 w-10/10 sm:w-8/10">
               One on one tutoring from industry professionals
             </div>

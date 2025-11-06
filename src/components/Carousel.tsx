@@ -48,7 +48,7 @@ export default function Carousel({perView = 1}: {perView?: number}) {
         {mentorImages.map((image) => (
           <div
             key={image.id}
-            className="keen-slider__slide w-full flex items-center justify-center px-5"
+            className="keen-slider__slide w-full flex basis-1/3 items-center justify-center px-5"
           >
             <Image
               src={image.src}
