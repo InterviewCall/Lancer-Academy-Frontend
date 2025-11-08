@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="w-full sm:w-7/10 bg-white rounded-xl shadow-sm px-8 py-10 mt-10">
+    <footer className="w-full sm:w-2/3 bg-white rounded-xl shadow-sm px-8 py-10 mt-10">
       <div className="grid grid-cols-1 sm:grid-cols-[2fr_1fr_1fr] gap-8 border-gray-200 pb-8">
         <div>
           <h3 className="font-semibold text-gray-900 mb-4 text-xl">Programs</h3>

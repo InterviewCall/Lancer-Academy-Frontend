@@ -12,9 +12,12 @@ import { Rhombus } from "./DesignDivs";
 import { FaCircleCheck } from "react-icons/fa6";
 export default function BookACallForm() {
   return (
-    <div id="book-a-call" className="relative w-full sm:w-9/10 flex sm:flex-row flex-col items-center sm:items-stretch sm:justify-evenly bg-[#d35723] shadow-2xl  p-6 py-10 rounded-2xl my-10">
+    <div
+      id="book-a-call"
+      className="relative w-full sm:w-7/10 flex sm:grid sm:grid-cols-2 sm:gap-10 sm:px-14 flex-col items-center sm:items-stretch sm:justify-evenly bg-[#d35723] shadow-2xl  p-6 py-10 rounded-2xl my-10"
+    >
       <Rhombus background="#d35723" />
-      <div className="sm:basis-2/5 ">
+      <div className="sm:basis-2/5 h-fit">
         <div className="h-4/10 sm:h-2/10 my-5 flex justify-center">
           <Image
             alt=""
@@ -54,28 +57,28 @@ export default function BookACallForm() {
         {" "}
         <ContactForm />{" "}
       </div>
-       <div className="flex flex-col mt-10 sm:hidden items-stretch text-center justify-between space-y-5 font-semibold text-lg">
-          <div>
-            <div className="flex items-center justify-center mt-5 mb-2">
-              <FaCircleCheck />
-            </div>
-            <div>Guarantee: Job or 100% money back</div>
+      <div className="flex flex-col mt-10 sm:hidden items-stretch text-center justify-between space-y-5 font-semibold text-lg">
+        <div>
+          <div className="flex items-center justify-center mt-5 mb-2">
+            <FaCircleCheck />
           </div>
-          <div>
-            <div className="flex items-center justify-center my-5 mb-2">
-              <FaCircleCheck />
-            </div>
-
-            <div>No IT or STEM background needed</div>
-          </div>
-          <div>
-            <div className="flex items-center justify-center my-5 mb-2">
-              <FaCircleCheck />
-            </div>
-
-            <div>Flexible program with personal support</div>
-          </div>
+          <div>Guarantee: Job or 100% money back</div>
         </div>
+        <div>
+          <div className="flex items-center justify-center my-5 mb-2">
+            <FaCircleCheck />
+          </div>
+
+          <div>No IT or STEM background needed</div>
+        </div>
+        <div>
+          <div className="flex items-center justify-center my-5 mb-2">
+            <FaCircleCheck />
+          </div>
+
+          <div>Flexible program with personal support</div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -105,80 +108,90 @@ function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-4 p-8 rounded-2xl"
+      className=" p-8 rounded-2xl h-full flex flex-col justify-between"
     >
       {/* Full Name */}
-      <div>
-        <input
-          placeholder="Full name"
-          id="fullName"
-          {...register("fullName", { required: "Full name is required" })}
-          className="border border-gray-400 p-2 w-full rounded-xl"
-        />
-        {errors.fullName && (
-          <p className="text-red-500">{errors.fullName.message}</p>
-        )}
-      </div>
-
-      {/* Email */}
-      <div>
-        <input
-          placeholder="Email"
-          id="email"
-          type="email"
-          {...register("email", {
-            required: "Email is required",
-            pattern: {
-              value: /^\S+@\S+$/i,
-              message: "Invalid email address",
-            },
-          })}
-          className="border border-gray-400 p-2 w-full rounded-xl"
-        />
-        {errors.email && <p className="text-red-500">{errors.email.message}</p>}
-      </div>
-
-      {/* Phone Number */}
-      <div>
-        <input
-          placeholder="Phone"
-          id="phone"
-          type="tel"
-          {...register("phone", {
-            required: "Phone number is required",
-            pattern: {
-              value: /^[0-9]{10}$/,
-              message: "Enter a valid 10-digit phone number",
-            },
-          })}
-          className="border border-gray-400 p-2 w-full rounded-xl"
-        />
-        {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
-      </div>
-
-      {/* Checkbox */}
-      <div>
-        <label className="flex items-start">
+      <div className="space-y-4">
+        <div>
           <input
-            type="checkbox"
-            {...register("agree", { required: "You must agree to continue" })}
-            className="m-2 text-xs"
+            placeholder="Full name"
+            id="fullName"
+            {...register("fullName", { required: "Full name is required" })}
+            className="border border-gray-400 p-2 w-full rounded-xl"
           />
-          I consent to marketing calls and text messages, including those made
-          with an autodialed or artificial voice messages. Message and data
-          rates may apply. Message frequency varies. Unsubscribe anytime per our
-          Privacy Policy. Consent is not a condition of purchase.
-        </label>
-        {errors.agree && <p className="text-red-500">{errors.agree.message}</p>}
+          {errors.fullName && (
+            <p className="text-red-500">{errors.fullName.message}</p>
+          )}
+        </div>
+
+        {/* Email */}
+        <div>
+          <input
+            placeholder="Email"
+            id="email"
+            type="email"
+            {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value: /^\S+@\S+$/i,
+                message: "Invalid email address",
+              },
+            })}
+            className="border border-gray-400 p-2 w-full rounded-xl"
+          />
+          {errors.email && (
+            <p className="text-red-500">{errors.email.message}</p>
+          )}
+        </div>
+
+        {/* Phone Number */}
+        <div>
+          <input
+            placeholder="Phone"
+            id="phone"
+            type="tel"
+            {...register("phone", {
+              required: "Phone number is required",
+              pattern: {
+                value: /^[0-9]{10}$/,
+                message: "Enter a valid 10-digit phone number",
+              },
+            })}
+            className="border border-gray-400 p-2 w-full rounded-xl"
+          />
+          {errors.phone && (
+            <p className="text-red-500">{errors.phone.message}</p>
+          )}
+        </div>
+
+        {/* Checkbox */}
+        <div>
+          <label className="flex items-start">
+            <input
+              type="checkbox"
+              {...register("agree", { required: "You must agree to continue" })}
+              className="m-2 text-xs"
+            />
+            I consent to marketing calls and text messages, including those made
+            with an autodialed or artificial voice messages. Message and data
+            rates may apply. Message frequency varies. Unsubscribe anytime per
+            our Privacy Policy. Consent is not a condition of purchase.
+          </label>
+          {errors.agree && (
+            <p className="text-red-500">{errors.agree.message}</p>
+          )}
+        </div>
       </div>
 
       {/* Submit Button */}
-      <button
-        type="submit"
-        className="bg-black text-white px-4 py-2 hover:cursor-pointer rounded-lg w-full"
-      >
-        Continue
-      </button>
+      <div>
+        <button
+          type="submit"
+          className="bg-black text-white px-4 py-2 hover:cursor-pointer rounded-lg w-full"
+        >
+          Continue
+        </button>
+      </div>
     </form>
   );
 }

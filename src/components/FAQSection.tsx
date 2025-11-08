@@ -3,7 +3,7 @@ import { faqData } from "@/utits/content";
 
 export default function FAQSection() {
   return (
-    <div className="w-full sm:w-5/10 my-10">
+    <div className="w-full sm:w-2/3 my-10">
       <div className=" items-center justify-between p-3">
         <div className="text-5xl sm:text-6xl font-semibold">FAQ</div>
         

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function StatsAfterCourse() {
   return (
-    <div className="w-9/10 sm:w-6/10 grid grid-cols-1 sm:grid-cols-3 gap-3 items-stretch">
+    <div className="w-9/10 sm:w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-3 items-stretch">
       <div className="flex items-end justify-end w-full ">
         <Image
           alt=""

@@ -3,7 +3,7 @@ import { Eye } from "lucide-react";
 
 export default function CareerCoachingBanner(){
     return (
-        <div className="w-full h-[680px] relative  sm:w-9/10 pb-0 p-10 rounded-2xl bg-white flex flex-col items-center">
+        <div className="w-full h-[680px] relative  sm:w-2/3 pb-0 p-10 rounded-2xl bg-white flex flex-col items-center">
             <div className="sm:w-6/10 mb-3 text-center font-semibold text-4xl sm:text-5xl">
               Get the job with expert career coaching and AI tools
             </div>
