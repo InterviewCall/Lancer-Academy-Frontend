@@ -158,7 +158,7 @@ export default function Navbar() {
             Book a call
           </button>
         </div>
-      <div className={"flex sm:w-full rounded-lg p-4 sm:p-0 items-center " + (isScrolled ? " bg-white sm:bg-transparent shadow-lg " : " bg-transparent ")}>
+      <div className={"flex sm:w-full rounded-lg p-4 sm:p-0 items-center " + (isScrolled ? " " : " bg-transparent ")}>
         <button
           onClick={() => {
             setIsNavbarOpen(false);

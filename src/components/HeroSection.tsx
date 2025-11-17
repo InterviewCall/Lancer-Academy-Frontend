@@ -19,8 +19,8 @@ export default function HeroSection() {
     }
   }, [isVideoActive]);
   return (
-    <div className="lg:flex items-start justify-center my-10 gap-x-15 w-9/10 md:w-1/2  lg:w-2/3 py-14">
-      <div className="hidden lg:basis-2/5 w-full lg:flex items-center justify-center relative">
+    <div className="lg:flex items-start justify-center mt-10 gap-x-15 w-9/10 md:w-1/2  lg:w-2/3 pt-14">
+      <div className="hidden lg:basis-2/5 w-full lg:flex items-center justify-center relative translate-y-2">
         {isVideoActive && (
           <video
             className="w-full h-full rounded-xl object-cover"
@@ -84,7 +84,7 @@ export default function HeroSection() {
         <div className="relative">
           {/* <div className="pointer-events-none absolute inset-x-0 -top-6 h-64 lg:h-72
                   mx-4 rounded-[48px] bg-[#F8D2C1]/35 blur-2xl z-[1]"></div> */}
-          <div className="text-center lg:text-start text-6xl lg:text-6xl font-[700] my-10 leading-[82%] z-[10]">
+          <div className="text-center lg:text-start text-6xl lg:text-[120px] font-[700] pt-5 leading-[82%] z-[10]">
             Software Engineering Bootcamp
           </div>
 
@@ -92,7 +92,7 @@ export default function HeroSection() {
         </div>
         {/* className="font-[400] text-center lg:text-start leading-[100%] tracking-[-1.5%] px-10 lg:px-0 w-full text-lg lg:text-2xl" */}
         {/* className="font-[400] text-center lg:text-start leading-[100%] tracking-[-1.5%] px-10 lg:px-0 w-full text-lg lg:text-[clamp(1.5rem,2vw,150rem)]" */}
-        <div className="font-[400] text-center lg:text-start leading-[100%] tracking-[-1.5%] px-10 lg:px-0 w-full text-lg lg:text-[clamp(1.5rem,2vw,150rem)]">
+        <div className="font-[400] text-center lg:text-start leading-[1] tracking-[-1.5%] pt-8 px-10 lg:px-0 w-full text-lg lg:text-[20px]">
           Join our Software Engineering Bootcamp to learn a remote-friendly job
           that pays  
           <span className="font-semibold"> ₹10,00,000 </span>
@@ -107,7 +107,7 @@ export default function HeroSection() {
               src={"/Cohort start.svg"}
               width={100}
               height={100}
-              className="h-auto lg:h-[80%] w-9/10 lg:w-[80%] lg:absolute lg:-top-14 lg:right-32"
+              className="h-auto lg:h-[70%] w-9/10 lg:w-[70%] lg:absolute lg:-top-9 lg:right-10"
             />
           </div>
           <BookACallButton />
