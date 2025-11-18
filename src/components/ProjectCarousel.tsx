@@ -7,46 +7,37 @@ import { useReducer, useState } from "react";
 const projectContent = [
   {
     id: 1,
-    src: "/projects/project1.png",
-    heading: "AI-Powered Chatbot",
+    src: "/projects/project-1.svg",
+    heading: "CodexTrack – AI DSA practice platform",
     content:
-      "An intelligent assistant built with React and FastAPI, capable of handling real-time queries and learning from user interactions.",
-    className: "w-1/3 h-auto",
+      "A focused web app that helps learners build strong problem-solving habits. CodexTrack lets users solve DSA questions, run code against hidden test cases, and track progress topic-wise. An integrated AI assistant generates hints, explains edge cases, and suggests follow-up problems. Leaderboards, streaks, and weekly goals keep learners accountable while giving them a clear, data-driven view of their readiness for product-company interviews.",
+    className: "w-full h-auto",
   },
   {
     id: 2,
-    src: "/projects/project2.jpg",
-    heading: "EduData Dashboard",
+    src: "/projects/project-2.svg",
+    heading: "WorkR Lite – job listings and referral portal",
     content:
-      "A dynamic dashboard that visualizes student performance, admission trends, and institutional metrics using interactive charts.",
-    className: "w-2/3 h-auto",
+      "A streamlined version of a real hiring platform that connects candidates, referrers, and recruiters. WorkR Lite allows companies to post roles, candidates to apply, and employees to share referral links with live status tracking. Recruiters get a clean dashboard to filter applicants, review profiles, and manage the pipeline. Built to mirror real-world ATS workflows, this project demonstrates end-to-end system design, robust APIs, and production-style user flows that employers instantly recognize.",
+    className: "w-full h-auto",
   },
   {
     id: 3,
-    src: "/projects/project3.png",
-    heading: "Image Classifier",
+    src: "/projects/project-3.svg",
+    heading: "InterviewCall AI Prep Suite – resume and interview assistant",
     content:
-      "A deep learning model trained to identify plant species from images, with a clean UI for uploading and viewing predictions.",
+      "A career-prep tool that uses AI to help candidates get ready for interviews. Users upload their resumes, and the system parses skills, experience, and keywords to generate an ATS-style score and a list of gaps to fix. The app then creates tailored interview questions by role and seniority level, plus suggested answers and follow-up prompts. Candidates can save sessions, track improvements, and export an AI-optimized resume version to apply for roles with more confidence.",
 
-    className: "w-1/3 h-auto",
+    className: "w-full h-auto",
   },
   {
     id: 4,
-    src: "/projects/project4.jpg",
-    heading: "Network Visualizer",
+    src: "/projects/project-4.svg",
+    heading: "Lancrs Commerce – smart e-commerce app",
     content:
-      "A graph-based tool that helps users explore OSI and TCP/IP layers through animated simulations and protocol breakdowns.",
+      "A full e-commerce experience where users browse products, add items to cart, and complete checkout with Razorpay test payments. Admins can manage inventory, prices, and order statuses from a separate dashboard. An AI recommendation engine analyzes browsing and purchase history to surface “You may also like” suggestions in real time. This project showcases complete full-stack skills: secure auth, payments, order workflows, and practical AI integration inside a familiar, production-style product.",
 
-    className: "w-2/3 h-auto",
-  },
-  {
-    id: 5,
-    src: "/projects/project5.jpg",
-    heading: "Network Visualizer",
-    content:
-      "A graph-based tool that helps users explore OSI and TCP/IP layers through animated simulations and protocol breakdowns.",
-
-    className: "w-2/3 h-auto",
+    className: "w-full h-auto",
   },
 ];
 
@@ -81,7 +72,9 @@ export default function ProjectCarousel() {
           <div className="font-medium text-2xl ">
             {projectContent[count].heading}
           </div>
-          <div className="w-full sm:w-6/10">{projectContent[count].content}</div>
+          <div className="w-full sm:w-9/10">
+            {projectContent[count].content}
+          </div>
         </div>
 
         <div className="mt-15 flex items-center justify-center sm:justify-start gap-x-2">
