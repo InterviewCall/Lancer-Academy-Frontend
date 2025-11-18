@@ -32,13 +32,11 @@ import {
   CirclePause,
   CircleUser,
   Clock,
-  GraduationCap,
   HandCoins,
   HeartHandshake,
   Notebook,
   UserStar,
 } from "lucide-react";
-import { GoProjectRoadmap } from "react-icons/go";
 import { FaLink } from "react-icons/fa6";
 import AIToolsSection from "@/components/AiToolsSection";
 
@@ -88,7 +86,7 @@ export default function Page() {
             />
 
             <Image
-              src={"/courseStatsMobile.svg"}
+              src={"/courseStatsMobile_3.svg"}
               alt="Example"
               width={100}
               height={100}
@@ -167,8 +165,10 @@ export default function Page() {
             <div className="w-full flex justify-center">
               <div>
                 <div>Select the pace that fits your life</div>
-              <div>and goals—both tracks</div>
-              <div>start at <span className="text-[#3AA65E]">₹39,999</span> </div>
+                <div>and goals—both tracks</div>
+                <div>
+                  start at <span className="text-[#3AA65E]">₹39,999</span>{" "}
+                </div>
               </div>
             </div>{" "}
             <div className="my-8 justify-center items-end sm:items-stretch sm:grid grid-cols-2 space-y-3 sm:space-y-0 gap-3">
@@ -277,7 +277,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-9/10 lg:w-2/3 rounded-2xl flex justify-center gap-10 relative">
+          <div className="w-full rounded-2xl flex justify-center gap-10 relative">
             <div className="absolute  w-full top-85/100 flex items-center justify-around">
               {/* <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 Tell me more
@@ -292,7 +292,7 @@ export default function Page() {
             <Image
               className="w-full h-auto lg:block hidden"
               alt=""
-              src={"/howtogetnewcareer.svg"}
+              src={"/howtogetnewcareer4.svg"}
               width={100}
               height={100}
             />
@@ -300,7 +300,7 @@ export default function Page() {
             <Image
               className="w-full h-auto lg:hidden block"
               alt=""
-              src={"/howtogetnewcareerMobile.svg"}
+              src={"/howtogetnewcareerMobile2.svg"}
               width={100}
               height={100}
             />
@@ -308,11 +308,11 @@ export default function Page() {
 
           <AIToolsSection />
 
-          <div className="font-semibold text-4xl my-10 w-9/10 sm:w-6/10 text-center">
-            Our grads get great jobs with both startups and industry giants
+          <div className="font-semibold text-4xl my-10 w-full text-center">
+            Our grads get great jobs at top startups and leading tech companies
           </div>
 
-          <div className="flex flex-wrap justify-center w-7/10 my-10 gap-6 sm:gap-10">
+          <div className="flex flex-wrap justify-center w-full my-10 gap-6 sm:gap-10">
             {/* <Image
               alt=""
               src={"/allcompanies.svg"}
@@ -337,7 +337,7 @@ export default function Page() {
             <div className="w-9/10 sm:w-6/10 flex items-center justify-center">
               <Image
                 alt=""
-                src={"/onlinetrainingandsupport.svg"}
+                src={"/onlinetrainingandsupport_3.svg"}
                 height={100}
                 width={100}
                 className="w-full h-auto lg:block hidden"
@@ -345,7 +345,7 @@ export default function Page() {
 
               <Image
                 alt=""
-                src={"/onlinetrainingandsupportMobile.svg"}
+                src={"/onlinetrainingandsupportMobile_2.svg"}
                 height={100}
                 width={100}
                 className="w-full h-auto lg:hidden block bg-transparent"
@@ -353,20 +353,24 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full sm:w-2/3 text-center my-10 rounded-4xl bg-white pt-10 px-2 sm:px-10 sm:p-10 sm:pb-0 pb-0 flex flex-col items-center">
-            <div className="font-semibold text-5xl mb-2 w-full sm:w-5/10">
-              <div>All in one learing experience</div>
+          <div className="w-full text-center my-10 rounded-4xl bg-white pt-10 px-2 sm:px-10 sm:p-10 sm:pb-0 pb-0 flex flex-col items-center">
+            <div className="font-[600] text-5xl mb-2 w-full ">
+              <div>
+                <div>All-in-one flexible learning</div>
+                <div>experience</div>
+              </div>
             </div>
-            <div className="mb-5 w-9/10 sm:w-4/10 font-light text-md">
-              Learn conceots prctice cosing, build projects, schedule 1 on 1
-              tutoring and get feedback all in one place
+            <div className="mb-5 w-9/10 sm:w-6/10 font-[400] text-lg">
+              Learn core concepts, practice real coding, build industry-grade
+              projects, book 1-on-1 mentor sessions, and get personalized
+              feedback — all in one place.
             </div>
 
             <div>
               <button className="rounded-lg flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
                 <FaRegEye size={20} />
                 <div className="hidden sm:block">
-                  This is how you will learn to code like a pro
+                  See how you’ll learn like a real software engineer
                 </div>
                 <div className="block sm:hidden">Learn to code like a pro</div>
               </button>

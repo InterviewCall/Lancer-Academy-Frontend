@@ -3,15 +3,23 @@
 import { Plus } from "lucide-react";
 import { useState } from "react";
 
-export default function ExpandableModule() {
+export default function ExpandableModule({
+  title,
+  time,
+  content,
+}: {
+  title?: string;
+  time?: string;
+  content?: { subHeading: string; subPoints: string[] }[];
+}) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-full p-7 px-5 sm:px-10 bg-white">
       <div className="w-full flex items-center justify-between">
         <div>
-          <div className="font-semibold text-lg sm:text-2xl">Introductory Module</div>
+          <div className="font-semibold text-lg sm:text-2xl">{title}</div>
           <div className="font-medium text-base sm:text-xl text-gray-600">
-            10 hours, 1 project, 7 live lessons
+            {time}
           </div>
         </div>
         <div
@@ -33,12 +41,19 @@ export default function ExpandableModule() {
             }
             `}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. A sit, eos
-        totam sint aliquam inventore consequatur, reiciendis molestiae error
-        doloribus deleniti beatae nobis minus temporibus pariatur eius sunt amet
-        excepturi voluptatem alias velit porro cupiditate nihil. Voluptatum
-        ullam, explicabo quaerat autem commodi repudiandae maxime temporibus,
-        ipsam, veritatis maiores veniam quis.
+        {content &&
+          content.map((item, index) => (
+            <div key={index}>
+              <div>{item.subHeading}</div>
+              <ul className="pl-10">{
+                item.subPoints && item.subPoints.map((point, idx) => (
+                  <li className="list-disc " key={idx}>
+                    {point}
+                  </li>
+                ))
+                }</ul>
+            </div>
+          ))}
       </div>
     </div>
   );

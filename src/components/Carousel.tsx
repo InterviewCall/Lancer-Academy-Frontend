@@ -5,17 +5,11 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 const mentorImages = [
-  { id: 1, src: "/mentors/Group 9.svg" },
-  { id: 2, src: "/mentors/Group 10.svg" },
-  { id: 3, src: "/mentors/Group 11.svg" },
-  { id: 4, src: "/mentors/Group 12.svg" },
-  { id: 5, src: "/mentors/Group 13.svg" },
-  { id: 6, src: "/mentors/Group 14.svg" },
-  { id: 7, src: "/mentors/Group 15.svg" },
-  { id: 8, src: "/mentors/Group 16.svg" },
-  { id: 9, src: "/mentors/Group 17.svg" },
-  { id: 10, src: "/mentors/Group 18.svg" },
-  { id: 11, src: "/mentors/Group 19.svg" },
+  { id: 1, src: "/mentors/mentor-1.svg" },
+  { id: 2, src: "/mentors/mentor-2.svg" },
+  { id: 3, src: "/mentors/mentor-3.svg" },
+  { id: 4, src: "/mentors/mentor-4.svg" },
+  { id: 5, src: "/mentors/mentor-5.svg" },
 ];
 
 export default function Carousel({perView = 1}: {perView?: number}) {
