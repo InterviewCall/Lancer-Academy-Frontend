@@ -59,21 +59,21 @@ export default function Page() {
   return (
     <div className="bg-red-50 flex flex-col min-h-screen">
       <Navbar />
-      <div className="flex-1 h-full bg-red-50 z-[1]">
-        <div className="w-full h-full flex flex-col items-center text-black bg-red-50">
+      <div className="flex-1 flex justify-center h-full bg-red-50 z-[1]">
+        <div className="w-80/100 h-full flex flex-col items-center text-black bg-red-50">
           <HeroSection />
 
           <GuaranteeBar />
           <div className="w-9/10 "></div>
 
-          <div className="w-[80%] relative lg:w-2/3 my-10">
+          <div className="w-[80%] relative lg:w-full my-10">
             <div className="absolute w-full top-75/100 flex items-center justify-center">
               {/* <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 All numbers come from our 2024 graduate outcomes report
               </div> */}
             </div>
             <Image
-              src={"/courseStats.svg"}
+              src={"/courseStats_3.svg"}
               alt="Example"
               width={100}
               height={100}
@@ -88,9 +88,9 @@ export default function Page() {
               className="w-full h-full lg:hidden block"
             />
             <div className="absolute hover:cursor-pointer bottom-[5%] sm:bottom-[10%] flex items-center justify-center w-full">
-              <button className="rounded-lg hidden sm:flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
+              <button className="rounded-2xl hidden sm:flex justify-center items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-7 py-2 font-[500] text-md  text-lg">
                 <div>
-                  All numbers come from our 2024 graduate outcomes report
+                  All numbers are from the latest Lancrs Academy Graduate Outcomes Report
                 </div>{" "}
                 <FaLink />
               </button>

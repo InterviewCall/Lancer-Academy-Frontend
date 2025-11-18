@@ -19,7 +19,7 @@ export default function HeroSection() {
     }
   }, [isVideoActive]);
   return (
-    <div className="md:flex items-start mb-10 justify-center mt-10 gap-x-15 w-9/10 md:w-80/100 pt-14">
+    <div className="md:flex items-start mb-10 justify-center mt-10 gap-x-15 w-9/10 md:w-full pt-14">
       <div className="hidden md:basis-2/5 w-full md:flex items-center justify-center relative translate-y-2">
         {isVideoActive && (
           <video
