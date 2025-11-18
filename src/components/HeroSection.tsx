@@ -19,8 +19,8 @@ export default function HeroSection() {
     }
   }, [isVideoActive]);
   return (
-    <div className="md:flex items-start mb-10 justify-center mt-10 gap-x-15 w-9/10 md:w-full pt-14">
-      <div className="hidden md:basis-2/5 w-full md:flex items-center justify-center relative translate-y-2">
+    <div className="md:flex items-start mb-10 justify-center mt-10 gap-x-15 w-9/10 md:w-full lg:w-full pt-14">
+      <div className="hidden md:basis-2/5 md:flex items-center justify-center relative translate-y-2">
         {isVideoActive && (
           <video
             className="w-full h-full rounded-xl object-cover"
@@ -46,11 +46,11 @@ export default function HeroSection() {
             src={"/hero_image_2.svg"}
             width={60}
             height={60}
-            className="w-full max-h-full"
+            className="w-full h-full"
           />
         )}
       </div>
-      <div className="md:basis-3/5 w-auto">
+      <div className="md:basis-2/5 w-full">
         <div className="w-full flex justify-center md:justify-start">
           <div className="flex items-center justify-center md:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-fit md:w-fit px-1 md:px-3 divide-x divide-gray-500  ">
             <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 md:px-2 my-2 ">
@@ -138,7 +138,7 @@ export default function HeroSection() {
               src={"/hero_image_2.svg"}
               width={60}
               height={60}
-              className="w-full h-auto"
+              className="w-full h-full"
             />
           )}
         </div>
