@@ -19,8 +19,8 @@ export default function HeroSection() {
     }
   }, [isVideoActive]);
   return (
-    <div className="lg:flex items-start justify-center mt-10 gap-x-15 w-9/10 md:w-1/2  lg:w-2/3 pt-14">
-      <div className="hidden lg:basis-2/5 w-full lg:flex items-center justify-center relative translate-y-2">
+    <div className="md:flex items-start mb-10 justify-center mt-10 gap-x-15 w-9/10 md:w-full pt-14">
+      <div className="hidden md:basis-2/5 w-full md:flex items-center justify-center relative translate-y-2">
         {isVideoActive && (
           <video
             className="w-full h-full rounded-xl object-cover"
@@ -46,14 +46,14 @@ export default function HeroSection() {
             src={"/hero_image_2.svg"}
             width={60}
             height={60}
-            className="w-full h-auto"
+            className="w-full max-h-full"
           />
         )}
       </div>
-      <div className="lg:basis-3/5 w-auto">
-        <div className="w-full flex justify-center lg:justify-start">
-          <div className="flex items-center justify-center lg:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-fit lg:w-fit px-1 lg:px-3 divide-x divide-gray-500  ">
-            <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 lg:px-2 my-2 ">
+      <div className="md:basis-3/5 w-auto">
+        <div className="w-full flex justify-center md:justify-start">
+          <div className="flex items-center justify-center md:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-fit md:w-fit px-1 md:px-3 divide-x divide-gray-500  ">
+            <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 md:px-2 my-2 ">
               <FaCircleHalfStroke
                 size={22}
                 className="inline-block pr-1 lg:pr-2 "
@@ -61,7 +61,7 @@ export default function HeroSection() {
 
               <div className="flex items-center justify-around text-sm lg:text-[16px]">
                 <div className="text-center">Intermediate:</div>
-                <div className="text-[#318f51] ml-1">6 months</div>
+                <div className="text-[#318f51] ml-1">7 months</div>
               </div>
             </div>
 
@@ -84,8 +84,8 @@ export default function HeroSection() {
         <div className="relative">
           {/* <div className="pointer-events-none absolute inset-x-0 -top-6 h-64 lg:h-72
                   mx-4 rounded-[48px] bg-[#F8D2C1]/35 blur-2xl z-[1]"></div> */}
-          <div className="text-center lg:text-start text-6xl lg:text-[120px] font-[700] pt-5 leading-[82%] z-[10]">
-            Software Engineering Bootcamp
+          <div className="text-center md:text-start text-6xl md:text-[90px] font-[700] pt-5 leading-[82%] z-[10]">
+            Full Stack and AI Software Engineering Program
           </div>
 
           {/* <Image alt="" src={'/behindEclips_2.svg'} width={100} height={100} className="absolute w-full h-full top-10 z-[1]" /> */}
@@ -93,24 +93,24 @@ export default function HeroSection() {
         {/* className="font-[400] text-center lg:text-start leading-[100%] tracking-[-1.5%] px-10 lg:px-0 w-full text-lg lg:text-2xl" */}
         {/* className="font-[400] text-center lg:text-start leading-[100%] tracking-[-1.5%] px-10 lg:px-0 w-full text-lg lg:text-[clamp(1.5rem,2vw,150rem)]" */}
         <div className="font-[400] text-center lg:text-start leading-[1] tracking-[-1.5%] pt-8 px-10 lg:px-0 w-full text-lg lg:text-[20px]">
-          Join our Software Engineering Bootcamp to learn a remote-friendly job
-          that pays  
-          <span className="font-semibold"> ₹10,00,000 </span>
-          
-          to start. Choose between a 4‑months Advanced
-          Program or a 6‑months, Intermediate Program for more flexibility.
+          Join{" India's"} most practical job-oriented Softwware Engineering program designed for 
+          <span className="font-semibold"> 12 LPA roles </span>
+          Master full-stack development + AI skills through real industry projects built for Lancers Academy, InterviewCall, and WorkR
+          <div className="mt-2">
+            Choose between our <span className="font-semibold">4-month advanced</span> or <span className="font-semibold">7-month intermediate</span> track -- based on your schedule.
+          </div>
         </div>
-        <div className="my-16 flex flex-col lg:block items-center justify-center relative">
-          <div className="flex justify-center pr-[5%]">
+        <div className="my-8 flex flex-col md:flex-row items-center gap-x-2 gap-y-2 md:items-stretch justify-evenly relative">
+            <BookACallButton />
+          <div className="flex justify-center ">
             <Image
               alt=""
-              src={"/Cohort start.svg"}
+              src={"/Cohort start_2.svg"}
               width={100}
               height={100}
-              className="h-auto lg:h-[70%] w-9/10 lg:w-[70%] lg:absolute lg:-top-9 lg:right-10"
+              className="h-auto lg:h-[100%] w-9/10 lg:w-[100%] lg:-top-5 lg:right-15"
             />
           </div>
-          <BookACallButton />
         </div>
         <div className="lg:hidden w-full flex items-center justify-center relative px-2 lg:px-0">
           {isVideoActive && (

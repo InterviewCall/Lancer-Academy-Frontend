@@ -59,21 +59,21 @@ export default function Page() {
   return (
     <div className="bg-red-50 flex flex-col min-h-screen">
       <Navbar />
-      <div className="flex-1 h-full bg-red-50 z-[1]">
-        <div className="w-full h-full flex flex-col items-center text-black bg-red-50">
+      <div className="flex-1 flex justify-center h-full bg-red-50 z-[1]">
+        <div className="w-80/100 h-full flex flex-col items-center text-black bg-red-50">
           <HeroSection />
 
           <GuaranteeBar />
           <div className="w-9/10 "></div>
 
-          <div className="w-[80%] relative lg:w-2/3 my-10">
+          <div className="w-[80%] relative lg:w-full my-10">
             <div className="absolute w-full top-75/100 flex items-center justify-center">
               {/* <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 All numbers come from our 2024 graduate outcomes report
               </div> */}
             </div>
             <Image
-              src={"/courseStats.svg"}
+              src={"/courseStats_3.svg"}
               alt="Example"
               width={100}
               height={100}
@@ -88,9 +88,10 @@ export default function Page() {
               className="w-full h-full lg:hidden block"
             />
             <div className="absolute hover:cursor-pointer bottom-[5%] sm:bottom-[10%] flex items-center justify-center w-full">
-              <button className="rounded-lg hidden sm:flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
+              <button className="rounded-2xl hidden sm:flex justify-center items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-7 py-2 font-[500] text-md  text-lg">
                 <div>
-                  All numbers come from our 2024 graduate outcomes report
+                  All numbers are from the latest Lancrs Academy Graduate
+                  Outcomes Report
                 </div>{" "}
                 <FaLink />
               </button>
@@ -103,36 +104,41 @@ export default function Page() {
 
           <div className="w-full tracking-tighter text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-5 sm:px-10">
             <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-2">
-              Become a Software Engineer with
+              Become a Software Engineer 
             </div>
 
             <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-5">
-              Lancrs Academy
+              with Lancrs Academy
             </div>
 
             <div className="w-full flex justify-center">
-              <div className="w-8/10 sm:w-6/10 flex flex-col sm:flex-row sm:items-start items-center justify-center sm:justify-start text gap-x-15 my-10 text-center">
+              <div className="w-8/10 flex flex-col sm:flex-row sm:items-start items-center justify-center sm:justify-start text gap-x-15 my-10 text-center">
                 <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center justify-start">
                   <FaCircleCheck />
-                  <div>Our guarantee: job in tech </div>
-                  <div>or 100% money back*</div>
+                  <div>Our guarantee:</div>
+                  <div> job in tech or 100% </div>
+                  <div> money back*</div>
                 </div>
                 <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center">
                   <FaCircleCheck />
-                  <div>No IT or STEM</div>
-                  <div> background needed</div>
+                  <div>No IT, CS, or engineering </div>
+                  <div> background required</div>
                 </div>
                 <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center">
                   <FaCircleCheck />
                   <div>4.8/5 rating across</div>
-                  <div>1k+ reviews</div>
+                  <div>1,500+ student reviews</div>
                 </div>
               </div>
             </div>
-            <div className=" hidden text-sm text-gray-600">
-              *Get a relevant job in 10 months or your tuition back when you
-              complete our included Career Services package and make a
-              good-faith effort to find a job. Details in our Terms of Use.
+            <div className="w-full flex justify-center text-sm mb-10 text-gray-600">
+              <div className="w-8/10">
+                *Get a relevant tech job within 6 months of graduation or
+                receive a full tuition refund after completing your Career
+                Services requirements and making a good-faith effort in your job
+                search. Full details are provided in our{" "}
+                <u>Terms & Conditions</u> .
+              </div>
             </div>
           </div>
 
@@ -247,7 +253,6 @@ export default function Page() {
 
           <AIToolsSection />
 
-
           <div className="font-semibold text-4xl my-10 w-9/10 sm:w-6/10 text-center">
             Our grads get great jobs with both startups and industry giants
           </div>
@@ -308,9 +313,7 @@ export default function Page() {
                 <div className="hidden sm:block">
                   This is how you will learn to code like a pro
                 </div>
-                <div className="block sm:hidden">
-                  Learn to code like a pro
-                </div>
+                <div className="block sm:hidden">Learn to code like a pro</div>
               </button>
             </div>
 
@@ -409,7 +412,6 @@ export default function Page() {
           <MoneyBackGuaranteeBannerMobile />
 
           <BookACallForm />
-
 
           <FAQSection />
 

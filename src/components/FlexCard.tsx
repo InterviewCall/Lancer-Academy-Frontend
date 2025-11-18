@@ -1,31 +1,44 @@
 import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
-const techLogos = [
-  { id: 1, src: "/techLogo/bash.svg" },
-  { id: 2, src: "/techLogo/bem.svg" },
-  { id: 3, src: "/techLogo/certbot.svg" },
-  { id: 4, src: "/techLogo/chromeDevtools.svg" },
-  { id: 5, src: "/techLogo/css.svg" },
-  { id: 6, src: "/techLogo/eslint.svg" },
-  { id: 7, src: "/techLogo/figma1.svg" },
-  { id: 8, src: "/techLogo/git.svg" },
-  { id: 9, src: "/techLogo/github.svg" },
-  { id: 10, src: "/techLogo/html.svg" },
-  { id: 11, src: "/techLogo/javascript.svg" },
-  { id: 12, src: "/techLogo/jest.svg" },
-  { id: 13, src: "/techLogo/mongoDb.svg" },
-  { id: 14, src: "/techLogo/nginx.svg" },
-  { id: 15, src: "/techLogo/nodejsandexpressjs.svg" },
-  { id: 16, src: "/techLogo/pm2.svg" },
-  { id: 17, src: "/techLogo/postman.svg" },
-  { id: 18, src: "/techLogo/prettier.svg" },
-  { id: 19, src: "/techLogo/react.svg" },
-  { id: 20, src: "/techLogo/webpack.svg" },
+const techSkills = [
+  { Id: 1, skillName: "Bash", skillImg: "/skillLogo/skill-bash.svg" },
+  {
+    Id: 2,
+    skillName: "Chrome DevTools",
+    skillImg: "/skillLogo/skill-chromeDevtools.svg",
+  },
+  { Id: 3, skillName: "CSS", skillImg: "/skillLogo/skill-css.svg" },
+  { Id: 4, skillName: "ESLint", skillImg: "/skillLogo/skill-eslint.svg" },
+  { Id: 5, skillName: "Figma", skillImg: "/skillLogo/skill-figma.svg" },
+  { Id: 6, skillName: "Git", skillImg: "/skillLogo/skill-git.svg" },
+  { Id: 7, skillName: "GitHub", skillImg: "/skillLogo/skill-github.svg" },
+  { Id: 8, skillName: "HTML", skillImg: "/skillLogo/skill-html.svg" },
+  {
+    Id: 9,
+    skillName: "JavaScript",
+    skillImg: "/skillLogo/skill-javascript.svg",
+  },
+  { Id: 10, skillName: "Jest", skillImg: "/skillLogo/skill-jest.svg" },
+  { Id: 11, skillName: "JWT", skillImg: "/skillLogo/skill-jwt.svg" },
+  { Id: 12, skillName: "MongoDB", skillImg: "/skillLogo/skill-mongoDb.svg" },
+  { Id: 13, skillName: "MySQL", skillImg: "/skillLogo/skill-mysql.svg" },
+  { Id: 14, skillName: "Node.js", skillImg: "/skillLogo/skill-node.svg" },
+  { Id: 15, skillName: "Postman", skillImg: "/skillLogo/skill-postman.svg" },
+  { Id: 16, skillName: "React", skillImg: "/skillLogo/skill-react.svg" },
+  {
+    Id: 17,
+    skillName: "Responsive Design",
+    skillImg: "/skillLogo/skill-responsiveDesgin.svg",
+  }, // typo preserved
+  { Id: 18, skillName: "REST", skillImg: "/skillLogo/skill-rest.svg" },
+  { Id: 19, skillName: "Webpack", skillImg: "/skillLogo/skill-webpack.svg" },
+  { Id: 20, skillName: "CI/CD", skillImg: "/skillLogo/skill-cicd.svg" },
 ];
 
 export default function FlexCard() {
   return (
-    <div className="w-full sm:w-2/3 text-center my-10 rounded-4xl bg-white p-8 py-15 sm:p-15 flex flex-col items-center">
+    <div className="w-full text-center my-10 rounded-4xl bg-white p-8 py-15 sm:p-15 flex flex-col items-center">
       <div className="text-3xl sm:text-5xl text-start sm:text-center font-semibold mb-5">
         You after lancrs academy
       </div>
@@ -34,30 +47,35 @@ export default function FlexCard() {
         <div className=" sm:p-4">
           <div className=" flex items-center justify-start gap-4">
             <div>
-              <Image alt="" src={"/pfp.svg"} width={110} height={110} />
+              <Image alt="" src={"/pfp1.svg"} width={110} height={110} />
             </div>
             <div className="sm:mx-3">
-              <div className="text-lg sm:text-2xl font-semibold">Software Engineer</div>
+              <div className="text-lg sm:text-2xl font-semibold">
+                Software Engineer
+              </div>
               <div className="flex items-center justify-center gap-3">
-                <div>Linked in </div>
-                <div>Github</div>
+                <div className="flex items-center justify-start gap-1">
+                  {" "}
+                  <FaLinkedin /> <div>Linked in</div>{" "}
+                </div>
+                <div className="flex items-center justify-start gap-1">
+                  <FaGithub /> <div> Github</div>
+                </div>
               </div>
             </div>
           </div>
           <div className="sm:hidden text-start text-xl font-medium mt-10 sm:mt-0 mb-2 flex items-center gap-x-2">
-            <div>Expected Salary:</div> <div className="text-3xl"> ₹10,00,000 </div>
+            <div>Expected Salary:</div>{" "}
+            <div className="text-3xl">₹6,00,000 - ₹12,00,000 </div>
           </div>
 
           <div className="text-start my-5 mt-10">Hard skills</div>
           <div className="flex flex-wrap gap-1 text-xs font-medium">
-            {techLogos.map((logo) => (
-              <div key={logo.id} className="h-8">
-                <Image
-                  alt=""
-                  src={logo.src}
-                  width={110}
-                  height={110}
-                  className="w-auto h-full"
+            {techSkills.map((skill) => (
+              <div key={skill.Id} className="h-8">
+                <SkillButton
+                  skillName={skill.skillName}
+                  skillImg={skill.skillImg}
                 />
               </div>
             ))}
@@ -66,7 +84,7 @@ export default function FlexCard() {
         <div className=" py-4 text-start text-sm">
           <div className="mb-1 mt-5 sm:mt-0">Education</div>
           <div className="font-semibold text-lg">
-            Lancrs academy software engineering bootcamp
+            Lancrs Academy - Full Stack & AI Engineering Program
           </div>
           <div className="mb-5">Jan-Sept 2025</div>
           <div className="mb-3 mt-10 sm:mt-14">Soft Skills</div>
@@ -74,6 +92,10 @@ export default function FlexCard() {
             <div className="bg-gray-200 rounded-md px-2 py-1 ">
               {" "}
               Problem Solving
+            </div>
+            <div className="bg-gray-200 rounded-md px-2 py-1 ">
+              {" "}
+              Communication
             </div>
             <div className="bg-gray-200 rounded-md px-2 py-1 ">
               {" "}
@@ -98,17 +120,47 @@ export default function FlexCard() {
           <div className="hidden sm:block font-medium mt-10 sm:mt-0 mb-2">
             Expected Salary
           </div>
-          <div className="hidden sm:block font-semibold mb-5"> ₹10,00,000 </div>
+          <div className="hidden sm:block font-semibold mb-5">
+            {" "}
+            ₹6,00,000 - ₹12,00,000
+          </div>
           <div className="font-medium mb-2 mt-10 sm:mt-24 text-sm">
             Projects
           </div>
-          <div className="font-semibold">Web Marketplace</div>
+          <div className="font-semibold">AI-Enhanced Web Platform</div>
           <div className="text-gray-500 text-sm">
-            740+ hours of coding in Javascript, ReactJs, NodeJs, HTML5, CSS3,
-            BEM
+            900+ hours of hands-on development in JavaScript, React.js, Node.js,
+            MySQL, REST APIs, Auth, Deployment
+          </div>
+          <div className="font-semibold mt-2">
+            AI Resume Optimizer {"(Full-Stack)"}
+          </div>
+          <div className="text-gray-500 text-sm">
+            Frontend + Backend + AI scoring engine + Dashboard
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function SkillButton({
+  skillName,
+  skillImg,
+}: {
+  skillName: string;
+  skillImg: string;
+}) {
+  return (
+    <div className="rounded-lg bg-[#F2F1EE] flex items-center justify-center px-2 py-1.5 font-[450] text-sm gap-2">
+      <Image
+        alt=""
+        src={skillImg}
+        height={100}
+        width={100}
+        className="h-5 w-5"
+      />
+      <div>{skillName}</div>
     </div>
   );
 }
