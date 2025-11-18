@@ -35,8 +35,8 @@ import {
   GraduationCap,
   HandCoins,
   HeartHandshake,
-  Notebook, 
-  UserStar
+  Notebook,
+  UserStar,
 } from "lucide-react";
 import { GoProjectRoadmap } from "react-icons/go";
 import { FaLink } from "react-icons/fa6";
@@ -163,12 +163,12 @@ export default function Page() {
 
           <FlexCard />
 
-          <div className="my-10 w-full text-center text-4xl font-bold">
+          <div className="my-10 w-full text-center text-5xl font-bold">
             <div className="w-full flex justify-center">
               <div>
-
-              Select the pace that fits your life and goals—both tracks start at
-              ₹39,999
+                <div>Select the pace that fits your life</div>
+              <div>and goals—both tracks</div>
+              <div>start at <span className="text-[#3AA65E]">₹39,999</span> </div>
               </div>
             </div>{" "}
             <div className="my-8 justify-center items-end sm:items-stretch sm:grid grid-cols-2 space-y-3 sm:space-y-0 gap-3">
@@ -181,7 +181,7 @@ export default function Page() {
               /> */}
 
               <CourseTypeCard
-                recommended={false}
+                recommended={true}
                 title="Advanced Track"
                 items={[
                   { icon: Calendar, text: "4 months" },
@@ -195,20 +195,31 @@ export default function Page() {
                   //   icon: GraduationCap,
                   //   text: "Best if you want a fast, intensive path into software engineering",
                   //   subpoints: [
-                      
+
                   //     ,
                   //     ,
                   //     ,
-                      
+
                   //   ],
                   // },
-                  { icon: Notebook , text: "Weekly projects and accelerated skill-building" },
-                  { icon: CirclePause , text: "2 one-week breaks included" },
-                  { icon: CircleUser , text: "Capstone: Build a real production-grade project for Lancrs / InterviewCall / WorkR" },
-                  { icon: HandCoins , text: "Intensive 1:1 job preparation and personalized coaching" },
-                  { icon: HeartHandshake , text: "One dedicated instructor guiding and mentoring your group" },
+                  {
+                    icon: Notebook,
+                    text: "Weekly projects and accelerated skill-building",
+                  },
+                  { icon: CirclePause, text: "2 one-week breaks included" },
+                  {
+                    icon: CircleUser,
+                    text: "Capstone: Build a real production-grade project for Lancrs / InterviewCall / WorkR",
+                  },
+                  {
+                    icon: HandCoins,
+                    text: "Intensive 1:1 job preparation and personalized coaching",
+                  },
+                  {
+                    icon: HeartHandshake,
+                    text: "One dedicated instructor guiding and mentoring your group",
+                  },
                   { icon: BookOpen, text: "Learn at your own pace" },
-
                 ]}
               />
 
@@ -235,11 +246,23 @@ export default function Page() {
                   //     // "Weekly live sessions and regular office hours",
                   //   ],
                   // },
-                  { icon: Notebook, text: "Flexible deadlines with full human mentor support" },
-                  { icon: CirclePause, text: "Biweekly projects designed for working professionals" },
-                  { icon: UserStar , text: "Up to 6 weeks of optional breaks" },
-                  { icon: HandCoins, text: "Optional externship-style project for real-world experience" },
-                  { icon: HeartHandshake, text: "Personalized 1:1 career coaching during job search" },
+                  {
+                    icon: Notebook,
+                    text: "Flexible deadlines with full human mentor support",
+                  },
+                  {
+                    icon: CirclePause,
+                    text: "Biweekly projects designed for working professionals",
+                  },
+                  { icon: UserStar, text: "Up to 6 weeks of optional breaks" },
+                  {
+                    icon: HandCoins,
+                    text: "Optional externship-style project for real-world experience",
+                  },
+                  {
+                    icon: HeartHandshake,
+                    text: "Personalized 1:1 career coaching during job search",
+                  },
                   { icon: BookOpen, text: "Learn at your own pace" },
                 ]}
               />
