@@ -65,7 +65,7 @@ export default function Page() {
     <div className="bg-red-50 flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-1 flex justify-center h-full bg-red-50 z-[1]">
-        <div className="w-80/100 h-full flex flex-col items-center text-black bg-red-50">
+        <div className="w-80/100 md:w-90/100 lg:w-80/100 h-full flex flex-col items-center text-black bg-red-50">
           <HeroSection />
 
           <GuaranteeBar />

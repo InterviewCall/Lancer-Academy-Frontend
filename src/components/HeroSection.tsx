@@ -84,7 +84,7 @@ export default function HeroSection() {
         <div className="relative">
           {/* <div className="pointer-events-none absolute inset-x-0 -top-6 h-64 lg:h-72
                   mx-4 rounded-[48px] bg-[#F8D2C1]/35 blur-2xl z-[1]"></div> */}
-          <div className="text-center md:text-start text-6xl md:text-[90px] font-[700] pt-5 leading-[82%] z-[10]">
+          <div className="text-center md:text-start text-6xl md:text-[90px] lg:text-[120px] font-[700] pt-5 leading-[82%] z-[10]">
             Full Stack and AI Software Engineering Program
           </div>
 
@@ -100,7 +100,7 @@ export default function HeroSection() {
             Choose between our <span className="font-semibold">4-month advanced</span> or <span className="font-semibold">7-month intermediate</span> track -- based on your schedule.
           </div>
         </div>
-        <div className="my-8 flex flex-col md:flex-row items-center gap-x-2 gap-y-2 md:items-stretch justify-evenly relative">
+        <div className="my-9 flex flex-col md:flex-row items-center gap-x-2 gap-y-2 md:items-stretch relative">
             <BookACallButton />
           <div className="flex justify-center ">
             <Image
@@ -108,11 +108,11 @@ export default function HeroSection() {
               src={"/Cohort start_2.svg"}
               width={100}
               height={100}
-              className="h-auto lg:h-[100%] w-9/10 lg:w-[100%] lg:-top-5 lg:right-15"
+              className="h-auto md:h-[100%] w-9/10 md:w-[100%] md:-top-5 md:right-15"
             />
           </div>
         </div>
-        <div className="lg:hidden w-full flex items-center justify-center relative px-2 lg:px-0">
+        <div className="md:hidden w-full flex items-center justify-center relative px-2 md:px-0">
           {isVideoActive && (
             <video
               className="w-full h-full rounded-xl object-cover"
