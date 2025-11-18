@@ -28,23 +28,23 @@ export default function CourseTypeCard({ title, items, recommended=false }: Part
       </h3>
 
       {/* List */}
-      <ul className="space-y-3 text-gray-800 text-lg sm:text-3xl font-semibold">
+      <ul className="space-y-0 text-gray-800 text-lg sm:text-2xl  font-semibold">
         {items.map((item, index) => (
           <li
             key={index}
             className={
-              "flex items-start gap-2 py-4 sm:py-6 " +
+              "flex items-center gap-2 py-2 h-[110px] " +
               (index === items.length - 1
                 ? "border-0 pb-0"
                 : "border-b border-gray-300 ")
             }
           >
             <item.icon
-              className={`w-4 h-4 sm:w-7 sm:h-7  ${
+              className={`w-4 basis-1/10 h-4 sm:w-7 sm:h-7  ${
                 item.iconColor || "text-gray-700"
               } mt-1`}
             />
-            <div>
+            <div className="basis-8/10">
               {typeof item.text === "string" ? (
                 <div
                   className="text-start"
@@ -71,7 +71,7 @@ export default function CourseTypeCard({ title, items, recommended=false }: Part
 
       {/* Button */}
       <div className="flex justify-start">
-        <button className="bg-gray-200 gap-x-3 flex items-center justify-center rounded-lg text-base sm:text-2xl font-medium px-5 sm:px-6  py-2 sm:py-4  mt-3 sm:mt-6">
+        <button className="bg-gray-200 gap-x-3 flex items-center justify-center rounded-lg text-base sm:text-xl hover:cursor-pointer hover:bg-gray-300 font-medium px-5 sm:px-5  py-2 sm:py-3  mt-3 sm:mt-6">
           <div>Show Syllabus</div>
           <Eye
             size={26}

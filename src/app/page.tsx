@@ -29,9 +29,16 @@ import {
   BookOpen,
   Calendar,
   CheckCircle,
+  CirclePause,
+  CircleUser,
   Clock,
   GraduationCap,
+  HandCoins,
+  HeartHandshake,
+  Notebook, 
+  UserStar
 } from "lucide-react";
+import { GoProjectRoadmap } from "react-icons/go";
 import { FaLink } from "react-icons/fa6";
 import AIToolsSection from "@/components/AiToolsSection";
 
@@ -104,7 +111,7 @@ export default function Page() {
 
           <div className="w-full tracking-tighter text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-5 sm:px-10">
             <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-2">
-              Become a Software Engineer 
+              Become a Software Engineer
             </div>
 
             <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-5">
@@ -156,8 +163,14 @@ export default function Page() {
 
           <FlexCard />
 
-          <div className="my-10 w-9/10 sm:w-2/3 text-center text-4xl font-bold">
-            Select the pace that fits your life and goals
+          <div className="my-10 w-full text-center text-4xl font-bold">
+            <div className="w-full flex justify-center">
+              <div>
+
+              Select the pace that fits your life and goals—both tracks start at
+              ₹39,999
+              </div>
+            </div>{" "}
             <div className="my-8 justify-center items-end sm:items-stretch sm:grid grid-cols-2 space-y-3 sm:space-y-0 gap-3">
               {/* <Image
                 className="w-full h-fit"
@@ -169,45 +182,64 @@ export default function Page() {
 
               <CourseTypeCard
                 recommended={false}
-                title="Full-time"
+                title="Advanced Track"
                 items={[
                   { icon: Calendar, text: "4 months" },
-                  { icon: Clock, text: "40-50 hours/week" },
+                  { icon: Clock, text: "40 hours/week" },
                   {
                     icon: CheckCircle,
                     iconColor: "text-green-600",
-                    text: '<span class="text-green-600 font-medium">Structured</span> schedule to fit your life',
+                    text: '<span class="text-green-600 font-medium">Structured</span> weekly deadlines with live mentor sessions',
                   },
-                  {
-                    icon: GraduationCap,
-                    text: "Learning and career support",
-                    subpoints: [
-                      'Career prep starts <span class="text-green-600 font-medium">day 1 in</span>',
-                      "Fixed full-time schedule with 2 live lectures daily",
-                    ],
-                  },
+                  // {
+                  //   icon: GraduationCap,
+                  //   text: "Best if you want a fast, intensive path into software engineering",
+                  //   subpoints: [
+                      
+                  //     ,
+                  //     ,
+                  //     ,
+                      
+                  //   ],
+                  // },
+                  { icon: Notebook , text: "Weekly projects and accelerated skill-building" },
+                  { icon: CirclePause , text: "2 one-week breaks included" },
+                  { icon: CircleUser , text: "Capstone: Build a real production-grade project for Lancrs / InterviewCall / WorkR" },
+                  { icon: HandCoins , text: "Intensive 1:1 job preparation and personalized coaching" },
+                  { icon: HeartHandshake , text: "One dedicated instructor guiding and mentoring your group" },
                   { icon: BookOpen, text: "Learn at your own pace" },
+
                 ]}
               />
 
               <CourseTypeCard
-                title="Part-time"
+                title="Intermediate Track"
                 items={[
-                  { icon: Calendar, text: "10 months" },
-                  { icon: Clock, text: "20–25 hours/week" },
+                  { icon: Calendar, text: "7 months" },
+                  { icon: Clock, text: "12-15 hours/week" },
                   {
                     icon: CheckCircle,
                     iconColor: "text-green-600",
                     text: '<span class="text-green-600 font-medium">Flexible</span> schedule to fit your life',
                   },
-                  {
-                    icon: GraduationCap,
-                    text: "Learning and career support",
-                    subpoints: [
-                      'Career prep begins <span class="text-red-500 font-medium">three months in</span>',
-                      "Weekly live sessions and regular office hours",
-                    ],
-                  },
+                  // {
+                  //   icon: GraduationCap,
+                  //   text: "Best if you are working or studying full time",
+                  //   subpoints: [
+                  //     ,
+                  //     ,
+                  //     ,
+                  //     ,
+                  //     ,
+                  //     // 'Career prep begins <span class="text-red-500 font-medium">three months in</span>',
+                  //     // "Weekly live sessions and regular office hours",
+                  //   ],
+                  // },
+                  { icon: Notebook, text: "Flexible deadlines with full human mentor support" },
+                  { icon: CirclePause, text: "Biweekly projects designed for working professionals" },
+                  { icon: UserStar , text: "Up to 6 weeks of optional breaks" },
+                  { icon: HandCoins, text: "Optional externship-style project for real-world experience" },
+                  { icon: HeartHandshake, text: "Personalized 1:1 career coaching during job search" },
                   { icon: BookOpen, text: "Learn at your own pace" },
                 ]}
               />
