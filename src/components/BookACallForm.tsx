@@ -12,72 +12,84 @@ import { Rhombus } from "./DesignDivs";
 import { FaCircleCheck } from "react-icons/fa6";
 export default function BookACallForm() {
   return (
-    <div
-      id="book-a-call"
-      className="relative w-full sm:w-7/10 flex sm:grid sm:grid-cols-2 sm:gap-10 sm:px-14 flex-col items-center sm:items-stretch sm:justify-evenly bg-[#d35723] shadow-2xl  p-6 py-10 rounded-2xl my-10"
-    >
-      <Rhombus background="#d35723" />
-      <div className="sm:basis-2/5 h-fit">
-        <div className="h-4/10 sm:h-2/10 my-5 flex justify-center">
-          <Image
-            alt=""
-            src={advisorImage}
-            width={100}
-            height={100}
-            className="h-full w-auto"
-          />
-        </div>
-        <div className="text-4xl sm:text-6xl mb-10 text-center sm:text-start w-full sm:w-9/10 font-semibold">
-          Book a call with advisor by 23rd October
-        </div>
-        <div className="hidden sm:flex items-start justify-between space-x-5 font-semibold text-lg">
-          <div>
+    <div className=" bg-[#d35723] shadow-2xl  p-6 py-10 rounded-2xl my-10 relative">
+      <div
+        id="book-a-call"
+        className=" w-full flex sm:grid sm:grid-cols-2 sm:gap-10 sm:px-14 flex-col items-center sm:items-stretch sm:justify-evenly"
+      >
+        <Rhombus background="#d35723" />
+        <div className="sm:basis-2/5 h-fit">
+          <div className="h-4/10 sm:h-2/10 my-5 flex justify-center">
+            <Image
+              alt=""
+              src={advisorImage}
+              width={100}
+              height={100}
+              className="h-full w-auto"
+            />
+          </div>
+          <div className="text-4xl sm:text-6xl mb-10 text-center sm:text-start w-full sm:w-9/10 font-semibold">
+            Book a call with an advisor by November 25th to take 12.5% off your
+            tuition!
+          </div>
+          <div className="hidden sm:flex items-start justify-between space-x-5 font-semibold text-lg">
             <div>
+              <div>
+                <FaCircleCheck />
+              </div>
+              <div>Guarantee: Job or 100% money back</div>
+            </div>
+            <div>
+              <div>
+                <FaCircleCheck />
+              </div>
+
+              <div>No IT or STEM background needed</div>
+            </div>
+            <div>
+              <div>
+                <FaCircleCheck />
+              </div>
+
+              <div>Fully flexible with personal support</div>
+            </div>
+          </div>
+        </div>
+        <div className="sm:basis-2/5 rounded-2xl mt-8 sm:mt-0 bg-white">
+          {" "}
+          <ContactForm />{" "}
+        </div>
+        <div className="flex flex-col mt-10 sm:hidden items-stretch text-center justify-between space-y-5 font-semibold text-lg">
+          <div>
+            <div className="flex items-center justify-center mt-5 mb-2">
               <FaCircleCheck />
             </div>
             <div>Guarantee: Job or 100% money back</div>
           </div>
           <div>
-            <div>
+            <div className="flex items-center justify-center my-5 mb-2">
               <FaCircleCheck />
             </div>
 
             <div>No IT or STEM background needed</div>
           </div>
           <div>
-            <div>
+            <div className="flex items-center justify-center my-5 mb-2">
               <FaCircleCheck />
             </div>
 
-            <div>Flexible program with personal support</div>
+            <div>Fully flexible with personal support</div>
           </div>
         </div>
       </div>
-      <div className="sm:basis-2/5 rounded-2xl mt-8 sm:mt-0 bg-white">
-        {" "}
-        <ContactForm />{" "}
+      <div className="text-gray-800 font-semibold text-sm mt-10 text-center">
+        This enrollment benefit applies to the Software Engineering, AI &
+        Full-Stack program.
       </div>
-      <div className="flex flex-col mt-10 sm:hidden items-stretch text-center justify-between space-y-5 font-semibold text-lg">
-        <div>
-          <div className="flex items-center justify-center mt-5 mb-2">
-            <FaCircleCheck />
-          </div>
-          <div>Guarantee: Job or 100% money back</div>
-        </div>
-        <div>
-          <div className="flex items-center justify-center my-5 mb-2">
-            <FaCircleCheck />
-          </div>
 
-          <div>No IT or STEM background needed</div>
-        </div>
-        <div>
-          <div className="flex items-center justify-center my-5 mb-2">
-            <FaCircleCheck />
-          </div>
-
-          <div>Flexible program with personal support</div>
-        </div>
+      <div className="text-gray-800 font-semibold text-sm text-center">
+        Available only for new learners who complete their career call and
+        finish the admission steps within the enrollment window.
       </div>
     </div>
   );

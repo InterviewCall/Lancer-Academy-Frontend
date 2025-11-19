@@ -39,6 +39,8 @@ import {
 } from "lucide-react";
 import { FaLink } from "react-icons/fa6";
 import AIToolsSection from "@/components/AiToolsSection";
+import GetDiscount from "@/components/GetDiscount";
+// import ReviewReport from "@/components/ReviewReport";
 
 const companyImages = [
   { id: 1, src: "/companies/Mask-group-1.svg" },
@@ -333,6 +335,10 @@ export default function Page() {
             ))}
           </div>
 
+          <GetDiscount />
+
+          {/* <ReviewReport /> */}
+
           <div className="w-full flex items-center justify-center">
             <div className="w-9/10 sm:w-6/10 flex items-center justify-center">
               <Image
@@ -397,31 +403,29 @@ export default function Page() {
 
           <SyllabusModules />
           <BookACallReminder
-            text="Ready to learn the skills that will get you into tech? Book a call with
-                  one of our career advisors!"
+            heading="Ready to start your journey into tech?" subHeading="Talk to a Lancrs Academy career advisor and discover the path that’s right for you."
           />
           <div className="w-7/10 flex flex-col items-center text-5xl sm:text-6xl font-bold my-10  sm:leading-20 tracking-tighter">
             <div className="flex items-center justify-center">
               <span>1.1K+</span>
-              <span className="sm:px-5 h-10 sm:h-16 w-10 sm:w-16 ">
-                <Image
-                  alt=""
-                  src={"./heart.svg"}
-                  height={100}
-                  width={100}
-                  className="h-full w-auto"
-                />
-              </span>
+              <Image
+                alt=""
+                src={"./heart.svg"}
+                height={100}
+                width={100}
+                className="h-full w-auto"
+              />
+
               <span>Alumni.</span>
             </div>
             <div className="flex gap-3 items-center justify-center">
               <div className="-rotate-12">
                 <PercentageBadge value="80%" textSize="3xl" />
               </div>
-              <div className="sm:block hidden ">From a non STEM </div>
-              <div className="block sm:hidden"> from </div>
+              <div className="sm:block hidden ">came from a non-CSE/IT </div>
+              <div className="block sm:hidden"> came from a  </div>
             </div>
-            <div className="sm:hidden block">a non stem</div>
+            <div className="sm:hidden block">non-CSE/IT </div>
             <div>background</div>
           </div>
           <SuccessStoryBanner
@@ -430,7 +434,7 @@ export default function Page() {
             quote="
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto vel dolorum, quia eum deleniti quisquam animi ."
           />
-          <div className="flex sm:grid sm:grid-cols-3 gap-4 overflow-x-auto sm:overflow-visible max-w-full sm:max-w-65/100 scrollbar-hide">
+          <div className="flex sm:grid sm:grid-cols-3 gap-4 overflow-x-auto sm:overflow-visible max-w-full  scrollbar-hide">
             <SuccessStoryCard
               before="Track Driver"
               image="/testimonial_LA.png"
@@ -453,18 +457,19 @@ export default function Page() {
               quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
             />
           </div>
+
           <div className="hidden sm:block text-center my-20 font-bold text-2xl sm:text-6xl">
-            <div>4.8/5 across 1,200+ reviews</div>
-            <div>on trusted platforms</div>
+            <div>4.8/5 across 2,100+ verified reviews</div>
+            <div>Trusted by learners on leading global platforms</div>
           </div>
 
           <div className="block sm:hidden text-center my-20 font-bold text-3xl leading-6.5">
             <div>4.8/5 across </div>
-            <div>1,200+ reviews on</div>
-            <div>trusted platforms</div>
+            <div>2,100+ verified reviews on</div>
+            <div>leading global platforms</div>
           </div>
 
-          <BookACallReminder text="Ready to start with one of the highest-rated bootcamps in the India? Book a call today!" />
+          <BookACallReminder heading="Ready to start your journey into tech?" subHeading="Talk to a Lancrs Academy career advisor today." />
           <FreeBonusCourse />
 
           <MoneyBackGuaranteeBannerLaptop />

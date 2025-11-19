@@ -11,7 +11,7 @@ export default function SuccessStoryBanner(props: TestimonialCardProps) {
   const { image, name, quote } = props;
 
   return (
-    <div className="bg-white my-10 rounded-2xl shadow-sm border border-gray-200 px-0 sm:px-12 py-24 text-center w-full sm:w-65/100">
+    <div className="bg-white my-10 rounded-2xl shadow-sm border border-gray-200 px-0 sm:px-12 py-24 text-center w-full">
       {/* Avatar */}
       <Image
         src={image}
