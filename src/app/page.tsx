@@ -67,7 +67,7 @@ export default function Page() {
     <div className="bg-red-50 flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-1 flex justify-center min-h-screen bg-red-50 z-[1]">
-        <div className="w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 xl:px-0 mx-auto text-black bg-red-50">
+        <div className="w-full max-w-screen-xl sm:px-6 lg:px-8 xl:px-0 mx-auto text-black bg-red-50">
           <HeroSection />
           <div className="hidden w-[200px] h-[500px] md:w-[760px] md:h-[100px] border bg-red-500">
 
@@ -112,7 +112,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full tracking-tighter text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-5 sm:px-10">
+          <div className="w-full tracking-tighter text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-2 sm:px-10">
             <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-2">
               Become a Software Engineer
             </div>
@@ -166,9 +166,9 @@ export default function Page() {
 
           <FlexCard />
 
-          <div className="my-10 w-full text-center text-5xl font-bold">
-            <div className="w-full flex justify-center">
-              <div>
+          <div className="my-10 w-full text-center text-5xl font-bold max-md:px-2">
+            <div className="w-full flex justify-center max-md:text-[30px] font-semibold">
+              <div className="max-md:px-6">
                 <div>Select the pace that fits your life</div>
                 <div>and goals—both tracks</div>
                 <div>
@@ -313,11 +313,11 @@ export default function Page() {
 
           <AIToolsSection />
 
-          <div className="font-semibold text-4xl my-10 w-full text-center">
+          <div className="font-semibold text-4xl my-10 w-full text-center max-md:px-4">
             Our grads get great jobs at top startups and leading tech companies
           </div>
 
-          <div className="flex flex-wrap justify-center w-full my-10 gap-6 sm:gap-10">
+          <div className="flex flex-wrap justify-center w-full max-md:px-7 my-10 gap-6 sm:gap-10">
             {/* <Image
               alt=""
               src={"/allcompanies.svg"}
@@ -343,7 +343,7 @@ export default function Page() {
           {/* <ReviewReport /> */}
 
           <div className="w-full flex items-center justify-center">
-            <div className="w-9/10 sm:w-6/10 flex items-center justify-center">
+            <div className="w-full sm:w-6/10 flex items-center justify-center">
               <Image
                 alt=""
                 src={"/onlinetrainingandsupport_3.svg"}
@@ -362,9 +362,10 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full text-center my-10 rounded-4xl bg-white pt-10 px-2 sm:px-10 sm:p-10 sm:pb-0 pb-0 flex flex-col items-center">
+          <div className="max-md:pl-2 max-md:pr-5">
+            <div className="w-full relative text-center my-10 rounded-4xl max-md:rounded-2xl bg-white pt-16 px-6 sm:px-10 sm:p-10 sm:pb-0 pb-0 flex flex-col items-center">
             <div className="font-[600] text-5xl mb-2 w-full ">
-              <div>
+              <div className="max-md:text-3xl">
                 <div>All-in-one flexible learning</div>
                 <div>experience</div>
               </div>
@@ -394,6 +395,7 @@ export default function Page() {
                 className=" absolute sm:static bottom-0 w-auto sm:w-full h-40 sm:h-auto max-w-none"
               />
             </div>
+          </div>
           </div>
 
           <TutorSection />

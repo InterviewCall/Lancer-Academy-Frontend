@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function StatsAfterCourse() {
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3 items-stretch">
+    <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3 items-stretch max-md:px-4">
       <div className="flex items-end justify-end w-full ">
         <Image
           alt=""
@@ -22,7 +22,7 @@ export default function StatsAfterCourse() {
         </div> */}
         <div className="absolute font-medium w-8/10 rounded-md top-[95%] md:top-[24%] text-start md:text-center bg-[#6cc989] -right-[0%] md:-right-[64%] text-xs p-3">
           <div className="relative">
-            <div className="absolute translate-y-[1px] top-[95%] md:-top-[49%] right-[75%] md:right-[75%]">
+            <div className="absolute md:block hidden translate-y-[1px] top-[95%] md:-top-[49%] right-[75%] md:right-[75%]">
               <Image
                 alt=""
                 src={"/green_top_arrow.svg"}

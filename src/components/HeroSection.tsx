@@ -248,7 +248,7 @@ export default function HeroSection() {
   }, [isVideoActive]);
 
   return (
-    <section className="flex flex-col md:flex-row items-start justify-between gap-10 mt-10 pt-14 mb-10">
+    <section className="flex flex-col md:flex-row items-start justify-between gap-10 mt-10 pt-14 mb-10 max-md:px-6">
       {/* TEXT BLOCK */}
       <div className="order-1 md:order-2 md:basis-[55%] w-full">
         {/* top tag bar */}

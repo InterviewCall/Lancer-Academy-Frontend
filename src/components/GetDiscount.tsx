@@ -4,7 +4,12 @@ import { Rhombus } from "./DesignDivs";
 
 export default function GetDiscount() {
     return (
-        <div className="relative my-15 w-full py-15 flex flex-col items-center rounded-3xl text-white font- text-5xl tracking-tight bg-black">
+        <div className="relative my-15 w-full py-15 flex flex-col items-center md:rounded-3xl text-white font- text-5xl tracking-tight bg-[#1a1a1a]">
+            <div className="absolute -top-[4%]">
+                <svg className="cta-block__decoration" width="72" height="23" viewBox="0 0 72 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 23C21.4525 23 31.7687 7.26072 34.9167 1.27403C35.3384 0.472241 36.6616 0.472241 37.0833 1.27403C40.2313 7.26072 50.5475 23 72 23H0Z" fill="#1a1a1a"></path>
+            </svg>
+            </div>
                 <Rhombus background="#000000" />
                 <Image alt="" src={advisorImage} width={150} height={150} className="h-full w-auto my-10"/>
             <div>

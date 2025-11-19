@@ -9,7 +9,7 @@ export default function GuaranteeBar() {
   ];
 
   return (
-    <div className="w-full sm:w-full relative flex justify-center mb-30">
+    <div className="w-full sm:w-full relative flex justify-center mb-30 max-md:px-2">
       <div className="w-full flex items-center justify-center bg-white rounded-xl shadow-sm py-6 px-6">
         <div className="w-fit sm:w-full sm:flex flex-wrap justify-start  md:justify-around items-center gap-y-3 ">
           {items.map((text, index) => (

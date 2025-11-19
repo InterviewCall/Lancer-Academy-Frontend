@@ -39,7 +39,7 @@ const techSkills = [
 export default function FlexCard() {
   return (
     <div className="w-full">
-      <div className="w-full text-center my-10 rounded-4xl bg-white p-8 py-15 md:p-7 lg:px-10 flex flex-col items-center">
+      <div className="w-full text-center my-10 rounded-2xl bg-white p-8 md:p-7 lg:px-10 flex flex-col items-center">
         <div className="text-3xl sm:text-5xl text-start sm:text-center font-semibold mb-5">
           You after lancrs academy
         </div>
@@ -57,7 +57,7 @@ export default function FlexCard() {
                 <div className="flex items-center justify-center gap-3">
                   <div className="flex items-center justify-start gap-1">
                     {" "}
-                    <FaLinkedin /> <div>Linked in</div>{" "}
+                    <FaLinkedin /> <div>LinkedIn</div>{" "}
                   </div>
                   <div className="flex items-center justify-start gap-1">
                     <FaGithub /> <div> Github</div>
@@ -66,8 +66,8 @@ export default function FlexCard() {
               </div>
             </div>
             <div className="sm:hidden text-start text-xl font-medium mt-10 sm:mt-0 mb-2 flex items-center gap-x-2">
-              <div>Expected Salary:</div>{" "}
-              <div className="text-3xl">₹6,00,000 - ₹12,00,000 </div>
+              <div className="md:text-3xl text-sm">Expected Salary:</div>{" "}
+              <div className="md:text-3xl text-xl">₹6,00,000 - ₹12,00,000 </div>
             </div>
 
             <div className="text-start my-5 mt-10">Hard skills</div>
@@ -157,7 +157,7 @@ export default function FlexCard() {
                   <div className="flex items-center justify-center gap-3">
                     <div className="flex items-center justify-start gap-1">
                       {" "}
-                      <FaLinkedin /> <div>Linked in</div>{" "}
+                      <FaLinkedin /> <div>LinkedIn</div>{" "}
                     </div>
                     <div className="flex items-center justify-start gap-1">
                       <FaGithub /> <div> Github</div>
