@@ -19,8 +19,8 @@ export default function HeroSection() {
     }
   }, [isVideoActive]);
   return (
-    <div className="md:flex items-start mb-10 justify-center mt-10 gap-x-15 w-9/10 md:w-full pt-14">
-      <div className="hidden md:basis-2/5 w-full md:flex items-center justify-center relative translate-y-2">
+    <div className="md:flex items-start mb-10 justify-center mt-10 gap-x-15 w-9/10 md:w-full lg:w-full pt-14">
+      <div className="hidden md:basis-2/5 md:flex items-center justify-center relative translate-y-2">
         {isVideoActive && (
           <video
             className="w-full h-full rounded-xl object-cover"
@@ -46,11 +46,11 @@ export default function HeroSection() {
             src={"/hero_image_2.svg"}
             width={60}
             height={60}
-            className="w-full max-h-full"
+            className="w-full h-full"
           />
         )}
       </div>
-      <div className="md:basis-3/5 w-auto">
+      <div className="md:basis-2/5 w-full">
         <div className="w-full flex justify-center md:justify-start">
           <div className="flex items-center justify-center md:justify-start gap-0 bg-[#B8E9C8]  my-[4px] rounded-lg overflow-clip w-fit md:w-fit px-1 md:px-[8px] divide-x divide-gray-500  ">
             <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 md:px-[4px]  ">
@@ -100,7 +100,7 @@ export default function HeroSection() {
             Choose between our <span className="font-semibold">4-month advanced</span> or <span className="font-semibold">7-month intermediate</span> track -- based on your schedule.
           </div>
         </div>
-        <div className="my-8 flex flex-col md:flex-row items-center gap-x-2 gap-y-2 md:items-stretch justify-evenly relative">
+        <div className="my-9 flex flex-col md:flex-row items-center gap-x-2 gap-y-2 md:items-stretch relative">
             <BookACallButton />
           <div className="flex justify-center ">
             <Image
@@ -108,11 +108,11 @@ export default function HeroSection() {
               src={"/Cohort start_2.svg"}
               width={100}
               height={100}
-              className="h-auto lg:h-[100%] w-9/10 lg:w-[100%] lg:-top-5 lg:right-15"
+              className="h-auto md:h-[100%] w-9/10 md:w-[100%] md:-top-5 md:right-15"
             />
           </div>
         </div>
-        <div className=" md:hidden w-full block items-center justify-center relative px-2 lg:px-0">
+        <div className="md:hidden w-full flex items-center justify-center relative px-2 md:px-0">
           {isVideoActive && (
             <video
               className="w-full h-full rounded-xl object-cover"
@@ -138,7 +138,7 @@ export default function HeroSection() {
               src={"/hero_image_2.svg"}
               width={60}
               height={60}
-              className="w-full h-auto"
+              className="w-full h-full"
             />
           )}
         </div>
