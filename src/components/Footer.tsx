@@ -9,70 +9,57 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="w-full sm:w-2/3 bg-white rounded-xl shadow-sm px-8 py-10 mt-10">
+    <footer className="w-full bg-white rounded-xl shadow-sm px-8 py-10 mt-10">
       <div className="grid grid-cols-1 sm:grid-cols-[2fr_1fr_1fr] gap-8 border-gray-200 pb-8">
+        {/* Programs */}
         <div>
           <h3 className="font-semibold text-gray-900 mb-4 text-xl">Programs</h3>
           <ul className="space-y-2 text-gray-700 text-lg">
-            <li>Part-time AI Automation bootcamp</li>
-            <li>Part-time AI & Machine Learning bootcamp</li>
-            <li>Part-time BI Analytics bootcamp</li>
-            <li>Part-time Cyber Security bootcamp</li>
-            <li>Part-time Quality Assurance bootcamp</li>
-            <li>Part-time Software Engineering bootcamp</li>
-            <li>Part-time UX/UI Design bootcamp</li>
-            <li>Free Intro to SQL</li>
-            <li>Can’t decide? Take a career quiz!</li>
+            <li>Intermediate Software Engineering Program (7 months)</li>
+            <li>Advanced Software Engineering Program (4 months)</li>
           </ul>
         </div>
 
+        {/* Why Lancrs Academy */}
         <div>
           <h3 className="font-semibold text-gray-900 mb-4 text-xl">
-            Why TripleTen
+            Why Lancrs Academy
           </h3>
           <ul className="space-y-2 text-gray-700 text-lg">
-            <li>Real industry experts</li>
-            <li>One-on-one support</li>
-            <li>Flexible payment options</li>
-            <li>1000+ successful graduates</li>
-            <li>2025 Outcomes report</li>
-            <li>Comparison</li>
-            <li>Student reviews</li>
+            <li>Learn from real industry professionals</li>
+            <li>One-on-one support & personalized guidance</li>
+            <li>Flexible and transparent payment options</li>
+            <li>Job-ready curriculum built for modern tech roles</li>
+            <li>1000+ students trained across our ecosystem</li>
+            <li>Outcomes-focused training</li>
+            <li>Student success stories</li>
           </ul>
 
           <div className="mt-4 text-lg text-gray-800">
             <p>
-              <span className="font-semibold">press@tripleten.com</span> <br />
-              For all media inquiries
+              <span className="font-semibold">support@academy.lancrs.com</span> <br />
+              For all student questions
             </p>
             <p className="mt-3">
-              <span className="font-semibold">support@tripleten.com</span> <br />
-              For all your questions
+              <span className="font-semibold">+91-00000-00000</span> <br />
+              11am–7:30pm IST, Mon–Sat
             </p>
           </div>
         </div>
 
+        {/* About Lancrs Academy */}
         <div>
           <h3 className="font-semibold text-gray-900 mb-4 text-xl">
-            About TripleTen
+            About Lancrs Academy
           </h3>
           <ul className="space-y-2 text-gray-700 text-lg">
-            <li>About</li>
+            <li>About us</li>
             <li>FAQ</li>
             <li>Support</li>
             <li>Careers</li>
-            <li>Podcast</li>
-            <li>For universities</li>
-            <li>Site map</li>
+            <li>Partnership for Colleges & Universities</li>
+            <li>Contact</li>
           </ul>
-
-          <div className="mt-4 text-lg text-gray-800">
-            <p>
-              <span className="font-semibold">+1 (800) 738-4461</span> <br />
-              8am–8pm ET, Mon–Thu <br />
-              9am–6pm ET, Fri–Sun
-            </p>
-          </div>
         </div>
       </div>
 
@@ -97,9 +84,9 @@ export default function Footer() {
           <a href="#">Manage cookies</a>
         </div>
 
-        <div className="sm:flex justify-between items-center  mt-10">
-          <div>© TripleTen, 2025</div>
-          <div>299 South Main, Suite 1300, Salt Lake City, UT 84101</div>
+        <div className="sm:flex justify-between items-center mt-10">
+          <div>© Lancrs Academy, 2025</div>
+          <div>India</div>
         </div>
       </div>
     </footer>

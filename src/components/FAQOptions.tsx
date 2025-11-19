@@ -11,7 +11,10 @@ export default function FAQOptions({
 }: {
   startingDivider?: boolean;
   heading: string;
-  content: string;
+  content?: {
+    subHeading: string;
+    subPoints: string[];
+  }[];
   endingDivider?: boolean;
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +33,20 @@ export default function FAQOptions({
           <Plus size={30} />
         </div>
       </div>
-      {isOpen && <div className="pb-4 sm:pb-5 text-base sm:text-xl hover:cursor-pointer">{content}</div>}
+      {isOpen && <div className="pb-4 sm:pb-5 text-base sm:text-xl hover:cursor-pointer">
+        {
+          content?.map((item, index) => (
+            <div key={index}>
+              <div className="text-2xl mb-2">{item.subHeading}</div>
+              <ul className="pl-10">
+                {item.subPoints?.map((point, idx) => (
+                  <li key={idx} className="mb-2 list-disc ">{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>}
       {endingDivider && <FAQDivider />}
     </div>
   );
@@ -48,7 +64,7 @@ interface PercentageBadgeProps {
   textSize?: string;
 }
 
-export const PercentageBadge: React.FC<PercentageBadgeProps> = ({ value, textSize="5xl" }) => {
+export const PercentageBadge: React.FC<PercentageBadgeProps> = ({ value, textSize = "5xl" }) => {
   return (
     <div className={`inline-block bg-[#FF9363] text-black font-extrabold text-${textSize} px-3 sm:px-5 py-1.5 sm:py-2 rounded-xl shadow-[4px_4px_0_#e26f3e]`}>
       {value}
