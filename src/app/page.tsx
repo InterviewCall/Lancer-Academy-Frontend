@@ -66,8 +66,8 @@ export default function Page() {
   return (
     <div className="bg-red-50 flex flex-col min-h-screen">
       <Navbar />
-      <div className="flex-1 flex justify-center h-full bg-red-50 z-[1]">
-        <div className=" w-[400px] md:w-[726px] lg:w-[950px] h-full flex flex-col items-center text-black bg-red-50">
+      <div className="flex-1 flex justify-center min-h-screen bg-red-50 z-[1]">
+        <div className="w-[90%] max-w-screen-xl px-4 sm:px-6 lg:px-8 xl:px-0 flex flex-col items-center text-black bg-red-50">
           <HeroSection />
           <div className="hidden w-[200px] h-[500px] md:w-[760px] md:h-[100px] border bg-red-500">
 
