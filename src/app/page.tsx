@@ -67,8 +67,11 @@ export default function Page() {
     <div className="bg-red-50 flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-1 flex justify-center h-full bg-red-50 z-[1]">
-        <div className="w-80/100 md:w-85/100 lg:w-80/100 h-full flex flex-col items-center text-black bg-red-50">
+        <div className=" w-[400px] md:w-[726px] lg:w-[950px] h-full flex flex-col items-center text-black bg-red-50">
           <HeroSection />
+          <div className="hidden w-[200px] h-[500px] md:w-[760px] md:h-[100px] border bg-red-500">
+
+          </div>
 
           <GuaranteeBar />
           <div className="w-9/10 "></div>
@@ -95,14 +98,14 @@ export default function Page() {
               className="w-full h-full lg:hidden block"
             />
             <div className="absolute hover:cursor-pointer bottom-[5%] sm:bottom-[10%] flex items-center justify-center w-full">
-              <button className="rounded-2xl hidden sm:flex justify-center items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-7 py-2 font-[500] text-md  text-lg">
+              <button className="rounded-2xl hidden lg:flex justify-center items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-7 py-2 font-[500] text-md  text-lg">
                 <div>
                   All numbers are from the latest Lancrs Academy Graduate
                   Outcomes Report
                 </div>{" "}
                 <FaLink />
               </button>
-              <button className="rounded-lg flex sm:hidden justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-sm">
+              <button className="rounded-lg flex lg:hidden justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-sm">
                 <div>2024 graduate outcomes report</div>
                 <FaLink />
               </button>
@@ -119,7 +122,7 @@ export default function Page() {
             </div>
 
             <div className="w-full flex justify-center">
-              <div className="w-8/10 flex flex-col sm:flex-row sm:items-start items-center justify-center sm:justify-start text gap-x-15 my-10 text-center">
+              <div className="w-full lg:w-8/10 flex flex-col md:flex-row md:items-start items-center justify-center sm:justify-start text gap-x-15 my-10 text-center">
                 <div className="text-lg font-semibold w-2/3 sm:w-5/10 my-5 flex flex-col items-center justify-start">
                   <FaCircleCheck />
                   <div>Our guarantee:</div>
@@ -173,7 +176,7 @@ export default function Page() {
                 </div>
               </div>
             </div>{" "}
-            <div className="my-8 justify-center items-end sm:items-stretch sm:grid grid-cols-2 space-y-3 sm:space-y-0 gap-3">
+            <div className="my-8 justify-center items-end sm:items-stretch md:px-10 lg:px-0 gap-y-5 lg:grid grid-cols-2 space-y-3  gap-3">
               {/* <Image
                 className="w-full h-fit"
                 alt=""
@@ -429,36 +432,33 @@ export default function Page() {
             <div>background</div>
           </div>
           <SuccessStoryBanner
-            image="/testimonial_LA.png"
-            name="John Doe"
-            quote="
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto vel dolorum, quia eum deleniti quisquam animi ."
+            currentRole="SDE-2 — Reputed International Tech Company"
+            image="/alumni_lancrs_1.svg"
+            name="Subhadip De"
+            quote="With the right direction, mock interview support, and a clear learning roadmap, Shubhadeep achieved a 110% salary hike and successfully moved into a global technology environment."
           />
           <div className="flex sm:grid sm:grid-cols-3 gap-4 overflow-x-auto sm:overflow-visible max-w-full  scrollbar-hide">
             <SuccessStoryCard
-              before="Track Driver"
-              image="/testimonial_LA.png"
-              name="John Doe"
-              now="Full Stack Developer"
-              quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
+              image="/alumni_lancrs_2.svg"
+              name="Raunak Goswami"
+              now="SDE-2 — Reputed International Tech Company"
+              quote="With structured practice and project-based learning, I strengthened my fundamentals and approached interviews with clarity. This helped me transition into a strong engineering role."
             />
             <SuccessStoryCard
-              before="Track Driver"
-              image="/testimonial_LA.png"
-              name="John Doe"
-              now="Full Stack Developer"
-              quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
+              image="/alumni_lancrs_3.svg"
+              name="Shivansh Yashasvi"
+              now="SDE-1 —Amazon"
+              quote="The focused preparation, interview practice, and consistent mentor support helped me perform confidently in multiple hiring processes. This led to securing offers from Amazon, ION, and Cisco."
             />
             <SuccessStoryCard
-              before="Track Driver"
-              image="/testimonial_LA.png"
-              name="John Doe"
-              now="Full Stack Developer"
-              quote="The time commitment was another big thing because I didn't have to quit my job or anything. I could keep working those 40 hours I was, and then also try to fit it into my schedule while I was watching my kids."
+              image="/alumni_lancrs_4.svg"
+              name="Abhinay Reddy"
+              now="Software Engineer — Valuefy, Knolskape"
+              quote="Learning with structured guidance helped me improve my problem-solving skills and build real projects that showcased my capability. This played a key role in securing offers from Valuefy and Knolskape."
             />
           </div>
 
-          <div className="hidden sm:block text-center my-20 font-bold text-2xl sm:text-6xl">
+          <div className="hidden sm:block text-center my-20 font-semibold text-2xl sm:text-5xl tracking-tight">
             <div>4.8/5 across 2,100+ verified reviews</div>
             <div>Trusted by learners on leading global platforms</div>
           </div>

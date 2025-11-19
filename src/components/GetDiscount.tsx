@@ -10,11 +10,17 @@ export default function GetDiscount() {
             <div>
                 Book a call with an advisor 
             </div>
-            <div>
+            <div className="hidden lg:block">
                 by November 25th and get 12.5% off your
             </div>
-            <div>
+            <div className="hidden lg:block">
                 tuition.
+            </div>
+            <div className="lg:hidden md:block hidden">
+                by November 25th and get 
+            </div>
+            <div className="lg:hidden md:block hidden">
+                12.5% off your tuition.
             </div>
             <button className="rounded-xl mt-10 px-7  py-3 text-xl tracking-normal bg-green-300 text-black font-semibold mb-10 hover:cursor-pointer hover:bg-green-400">
                 Claim Offer

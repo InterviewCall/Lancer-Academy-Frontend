@@ -52,24 +52,24 @@ export default function HeroSection() {
       </div>
       <div className="md:basis-2/5 w-full">
         <div className="w-full flex justify-center md:justify-start">
-          <div className="flex items-center justify-center md:justify-start gap-0 bg-[#B8E9C8]  my-2 rounded-lg overflow-clip w-fit md:w-fit px-1 md:px-3 divide-x divide-gray-500  ">
-            <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 md:px-2 my-2 ">
+          <div className="flex items-center justify-center md:justify-start gap-0 bg-[#B8E9C8]  my-[4px] rounded-lg overflow-clip w-fit md:w-fit px-1 md:px-[8px] divide-x divide-gray-500  ">
+            <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 md:px-[4px]  ">
               <FaCircleHalfStroke
-                size={22}
+                size={15}
                 className="inline-block pr-1 lg:pr-2 "
               />
 
-              <div className="flex items-center justify-around text-sm lg:text-[16px]">
+              <div className="flex items-center justify-around text-sm md:text-[10px]">
                 <div className="text-center">Intermediate:</div>
                 <div className="text-[#318f51] ml-1">7 months</div>
               </div>
             </div>
 
             <div className="text-xs font-semibold bg-[#B8E9C8] flex items-stretch justify-evenly w-fit px-1 lg:px-2 my-2 ">
-              <WiMoonFull size={22} className="inline-block pr-1 lg:pr-2 " />
+              <WiMoonFull size={15} className="inline-block pr-1 lg:pr-2 " />
               {/* <WiMoonFull size={17} className="inline-block pr-1 lg:pr-2 lg:hidden" /> */}
 
-              <div className="flex items-center justify-around text-sm lg:text-[16px]">
+              <div className="flex items-center justify-around text-sm md:text-[10px]">
                 <div className="text-center">Advanced:</div>
                 <div className="text-[#318f51] ml-1">4 months</div>
               </div>
@@ -84,7 +84,7 @@ export default function HeroSection() {
         <div className="relative">
           {/* <div className="pointer-events-none absolute inset-x-0 -top-6 h-64 lg:h-72
                   mx-4 rounded-[48px] bg-[#F8D2C1]/35 blur-2xl z-[1]"></div> */}
-          <div className="text-center md:text-start text-6xl md:text-[90px] lg:text-[120px] font-[700] pt-5 leading-[82%] z-[10]">
+          <div className="text-center md:text-start text-6xl text-[30px] md:text-[40px] lg:text-[60px] font-[700] pt-5 leading-[82%] z-[10]">
             Full Stack and AI Software Engineering Program
           </div>
 
@@ -92,7 +92,7 @@ export default function HeroSection() {
         </div>
         {/* className="font-[400] text-center lg:text-start leading-[100%] tracking-[-1.5%] px-10 lg:px-0 w-full text-lg lg:text-2xl" */}
         {/* className="font-[400] text-center lg:text-start leading-[100%] tracking-[-1.5%] px-10 lg:px-0 w-full text-lg lg:text-[clamp(1.5rem,2vw,150rem)]" */}
-        <div className="font-[400] text-center lg:text-start leading-[1] tracking-[-1.5%] pt-8 px-10 lg:px-0 w-full text-lg lg:text-[20px]">
+        <div className="font-[400] text-center md:text-start leading-[1] tracking-[-1.5%] pt-5 lg:pt-8 px-10 sm:px-0 w-full text-lg md:text-[15px] lg:text-[18px]">
           Join{" India's"} most practical job-oriented Softwware Engineering program designed for 
           <span className="font-semibold"> 12 LPA roles </span>
           Master full-stack development + AI skills through real industry projects built for Lancers Academy, InterviewCall, and WorkR

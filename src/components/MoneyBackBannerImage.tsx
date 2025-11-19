@@ -37,7 +37,7 @@ export function MoneyBackBannerImageMobile() {
       <div className="z-10 relative">
         <Image
           alt=""
-          src={"/g2v2.svg"}
+          src={"/moneybackguaranteeMobilePerson.svg"}
           width={300}
           height={300}
           className="z-10"

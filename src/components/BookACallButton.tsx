@@ -8,7 +8,7 @@ export default function BookACallButton({
   text?: string;
 }) {
   return (
-    <button onClick={()=> {handleClickBookACallButton()}} className="px-12 sm:px-15 hover:cursor-pointer py-3 bg-[linear-gradient(180deg,#3A3A3A_0%,#1A1A1A_80%)] text-white text-xl sm:text-2xl rounded-xl mt-0">
+    <button onClick={()=> {handleClickBookACallButton()}} className="px-[20px] md:px-[24px] lg:px-[21px] hover:cursor-pointer py-[10px] md:py-[11px] lg:py-[15px] bg-[linear-gradient(180deg,#3A3A3A_0%,#1A1A1A_80%)] text-white text-sm lg:text-xl rounded-xl mt-0">
       {text}
     </button>
   );
