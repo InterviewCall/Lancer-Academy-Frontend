@@ -37,7 +37,7 @@ export default function Navbar() {
             src={"/lancersFullLogo.png"}
             height={90}
             width={90}
-            className="w-full h-auto"
+            className="w-[150px] h-auto"
           />
         </div>
         {/* <div className="rounded-full border px-3 py-1 hidden sm:flex items-center gap-2 font-semibold text-sm border-gray-400 shadow-2xl">
@@ -67,7 +67,8 @@ export default function Navbar() {
         </button>
         {isNavbarOpen ? (
           <IoMdClose
-            className="block sm:hidden h-4 w-4 hover:cursor-pointer"
+          size={30}
+            className="border block sm:hidden h-4 w-4 hover:cursor-pointer"
             onClick={() => setIsNavbarOpen((prev) => !prev)}
           />
         ) : (
@@ -81,13 +82,13 @@ export default function Navbar() {
         <div className="absolute sm:hidden z-15 bg-white h-full w-full top-0 right-0">
           <div className="flex flex-col w-full h-full">
             <div className="flex items-center justify-between p-2 px-5 ">
-              <div>
+              <div className="pl-2 py-1">
                 <Image
                   alt=""
                   src={"/lancersFullLogo.png"}
                   height={90}
                   width={90}
-                  className="w-full h-auto"
+                  className="w-[150px] h-auto"
                 />
               </div>
               <IoMdClose
@@ -170,7 +171,7 @@ export default function Navbar() {
         </button>
         {isNavbarOpen ? (
           <IoMdClose
-            className="block text-black sm:hidden h-4 w-4 hover:cursor-pointer"
+            className="border block text-black sm:hidden h-4 w-4 hover:cursor-pointer"
             onClick={() => setIsNavbarOpen((prev) => !prev)}
           />
         ) : (

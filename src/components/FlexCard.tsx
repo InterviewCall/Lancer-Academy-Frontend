@@ -38,105 +38,203 @@ const techSkills = [
 
 export default function FlexCard() {
   return (
-    <div className="w-full text-center my-10 rounded-4xl bg-white p-8 py-15 sm:p-15 flex flex-col items-center">
-      <div className="text-3xl sm:text-5xl text-start sm:text-center font-semibold mb-5">
-        You after lancrs academy
-      </div>
+    <div className="w-full">
+      <div className="w-full text-center my-10 rounded-4xl bg-white p-8 py-15 md:p-7 lg:px-10 flex flex-col items-center">
+        <div className="text-3xl sm:text-5xl text-start sm:text-center font-semibold mb-5">
+          You after lancrs academy
+        </div>
+        {/* large and above */}
+        <div className="grid-cols-1 md:hidden bg-white lg:grid lg:grid-cols-[4fr_2fr_2fr] gap-4">
+          <div className=" sm:p-4">
+            <div className=" flex items-center justify-start gap-4">
+              <div>
+                <Image alt="" src={"/pfp1.svg"} width={110} height={110} />
+              </div>
+              <div className="sm:mx-3">
+                <div className="text-lg sm:text-2xl font-semibold">
+                  Software Engineer
+                </div>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="flex items-center justify-start gap-1">
+                    {" "}
+                    <FaLinkedin /> <div>Linked in</div>{" "}
+                  </div>
+                  <div className="flex items-center justify-start gap-1">
+                    <FaGithub /> <div> Github</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="sm:hidden text-start text-xl font-medium mt-10 sm:mt-0 mb-2 flex items-center gap-x-2">
+              <div>Expected Salary:</div>{" "}
+              <div className="text-3xl">₹6,00,000 - ₹12,00,000 </div>
+            </div>
 
-      <div className="bg-white sm:grid sm:grid-cols-[4fr_2fr_2fr] gap-4">
-        <div className=" sm:p-4">
-          <div className=" flex items-center justify-start gap-4">
+            <div className="text-start my-5 mt-10">Hard skills</div>
+            <div className="flex flex-wrap gap-1 text-xs font-medium">
+              {techSkills.map((skill) => (
+                <div key={skill.Id} className="h-8">
+                  <SkillButton
+                    skillName={skill.skillName}
+                    skillImg={skill.skillImg}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className=" py-4 text-start text-sm">
+            <div className="mb-1 mt-5 sm:mt-0">Education</div>
+            <div className="font-semibold text-lg">
+              Lancrs Academy - Full Stack & AI Engineering Program
+            </div>
+            <div className="mb-5">Jan-Sept 2025</div>
+            <div className="mb-3 mt-10 sm:mt-14">Soft Skills</div>
+            <div className="flex flex-wrap gap-2 text-sm font-medium items-center">
+              <div className="bg-gray-200 rounded-md px-2 py-1 ">
+                {" "}
+                Problem Solving
+              </div>
+              <div className="bg-gray-200 rounded-md px-2 py-1 ">
+                {" "}
+                Communication
+              </div>
+              <div className="bg-gray-200 rounded-md px-2 py-1 ">
+                {" "}
+                Time management
+              </div>
+              <div className="bg-gray-200 rounded-md px-2 py-1 ">
+                {" "}
+                Project Management
+              </div>
+              <div className="bg-gray-200 rounded-md px-2 py-1 ">
+                {" "}
+                Adaptability
+              </div>
+
+              <div className="bg-gray-200 rounded-md px-2 py-1 text-sm">
+                {" "}
+                Teamwork
+              </div>
+            </div>
+          </div>
+          <div className="mt-10 sm:mt-0 sm:p-4 text-start">
+            <div className="hidden sm:block font-medium mt-10 sm:mt-0 mb-2">
+              Expected Salary
+            </div>
+            <div className="hidden sm:block font-semibold mb-5">
+              {" "}
+              ₹6,00,000 - ₹12,00,000
+            </div>
+            <div className="font-medium mb-2 mt-10 sm:mt-24 text-sm">
+              Projects
+            </div>
+            <div className="font-semibold">AI-Enhanced Web Platform</div>
+            <div className="text-gray-500 text-sm">
+              900+ hours of hands-on development in JavaScript, React.js, Node.js,
+              MySQL, REST APIs, Auth, Deployment
+            </div>
+            <div className="font-semibold mt-2">
+              AI Resume Optimizer {"(Full-Stack)"}
+            </div>
+            <div className="text-gray-500 text-sm">
+              Frontend + Backend + AI scoring engine + Dashboard
+            </div>
+          </div>
+        </div>
+        {/* {medium and above } */}
+        <div className="hidden md:block lg:hidden">
+          <div className="grid grid-cols-[3fr_2fr]">
+
             <div>
-              <Image alt="" src={"/pfp1.svg"} width={110} height={110} />
-            </div>
-            <div className="sm:mx-3">
-              <div className="text-lg sm:text-2xl font-semibold">
-                Software Engineer
+              <div className=" flex items-center justify-start gap-4">
+                <div>
+                  <Image alt="" src={"/pfp1.svg"} width={110} height={110} />
+                </div>
+                <div className="sm:mx-3">
+                  <div className="text-lg sm:text-2xl font-semibold">
+                    Software Engineer
+                  </div>
+                  <div className="flex items-center justify-center gap-3">
+                    <div className="flex items-center justify-start gap-1">
+                      {" "}
+                      <FaLinkedin /> <div>Linked in</div>{" "}
+                    </div>
+                    <div className="flex items-center justify-start gap-1">
+                      <FaGithub /> <div> Github</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center justify-center gap-3">
-                <div className="flex items-center justify-start gap-1">
+
+              <div className="text-start my-5 mt-10">Hard skills</div>
+              <div className="flex flex-wrap gap-1 text-xs font-medium">
+                {techSkills.map((skill) => (
+                  <div key={skill.Id} className="h-8">
+                    <SkillButton
+                      skillName={skill.skillName}
+                      skillImg={skill.skillImg}
+                    />
+                  </div>
+                ))}
+              </div>
+
+            </div>
+            <div>
+              <div className="hidden sm:block font-medium mt-10 sm:mt-0 mb-2">
+                Expected Salary
+              </div>
+              <div className="hidden sm:block font-semibold mb-5">
+                {" "}
+                ₹6,00,000 - ₹12,00,000
+              </div>
+              <div className="mb-3 mt-10 sm:mt-14">Soft Skills</div>
+              <div className="flex flex-wrap gap-2 text-sm font-medium items-center">
+                <div className="bg-gray-200 rounded-md px-2 py-1 ">
                   {" "}
-                  <FaLinkedin /> <div>Linked in</div>{" "}
+                  Problem Solving
                 </div>
-                <div className="flex items-center justify-start gap-1">
-                  <FaGithub /> <div> Github</div>
+                <div className="bg-gray-200 rounded-md px-2 py-1 ">
+                  {" "}
+                  Communication
+                </div>
+                <div className="bg-gray-200 rounded-md px-2 py-1 ">
+                  {" "}
+                  Time management
+                </div>
+                <div className="bg-gray-200 rounded-md px-2 py-1 ">
+                  {" "}
+                  Project Management
+                </div>
+                <div className="bg-gray-200 rounded-md px-2 py-1 ">
+                  {" "}
+                  Adaptability
+                </div>
+
+                <div className="bg-gray-200 rounded-md px-2 py-1 text-sm">
+                  {" "}
+                  Teamwork
                 </div>
               </div>
+
+
             </div>
           </div>
-          <div className="sm:hidden text-start text-xl font-medium mt-10 sm:mt-0 mb-2 flex items-center gap-x-2">
-            <div>Expected Salary:</div>{" "}
-            <div className="text-3xl">₹6,00,000 - ₹12,00,000 </div>
-          </div>
-
-          <div className="text-start my-5 mt-10">Hard skills</div>
-          <div className="flex flex-wrap gap-1 text-xs font-medium">
-            {techSkills.map((skill) => (
-              <div key={skill.Id} className="h-8">
-                <SkillButton
-                  skillName={skill.skillName}
-                  skillImg={skill.skillImg}
-                />
+          <div className="grid grid-cols-[1fr_5fr] text-start mt-5 ">
+            <div className="font-semibold mt-3">Projects</div>
+            <div>
+              <div className="font-semibold">AI-Enhanced Web Platform</div>
+              <div className="text-gray-500 text-sm">
+                900+ hours of hands-on development in JavaScript, React.js, Node.js,
+                MySQL, REST APIs, Auth, Deployment
               </div>
-            ))}
-          </div>
-        </div>
-        <div className=" py-4 text-start text-sm">
-          <div className="mb-1 mt-5 sm:mt-0">Education</div>
-          <div className="font-semibold text-lg">
-            Lancrs Academy - Full Stack & AI Engineering Program
-          </div>
-          <div className="mb-5">Jan-Sept 2025</div>
-          <div className="mb-3 mt-10 sm:mt-14">Soft Skills</div>
-          <div className="flex flex-wrap gap-2 text-sm font-medium items-center">
-            <div className="bg-gray-200 rounded-md px-2 py-1 ">
-              {" "}
-              Problem Solving
-            </div>
-            <div className="bg-gray-200 rounded-md px-2 py-1 ">
-              {" "}
-              Communication
-            </div>
-            <div className="bg-gray-200 rounded-md px-2 py-1 ">
-              {" "}
-              Time management
-            </div>
-            <div className="bg-gray-200 rounded-md px-2 py-1 ">
-              {" "}
-              Project Management
-            </div>
-            <div className="bg-gray-200 rounded-md px-2 py-1 ">
-              {" "}
-              Adaptability
+              <div className="font-semibold mt-2">
+                AI Resume Optimizer {"(Full-Stack)"}
+              </div>
+              <div className="text-gray-500 text-sm">
+                Frontend + Backend + AI scoring engine + Dashboard
+              </div>
             </div>
 
-            <div className="bg-gray-200 rounded-md px-2 py-1 text-sm">
-              {" "}
-              Teamwork
-            </div>
-          </div>
-        </div>
-        <div className="mt-10 sm:mt-0 sm:p-4 text-start">
-          <div className="hidden sm:block font-medium mt-10 sm:mt-0 mb-2">
-            Expected Salary
-          </div>
-          <div className="hidden sm:block font-semibold mb-5">
-            {" "}
-            ₹6,00,000 - ₹12,00,000
-          </div>
-          <div className="font-medium mb-2 mt-10 sm:mt-24 text-sm">
-            Projects
-          </div>
-          <div className="font-semibold">AI-Enhanced Web Platform</div>
-          <div className="text-gray-500 text-sm">
-            900+ hours of hands-on development in JavaScript, React.js, Node.js,
-            MySQL, REST APIs, Auth, Deployment
-          </div>
-          <div className="font-semibold mt-2">
-            AI Resume Optimizer {"(Full-Stack)"}
-          </div>
-          <div className="text-gray-500 text-sm">
-            Frontend + Backend + AI scoring engine + Dashboard
           </div>
         </div>
       </div>

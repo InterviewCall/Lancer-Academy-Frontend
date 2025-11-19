@@ -81,11 +81,11 @@ export default function SyllabusModules() {
   // const [courseContent, setCourseContent] = useState("Advanced");
 
   return (
-    <div className="w-full my-10  border-gray-400 bg-gray-100 rounded-xl px-10 py-15 space-y-1">
+    <div className="w-full my-10  border-gray-400 bg-gray-100 rounded-xl px-3 sm:px-10 py-15 space-y-1">
       <div className="text-center font-semibold text-5xl">
         Software Engineering Curriculum
       </div>
-      <div className="grid grid-cols-3 my-10 font-semibold text-xl">
+      <div className="grid sm:grid-cols-3 gap-y-10 my-10 font-semibold text-xl">
         <div className="flex flex-col items-center ">
           <FaRocket />
           <div>7 months of career</div>

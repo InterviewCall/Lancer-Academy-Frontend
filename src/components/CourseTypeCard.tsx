@@ -33,7 +33,7 @@ export default function CourseTypeCard({ title, items, recommended=false }: Part
           <li
             key={index}
             className={
-              "flex items-center gap-2 py-2 h-[110px] " +
+              "flex items-center gap-2 py-2 md:h-[100px] lg:h-[130px] " +
               (index === items.length - 1
                 ? "border-0 pb-0"
                 : "border-b border-gray-300 ")

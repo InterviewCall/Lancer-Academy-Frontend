@@ -199,7 +199,7 @@ function ContactForm() {
       <div>
         <button
           type="submit"
-          className="bg-black text-white px-4 py-2 hover:cursor-pointer rounded-lg w-full"
+          className="bg-black text-white px-4 py-2 hover:cursor-pointer mt-5 sm:mt-1 rounded-lg w-full"
         >
           Continue
         </button>
