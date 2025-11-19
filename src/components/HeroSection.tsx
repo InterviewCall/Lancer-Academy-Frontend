@@ -20,7 +20,7 @@ export default function HeroSection() {
   }, [isVideoActive]);
   return (
     <div className="flex flex-col md:flex-row items-start mb-10 justify-between mt-10 gap-10 pt-14">
-      <div className="hidden md:basis-2/5 md:flex items-center justify-center relative translate-y-2">
+      {/* <div className="hidden md:basis-2/5 md:flex items-center justify-center relative translate-y-2">
         {isVideoActive && (
           <video
             className="w-full h-full rounded-xl object-cover"
@@ -49,7 +49,36 @@ export default function HeroSection() {
             className="w-full h-full"
           />
         )}
-      </div>
+      </div> */}
+
+        <div className="hidden md:flex md:basis-[45%] lg:basis-[44%] items-center justify-center">
+          <div className="relative w-full max-w-[560px] lg:max-w-[600px] aspect-[3/4]">
+            {isVideoActive ? (
+              <video
+                className="absolute inset-0 w-full h-full rounded-xl object-cover"
+                src={heroSectionVideoUrl}
+                autoPlay
+                loop
+                ref={videoRef}
+              />
+            ) : (
+              <Image
+                alt=""
+                src="/hero_image_2.svg"
+                fill
+                className="rounded-xl object-cover"
+              />
+            )}
+
+            <button
+              className="absolute bottom-[10%] left-1/2 -translate-x-1/2 bg-[#65bd82] p-9 rounded-full flex items-center justify-center cursor-pointer"
+              onClick={() => setIsVideoActive(prev => !prev)}
+            >
+            {isVideoActive ? <FaPause size={30} /> : <FaPlay size={30} />}
+            </button>
+          </div>
+        </div>
+
       <div className="md:basis-3/5 w-full">
         <div className="w-full flex justify-center md:justify-start">
           <div className="flex items-center bg-[#B8E9C8] my-1 rounded-lg px-3 py-2 md:px-4 gap-4">
@@ -104,7 +133,7 @@ export default function HeroSection() {
             />
           </div>
         </div>
-        <div className="md:hidden w-full flex items-center justify-center relative px-2 md:px-0">
+        {/* <div className="md:hidden w-full flex items-center justify-center relative px-2 md:px-0">
           {isVideoActive && (
             <video
               className="w-full h-full rounded-xl object-cover"
@@ -133,7 +162,36 @@ export default function HeroSection() {
               className="w-full h-full"
             />
           )}
-        </div>
+        </div> */}
+
+          <div className="md:hidden w-full flex justify-center mt-6 px-3">
+            <div className="relative w-full max-w-[420px] aspect-[3/4]">
+              {isVideoActive ? (
+                <video
+                  className="absolute inset-0 w-full h-full rounded-xl object-cover"
+                  src={heroSectionVideoUrl}
+                  autoPlay={false}
+                  loop
+                  ref={videoRef}
+                />
+              ) : (
+                <Image
+                  alt=""
+                  src="/hero_image_2.svg"
+                  fill
+                  className="rounded-xl object-cover"
+                />
+              )}
+
+              <button
+                className="absolute bottom-[10%] left-1/2 -translate-x-1/2 bg-[#65bd82] p-6 rounded-full"
+                onClick={() => setIsVideoActive(prev => !prev)}
+              >
+                {isVideoActive ? <FaPause size={24} /> : <FaPlay size={24} />}
+              </button>
+            </div>
+          </div>
+
       </div>
     </div>
   );

@@ -67,7 +67,7 @@ export default function Page() {
     <div className="bg-red-50 flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-1 flex justify-center min-h-screen bg-red-50 z-[1]">
-        <div className="w-[90%] max-w-screen-xl px-4 sm:px-6 lg:px-8 xl:px-0 flex flex-col items-center text-black bg-red-50">
+        <div className="w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 xl:px-0 mx-auto text-black bg-red-50">
           <HeroSection />
           <div className="hidden w-[200px] h-[500px] md:w-[760px] md:h-[100px] border bg-red-500">
 
@@ -76,7 +76,7 @@ export default function Page() {
           <GuaranteeBar />
           <div className="w-9/10 "></div>
 
-          <div className="w-[80%] relative lg:w-full my-10">
+          <div className="relative lg:w-full my-10">
             <div className="absolute w-full top-75/100 flex items-center justify-center">
               {/* <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 All numbers come from our 2024 graduate outcomes report
