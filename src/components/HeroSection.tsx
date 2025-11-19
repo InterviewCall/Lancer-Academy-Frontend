@@ -89,12 +89,10 @@ export default function HeroSection() {
         <div className="font-[400] text-center md:text-start leading-snug tracking-[-0.015em] pt-5 lg:pt-8 px-4 md:px-0 text-base w-full sm:text-lg md:text-xl lg:text-2xl">
           Join{" India's"} most practical job-oriented Softwware Engineering program designed for 
           <span className="font-semibold"> 12 LPA roles </span>
-          Master full-stack development + AI skills through real industry projects built for Lancers Academy, InterviewCall, and WorkR
-          <div className="mt-2">
+          Master full-stack development + AI skills through real industry projects built for Lancers Academy, InterviewCall, and WorkR.
             Choose between our <span className="font-semibold">4-month advanced</span> or <span className="font-semibold">7-month intermediate</span> track -- based on your schedule.
-          </div>
         </div>
-        <div className="mt-8 mb-5 flex flex-col md:flex-row items-center gap-x-2 gap-y-2 md:items-stretch relative">
+        <div className="mt-11 mb-5 flex flex-col md:flex-row items-center gap-x-2 gap-y-2 md:items-stretch relative">
             <BookACallButton />
           <div className="flex justify-center max-md:order-1">
             <Image
