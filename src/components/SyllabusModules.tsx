@@ -3,6 +3,7 @@ import { PiFilePdfBold } from "react-icons/pi";
 import ExpandableModule from "./ExpandableModule";
 import { useState } from "react";
 import { FaBell, FaLightbulb, FaRocket } from "react-icons/fa6";
+import { courseCurriculam } from "@/utits/content";
 
 const advancedCourseContent = [
   {
@@ -146,7 +147,7 @@ export default function SyllabusModules() {
         </div>
       )}
       <div className="flex items-center justify-end">
-        <button className="flex items-center gap-x-2 justify-center rounded-xl bg-gray-200 hover:bg-gray-300 hover:cursor-pointer px-3 py-2 my-2 font-semibold">
+        <button onClick={() => window.open(courseCurriculam, "_blank")} className="flex items-center gap-x-2 justify-center rounded-xl bg-gray-200 hover:bg-gray-300 hover:cursor-pointer px-3 py-2 my-2 font-semibold">
           <PiFilePdfBold size={25} />
           <div>Download PDF</div>
         </button>

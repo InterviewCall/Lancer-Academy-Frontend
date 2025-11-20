@@ -7,6 +7,8 @@ export const navbarItems = [
     { item: "FAQ", href: "#faq" },
   ];
 
+export const courseCurriculam = process.env.NEXT_PUBLIC_COURSE_CURRICULAM;
+
 export const faqData = [
   {
     heading: "What is Lancrs Academy’s Software Engineering Program?",
