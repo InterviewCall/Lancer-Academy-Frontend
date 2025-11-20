@@ -67,7 +67,7 @@ export default function Page() {
     <div className=" flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-1 flex justify-center min-h-screen  z-[1]">
-        <div className="max-md:w-full max-w-screen-xl sm:px-6 lg:px-8 xl:px-0 mx-auto text-black ">
+        <div className="max-md:w-full w-[92%] max-w-screen-xl sm:px-6 lg:px-8 xl:px-0 mx-auto text-black ">
           <HeroSection />
           <div className="hidden w-[200px] h-[500px] md:w-[760px] md:h-[100px] border bg-red-500">
 
