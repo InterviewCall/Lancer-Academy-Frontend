@@ -2,14 +2,16 @@
 
 import Image from "next/image";
 
-import React from "react";
-import { useForm } from "react-hook-form";
+import React, { useState } from "react";
+import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { z } from "zod";
 import { advisorImage } from "@/utits/externalUrls";
 import { Rhombus } from "./DesignDivs";
 import { FaCircleCheck } from "react-icons/fa6";
+import toast from "react-hot-toast";
+import axios from "axios";
 export default function BookACallForm() {
   return (
     <div className=" bg-[#b8e9c8] shadow-2xl  py-10 md:rounded-2xl my-36 max-md:my-16 relative">
@@ -100,24 +102,50 @@ export default function BookACallForm() {
 
 export const BookACallFormSchema = z.object({
   fullName: z.string().min(1, "Full name is required"),
-  email: z.string().email("Invalid email address"),
+  email: z.email("Invalid email address"),
   phone: z.string().regex(/^[0-9]{10}$/, "Enter a valid 10-digit phone number"),
-  agree: z.boolean().optional(),
+  agree: z
+    .boolean()
+    .refine((val) => val === true, {
+      message: "You must agree to continue",
+    }),
 });
 
 export type BookACallFormType = z.infer<typeof BookACallFormSchema>;
 
 function ContactForm() {
+  const [isClicked, setIsClicked] = useState(false);
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<BookACallFormType>({
     resolver: zodResolver(BookACallFormSchema),
   });
 
-  const onSubmit = (data: BookACallFormType) => {
-    console.log("Form Data:", data);
+  const onSubmit: SubmitHandler<BookACallFormType> = async (data: BookACallFormType) => {
+    try {
+      const requestBody = {
+        fullName: data.fullName,
+        email: data.email,
+        phoneNo: data.phone
+      }
+      setIsClicked(true);
+      await toast.promise(
+        axios.post('/api/create-book', requestBody),
+        {
+          loading: 'Submitting...',
+          success: 'Successfully booked a call',
+          error: 'Something went wrong'
+        }
+      )
+    } catch (error) {
+      throw error;
+    } finally {
+      reset();
+      setIsClicked(false);
+    }
   };
 
   return (
@@ -184,7 +212,7 @@ function ContactForm() {
           <label className="flex items-start">
             <input
               type="checkbox"
-              {...register("agree", { required: "You must agree to continue" })}
+              {...register("agree")}
               className="m-2 text-xs"
             />
             I consent to marketing calls and text messages, including those made
@@ -202,7 +230,7 @@ function ContactForm() {
       <div>
         <button
           type="submit"
-          className="bg-black text-white px-4 py-2 hover:cursor-pointer mt-5 sm:mt-1 rounded-lg w-full"
+          className={`bg-black text-white px-4 py-2 hover:cursor-pointer mt-5 sm:mt-1 rounded-lg w-full ${isClicked ? 'pointer-events-none bg-gray-400' : ''}`}
         >
           Continue
         </button>
