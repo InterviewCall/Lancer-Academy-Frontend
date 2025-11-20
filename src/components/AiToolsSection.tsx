@@ -15,6 +15,27 @@ export default function AIToolsSection() {
             truly job-ready
           </div>
           {/* box here */}
+
+          <div className="hidden md:block md:w-15/50 relative rounded-xl space-y-4 p-4 text-sm bg-[#ff976b]">
+            <div className="absolute -bottom-[18%] right-[80%]">
+              <Image
+                alt=""
+                src={"/orange_down_arrow.svg"}
+                height={50}
+                width={50}
+              />
+            </div>
+            <div className="text-[16px] font-medium">
+              Software fundamentals + real AI experience make you more valuable
+              and future-proof.
+            </div>
+            <div>
+              <div className="font-bold text-3xl">84% </div>
+              <span className="text-[16px] font-medium">
+                of Indian tech teams now use AI tools in development.*
+              </span>
+            </div>
+          </div>
         </div>
 
         <div className="sm:flex  justify-between ">
@@ -58,7 +79,7 @@ export default function AIToolsSection() {
               </div>
             </div>
 
-            <div className="block md:hidden lg:block md:w-15/50 w-[90%] relative rounded-xl -translate-x-2 -translate-y-4 space-y-4 p-4 text-sm bg-[#ff976b]">
+            <div className="block md:hidden md:w-15/50 w-[90%] relative rounded-xl -translate-x-2 -translate-y-4 space-y-4 p-4 text-sm bg-[#ff976b]">
               <div className="absolute -top-[7%] right-[80%]">
                 <Image
                   alt=""
@@ -73,7 +94,9 @@ export default function AIToolsSection() {
               </div>
               <div>
                 <div className="font-bold text-3xl">84% </div>
-                <span className="text-[16px] font-medium">of Indian tech teams now use AI tools in development.*</span>
+                <span className="text-[16px] font-medium">
+                  of Indian tech teams now use AI tools in development.*
+                </span>
               </div>
             </div>
 

@@ -57,7 +57,7 @@ export default function ProjectCarousel() {
 
   const [count, dispatch] = useReducer(counterReducer, 0);
   return (
-    <div className=" sm:flex w-full rounded-xl bg-gray-100 my-10 py-5">
+    <div className=" sm:flex w-full rounded-xl md:bg-gray-100 my-10 py-5">
       <div className="sm:basis-3/5 w-full sm:w-9/10 h-[50vh] sm:h-[70vh] flex items-center justify-center rounded-xl">
         <Image
           alt=""

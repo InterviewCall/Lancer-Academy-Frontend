@@ -38,8 +38,8 @@ const techSkills = [
 
 export default function FlexCard() {
   return (
-    <div className="w-full">
-      <div className="w-full text-center my-10 rounded-2xl bg-white p-8 md:p-7 lg:px-10 flex flex-col items-center">
+    <div className="w-full max-md:px-2">
+      <div className="w-full text-center my-10 rounded-2xl max-md:rounded-xl bg-white p-8 md:p-7 lg:px-10 flex flex-col items-center">
         <div className="text-3xl sm:text-5xl text-start sm:text-center font-semibold mb-5">
           You after lancrs academy
         </div>

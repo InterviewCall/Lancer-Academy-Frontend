@@ -1,3 +1,12 @@
+export const navbarItems = [
+    { item: "Intro", href: "#intro" },
+    { item: "How we teach", href: "#howWeTeach" },
+    { item: "Curriculum", href: "#curriculam" },
+    { item: "Reviews", href: "#reviews" },
+    { item: "Tuition", href: "#tuition" },
+    { item: "FAQ", href: "#faq" },
+  ];
+
 export const faqData = [
   {
     heading: "What is Lancrs Academy’s Software Engineering Program?",

@@ -22,7 +22,7 @@ export default function FAQOptions({
     <div className=" px-3">
       {startingDivider && <FAQDivider />}
       <div className="flex items-center justify-between">
-        <div className="py-2 sm:py-5 text-xl sm:text-3xl font-medium">{heading}</div>
+        <div className="py-5 sm:py-5 text-xl sm:text-3xl font-bold">{heading}</div>
         <div
           className={
             `hover:cursor-pointer transition-transform duration-300 ease-in-out ` +

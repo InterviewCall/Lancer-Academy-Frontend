@@ -12,14 +12,14 @@ import { Rhombus } from "./DesignDivs";
 import { FaCircleCheck } from "react-icons/fa6";
 export default function BookACallForm() {
   return (
-    <div className=" bg-[#d35723] shadow-2xl  p-6 py-10 rounded-2xl my-10 relative">
+    <div className=" bg-[#b8e9c8] shadow-2xl  py-10 md:rounded-2xl my-36 max-md:my-16 relative">
       <div
         id="book-a-call"
-        className=" w-full flex sm:grid sm:grid-cols-2 sm:gap-10 sm:px-14 flex-col items-center sm:items-stretch sm:justify-evenly"
+        className=" w-full flex sm:grid sm:grid-cols-2 sm:gap-10 sm:px-8 flex-col items-center sm:items-stretch sm:justify-evenly"
       >
-        <Rhombus background="#d35723" />
+        <Rhombus background="#b8e9c8" />
         <div className="sm:basis-2/5 h-fit">
-          <div className="h-4/10 sm:h-2/10 my-5 flex justify-center">
+          <div className="h-4/10 sm:h-2/10 my-5 flex justify-start max-md:justify-center">
             <Image
               alt=""
               src={advisorImage}
@@ -28,7 +28,7 @@ export default function BookACallForm() {
               className="h-full w-auto"
             />
           </div>
-          <div className="text-4xl sm:text-6xl mb-10 text-center sm:text-start w-full sm:w-9/10 font-semibold">
+          <div className="text-4xl sm:text-5xl mb-10 text-center sm:text-start w-full sm:w-9/10 font-semibold">
             Book a call with an advisor by November 25th to take 12.5% off your
             tuition!
           </div>
@@ -55,10 +55,13 @@ export default function BookACallForm() {
             </div>
           </div>
         </div>
-        <div className="sm:basis-2/5 rounded-2xl mt-8 sm:mt-0 bg-white">
+        <div className="max-md:px-3">
+          <div className="sm:basis-2/5 md:rounded-2xl rounded-lg mt-8 sm:mt-0 bg-white">
           {" "}
           <ContactForm />{" "}
         </div>
+        </div>
+        
         <div className="flex flex-col mt-10 sm:hidden items-stretch text-center justify-between space-y-5 font-semibold text-lg">
           <div>
             <div className="flex items-center justify-center mt-5 mb-2">

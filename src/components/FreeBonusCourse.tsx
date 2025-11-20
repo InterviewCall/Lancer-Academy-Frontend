@@ -2,7 +2,7 @@ import { BsLightningChargeFill } from "react-icons/bs";
 
 export default function FreeBonusCourse() {
   return (
-    <div className=" w-full sm:flex items-center justify-around gap-x-5 my-10">
+    <div className=" w-full sm:flex items-center justify-around gap-x-5 my-36">
       <div className="w-full text-5xl font-[520] p-5 ">
         Free bonus course for new students
       </div>

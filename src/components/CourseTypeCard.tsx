@@ -16,14 +16,14 @@ interface PartTimeCardProps {
 
 export default function CourseTypeCard({ title, items, recommended=false }: PartTimeCardProps) {
   return (
-    <div className="w-full relative bg-white border border-gray-200 rounded-xl p-5 sm:p-9 shadow-sm hover:shadow-md transition">
+    <div className="w-full m-0 relative bg-white border border-gray-200 rounded-xl p-5 sm:p-9 shadow-sm hover:shadow-md transition">
       {/* Title */}
       {recommended && (
         <div className="absolute flex items-center justify-center gap-x-2 bg-green-300 -top-5 right-5 p-2 px-3 rounded-md font-medium text-base">
         <div>Recommended</div>
       </div>
       )}
-      <h3 className="text-xl sm:text-4xl font-semibold text-gray-900 mb-4 text-start">
+      <h3 className="text-xl max-md:text-2xl sm:text-4xl font-semibold text-gray-900 mb-4 text-start">
         {title}
       </h3>
 

@@ -64,10 +64,10 @@ const companyImages = [
 
 export default function Page() {
   return (
-    <div className="bg-red-50 flex flex-col min-h-screen">
+    <div className=" flex flex-col min-h-screen">
       <Navbar />
-      <div className="flex-1 flex justify-center min-h-screen bg-red-50 z-[1]">
-        <div className="w-full max-w-screen-xl sm:px-6 lg:px-8 xl:px-0 mx-auto text-black bg-red-50">
+      <div className="flex-1 flex justify-center min-h-screen  z-[1]">
+        <div className="max-md:w-full max-w-screen-xl sm:px-6 lg:px-8 xl:px-0 mx-auto text-black ">
           <HeroSection />
           <div className="hidden w-[200px] h-[500px] md:w-[760px] md:h-[100px] border bg-red-500">
 
@@ -112,13 +112,17 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full tracking-tighter text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-2 sm:px-10">
-            <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-2">
+          <div id="intro" className="w-full tracking-tighter text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-2 sm:px-10">
+            <div className="text-3xl max-md:hidden block sm:text-6xl font-bold mb-3 sm:mb-2">
               Become a Software Engineer
             </div>
 
-            <div className="text-5xl sm:text-6xl font-bold mb-3 sm:mb-5">
+            <div className="text-3xl max-md:hidden block sm:text-6xl font-bold mb-3 sm:mb-5">
               with Lancrs Academy
+            </div>
+
+            <div className="text-5xl max-md:px-4 max-md:block hidden sm:text-6xl font-bold mb-3 sm:mb-2">
+              Become a Software Engineer with Lancrs Academy
             </div>
 
             <div className="w-full flex justify-center">
@@ -342,7 +346,7 @@ export default function Page() {
 
           {/* <ReviewReport /> */}
 
-          <div className="w-full flex items-center justify-center">
+          <div id="howWeTeach" className="w-full flex items-center justify-center">
             <div className="w-full sm:w-6/10 flex items-center justify-center">
               <Image
                 alt=""
@@ -362,7 +366,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="max-md:pl-2 max-md:pr-5">
+          <div className="max-md:px-2">
             <div className="w-full relative text-center my-10 rounded-4xl max-md:rounded-2xl bg-white pt-16 px-6 sm:px-10 sm:p-10 sm:pb-0 pb-0 flex flex-col items-center">
             <div className="font-[600] text-5xl mb-2 w-full ">
               <div className="max-md:text-3xl">
@@ -410,7 +414,7 @@ export default function Page() {
           <BookACallReminder
             heading="Ready to start your journey into tech?" subHeading="Talk to a Lancrs Academy career advisor and discover the path that’s right for you."
           />
-          <div className="w-7/10 flex flex-col items-center text-5xl sm:text-6xl font-bold my-10  sm:leading-20 tracking-tighter">
+          <div id="reviews" className="flex flex-col items-center text-5xl sm:text-6xl font-bold mt-36 mb-16  sm:leading-20 tracking-tighter">
             <div className="flex items-center justify-center">
               <span>1.1K+</span>
               <Image
@@ -424,8 +428,8 @@ export default function Page() {
               <span>Alumni.</span>
             </div>
             <div className="flex gap-3 items-center justify-center">
-              <div className="-rotate-12">
-                <PercentageBadge value="80%" textSize="3xl" />
+              <div className="-rotate-5">
+                <PercentageBadge value="80%" textSize="5xl" />
               </div>
               <div className="sm:block hidden ">came from a non-CSE/IT </div>
               <div className="block sm:hidden"> came from a  </div>
@@ -465,7 +469,7 @@ export default function Page() {
             <div>Trusted by learners on leading global platforms</div>
           </div>
 
-          <div className="block sm:hidden text-center my-20 font-bold text-3xl leading-6.5">
+          <div className="block sm:hidden max-md:px-4 text-center my-20 font-bold text-3xl leading-6.5">
             <div>4.8/5 across </div>
             <div>2,100+ verified reviews on</div>
             <div>leading global platforms</div>

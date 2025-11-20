@@ -7,10 +7,12 @@
   --font-mono: var(--font-geist-mono); */
   --font-inter: var(--font-inter);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #FFEEE5;
+    --background: #f2f1ee;
     --foreground: #ededed;
   }
 }
