@@ -280,7 +280,7 @@ export default function HeroSection() {
 
         {/* BODY */}
         <p className="font-[400] text-center md:text-start leading-snug tracking-[-0.015em] pt-5 lg:pt-8 px-4 md:px-0 text-base sm:text-lg md:text-xl lg:text-2xl">
-          Join{" India's"} most practical job-oriented Softwware Engineering program
+          Join{" India's"} most practical job-oriented Software Engineering program
           designed for <span className="font-semibold">12 LPA roles</span>. Master
           full-stack development + AI skills through real industry projects built for
           Lancers Academy, InterviewCall, and WorkR. Choose between our{" "}
