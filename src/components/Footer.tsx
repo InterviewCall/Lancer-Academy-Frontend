@@ -56,7 +56,7 @@ export default function Footer() {
               <span className="text-[#7f7f7f]">For all student questions</span>
             </p>
             <p className="mt-3">
-              <span className="font-semibold text-[#1a1a1a]">+91-00000-00000</span> <br />
+              <span className="font-semibold text-[#1a1a1a] underline"><a href="tel:6295797609">+91-6295797609</a></span> <br />
               <span className="text-[#7f7f7f]">11am–7:30pm IST, Mon–Sat</span>
             </p>
           </div>
@@ -87,7 +87,7 @@ export default function Footer() {
           <span className="text-[#7f7f7f]">For all student questions</span>
         </p>
         <p className="mt-3">
-          <span className="font-semibold text-[#1a1a1a]">+91-00000-00000</span> <br />
+          <span className="font-semibold text-[#1a1a1a] underline"><a href="tel:6295797609">+91-6295797609</a></span> <br />
           <span className="text-[#7f7f7f]">11am–7:30pm IST, Mon–Sat</span>
         </p>
       </div>

@@ -16,7 +16,7 @@ export default function CareerCoachingBanner() {
         thousands. Use AI tools to automate your job search, track applications,
         and sharpen your interview skills.
       </div>
-      <button className="flex items-center gap-x-3 hover:cursor-pointer rounded-xl bg-gray-200 px-5 py-3 font-medium my-5 max-md:text-sm max-md:font-semibold text-lg">
+      <button className="flex max-md:hidden items-center gap-x-3 hover:cursor-pointer rounded-xl bg-gray-200 px-5 py-3 font-medium my-5 max-md:text-sm max-md:font-semibold text-lg">
         <Eye />
         <div>See everything included in your career-growth package</div>
       </button>

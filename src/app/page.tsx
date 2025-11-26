@@ -438,7 +438,7 @@ export default function Page() {
             <div>background</div>
           </div>
           <SuccessStoryBanner
-            currentRole="SDE-2 — Reputed International Tech Company"
+            currentRole="Senior Software Engineer — Reputed International Fin-Tech Company"
             image="/alumni_lancrs_1.svg"
             name="Subhadip De"
             quote="With the right direction, mock interview support, and a clear learning roadmap, Shubhadeep achieved a 110% salary hike and successfully moved into a global technology environment."
@@ -447,7 +447,7 @@ export default function Page() {
             <SuccessStoryCard
               image="/alumni_lancrs_2.svg"
               name="Raunak Goswami"
-              now="SDE-2 — Reputed International Tech Company"
+              now="Software Engineer — Reputed International Fin-Tech Company"
               quote="With structured practice and project-based learning, I strengthened my fundamentals and approached interviews with clarity. This helped me transition into a strong engineering role."
             />
             <SuccessStoryCard

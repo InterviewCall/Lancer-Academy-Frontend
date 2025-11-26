@@ -29,9 +29,9 @@ export default function GetDiscount() {
             <div >
                 12.5% off your tuition.
             </div> */}
-            <button className="rounded-xl mt-10 px-7 max-md:px-20  py-3 text-xl tracking-normal bg-[#71cb8c] text-[#1a1a1a] font-semibold mb-10 hover:cursor-pointer hover:bg-green-400">
+            <a href="#bookACallForm" className="rounded-xl mt-10 px-7 max-md:px-20  py-3 text-xl tracking-normal bg-[#71cb8c] text-[#1a1a1a] font-semibold mb-10 hover:cursor-pointer hover:bg-green-400">
                 Claim Offer
-            </button>
+            </a>
 
         </div>
     )
