@@ -84,7 +84,7 @@ export default function CourseTypeCard({ title, items, recommended=false }: Part
         </button>
       </div> */}
 
-      <ShowSyllabusButton />
+      {/* <ShowSyllabusButton /> */}
     </div>
   );
 }

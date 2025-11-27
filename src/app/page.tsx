@@ -40,6 +40,7 @@ import {
 import { FaLink } from "react-icons/fa6";
 import AIToolsSection from "@/components/AiToolsSection";
 import GetDiscount from "@/components/GetDiscount";
+import ShowSyllabusButton from "@/components/ShowSyllabusButton";
 // import ReviewReport from "@/components/ReviewReport";
 
 const companyImages = [
@@ -170,7 +171,7 @@ export default function Page() {
 
           <FlexCard />
 
-          <div className="my-10 w-full text-center text-5xl font-bold max-md:px-2">
+          <div className="mt-10 w-full text-center text-5xl font-bold max-md:px-2">
             <div className="w-full flex justify-center max-md:text-[30px] font-semibold">
               <div className="max-md:px-6">
                 <div>Select the pace that fits your life</div>
@@ -180,7 +181,7 @@ export default function Page() {
                 </div>
               </div>
             </div>{" "}
-            <div className="my-8 justify-center items-end sm:items-stretch md:px-10 lg:px-0 gap-y-5 lg:grid grid-cols-2 space-y-3  gap-3">
+            <div className="my-4 justify-center items-end sm:items-stretch md:px-10 lg:px-0 gap-y-5 lg:grid grid-cols-2 space-y-3  gap-3">
               {/* <Image
                 className="w-full h-fit"
                 alt=""
@@ -286,7 +287,9 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full rounded-2xl flex justify-center gap-10 relative">
+            <ShowSyllabusButton />
+
+          <div className="w-full mt-6 rounded-2xl flex justify-center gap-10 relative">
             <div className="absolute  w-full top-85/100 flex items-center justify-around">
               {/* <div className="text-center rounded-lg bg-gray-300 hover:bg-gray-400 text-black hover:cursor-pointer px-5 py-3 text-sm font-semibold">
                 Tell me more
