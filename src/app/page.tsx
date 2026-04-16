@@ -70,9 +70,7 @@ export default function Page() {
       <div className="flex-1 flex justify-center min-h-screen  z-[1]">
         <div className="max-md:w-full w-[92%] max-w-screen-xl sm:px-6 lg:px-8 xl:px-0 mx-auto text-black ">
           <HeroSection />
-          <div className="hidden w-[200px] h-[500px] md:w-[760px] md:h-[100px] border bg-red-500">
-
-          </div>
+          <div className="hidden w-[200px] h-[500px] md:w-[760px] md:h-[100px] border bg-red-500"></div>
 
           <GuaranteeBar />
           <div className="w-9/10 "></div>
@@ -113,7 +111,10 @@ export default function Page() {
             </div>
           </div>
 
-          <div id="intro" className="w-full tracking-tighter text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-2 sm:px-10">
+          <div
+            id="intro"
+            className="w-full tracking-tighter text-center mt-10 mb-5 rounded-4xl bg-transparent pt-20 pb-0 px-2 sm:px-10"
+          >
             <div className="text-3xl max-md:hidden block sm:text-6xl font-bold mb-3 sm:mb-2">
               Become a Software Engineer
             </div>
@@ -172,15 +173,19 @@ export default function Page() {
           <FlexCard />
 
           <div className="mt-10 w-full text-center text-5xl font-bold max-md:px-2">
-            <div className="w-full flex justify-center max-md:text-[30px] font-semibold">
-              <div className="max-md:px-6">
+            <div className="w-full flex justify-center font-semibold max-md:text-[30px] mb-9">
+              <div className="max-md:px-6 text-center">
                 <div>Select the pace that fits your life</div>
                 <div>and goals—both tracks</div>
-                <div>
-                  start at <span className="text-[#3AA65E]">₹39,999</span>{" "}
+                <div className="flex items-baseline justify-center gap-2">
+                  <span>start at</span>
+                  <span className="text-[#3AA65E]">₹39,999</span>
+                  <span className="text-[17px] font-medium text-[#7B8794] max-md:text-[14px]">
+                    + GST
+                  </span>
                 </div>
               </div>
-            </div>{" "}
+            </div>
             <div className="my-4 justify-center items-end sm:items-stretch md:px-10 lg:px-0 gap-y-5 lg:grid grid-cols-2 space-y-3  gap-3">
               {/* <Image
                 className="w-full h-fit"
@@ -287,7 +292,7 @@ export default function Page() {
             </div>
           </div>
 
-            <ShowSyllabusButton />
+          <ShowSyllabusButton />
 
           <div className="w-full mt-6 rounded-2xl flex justify-center gap-10 relative">
             <div className="absolute  w-full top-85/100 flex items-center justify-around">
@@ -349,7 +354,10 @@ export default function Page() {
 
           {/* <ReviewReport /> */}
 
-          <div id="howWeTeach" className="w-full flex items-center justify-center">
+          <div
+            id="howWeTeach"
+            className="w-full flex items-center justify-center"
+          >
             <div className="w-full sm:w-6/10 flex items-center justify-center">
               <Image
                 alt=""
@@ -371,38 +379,40 @@ export default function Page() {
 
           <div className="max-md:px-2">
             <div className="w-full relative text-center my-10 rounded-4xl max-md:rounded-2xl bg-white pt-16 px-6 sm:px-10 sm:p-10 sm:pb-0 pb-0 flex flex-col items-center">
-            <div className="font-[600] text-5xl mb-2 w-full ">
-              <div className="max-md:text-3xl">
-                <div>All-in-one flexible learning</div>
-                <div>experience</div>
+              <div className="font-[600] text-5xl mb-2 w-full ">
+                <div className="max-md:text-3xl">
+                  <div>All-in-one flexible learning</div>
+                  <div>experience</div>
+                </div>
+              </div>
+              <div className="mb-5 w-9/10 sm:w-6/10 font-[400] text-lg">
+                Learn core concepts, practice real coding, build industry-grade
+                projects, book 1-on-1 mentor sessions, and get personalized
+                feedback — all in one place.
+              </div>
+
+              <div>
+                <button className="rounded-lg flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
+                  <FaRegEye size={20} />
+                  <div className="hidden sm:block">
+                    See how you’ll learn like a real software engineer
+                  </div>
+                  <div className="block sm:hidden">
+                    Learn to code like a pro
+                  </div>
+                </button>
+              </div>
+
+              <div className="relative overflow-x-clip mt-10 w-full h-44 sm:h-fit sm:w-9/10 rounded-2xl flex justify-center gap-10">
+                <Image
+                  alt=""
+                  src={"/allinone.svg"}
+                  height={100}
+                  width={100}
+                  className=" absolute sm:static bottom-0 w-auto sm:w-full h-40 sm:h-auto max-w-none"
+                />
               </div>
             </div>
-            <div className="mb-5 w-9/10 sm:w-6/10 font-[400] text-lg">
-              Learn core concepts, practice real coding, build industry-grade
-              projects, book 1-on-1 mentor sessions, and get personalized
-              feedback — all in one place.
-            </div>
-
-            <div>
-              <button className="rounded-lg flex justify-between items-center gap-x-3 hover:cursor-pointer hover:bg-gray-300 bg-gray-200 px-5 py-3 font-semibold text-md">
-                <FaRegEye size={20} />
-                <div className="hidden sm:block">
-                  See how you’ll learn like a real software engineer
-                </div>
-                <div className="block sm:hidden">Learn to code like a pro</div>
-              </button>
-            </div>
-
-            <div className="relative overflow-x-clip mt-10 w-full h-44 sm:h-fit sm:w-9/10 rounded-2xl flex justify-center gap-10">
-              <Image
-                alt=""
-                src={"/allinone.svg"}
-                height={100}
-                width={100}
-                className=" absolute sm:static bottom-0 w-auto sm:w-full h-40 sm:h-auto max-w-none"
-              />
-            </div>
-          </div>
           </div>
 
           <TutorSection />
@@ -415,9 +425,13 @@ export default function Page() {
 
           <SyllabusModules />
           <BookACallReminder
-            heading="Ready to start your journey into tech?" subHeading="Talk to a Lancrs Academy career advisor and discover the path that’s right for you."
+            heading="Ready to start your journey into tech?"
+            subHeading="Talk to a Lancrs Academy career advisor and discover the path that’s right for you."
           />
-          <div id="reviews" className="flex flex-col items-center text-5xl sm:text-6xl font-bold mt-36 mb-16  sm:leading-20 tracking-tighter">
+          <div
+            id="reviews"
+            className="flex flex-col items-center text-5xl sm:text-6xl font-bold mt-36 mb-16  sm:leading-20 tracking-tighter"
+          >
             <div className="flex items-center justify-center">
               <span>1.1K+</span>
               <Image
@@ -435,7 +449,7 @@ export default function Page() {
                 <PercentageBadge value="80%" textSize="5xl" />
               </div>
               <div className="sm:block hidden ">came from a non-CSE/IT </div>
-              <div className="block sm:hidden"> came from a  </div>
+              <div className="block sm:hidden"> came from a </div>
             </div>
             <div className="sm:hidden block">non-CSE/IT </div>
             <div>background</div>
@@ -478,7 +492,10 @@ export default function Page() {
             <div>leading global platforms</div>
           </div>
 
-          <BookACallReminder heading="Ready to start your journey into tech?" subHeading="Talk to a Lancrs Academy career advisor today." />
+          <BookACallReminder
+            heading="Ready to start your journey into tech?"
+            subHeading="Talk to a Lancrs Academy career advisor today."
+          />
           <FreeBonusCourse />
 
           <MoneyBackGuaranteeBannerLaptop />
