@@ -41,6 +41,7 @@ import { FaLink } from "react-icons/fa6";
 import AIToolsSection from "@/components/AiToolsSection";
 import GetDiscount from "@/components/GetDiscount";
 import ShowSyllabusButton from "@/components/ShowSyllabusButton";
+import RefundPolicyButton from "@/components/RefundPolicyButton";
 // import ReviewReport from "@/components/ReviewReport";
 
 const companyImages = [
@@ -153,7 +154,7 @@ export default function Page() {
                 receive a full tuition refund after completing your Career
                 Services requirements and making a good-faith effort in your job
                 search. Full details are provided in our{" "}
-                <u>Terms & Conditions</u> .
+                <RefundPolicyButton />.
               </div>
             </div>
           </div>

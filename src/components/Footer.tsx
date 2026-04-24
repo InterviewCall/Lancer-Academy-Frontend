@@ -51,7 +51,7 @@ export default function Footer() {
 
           <div className="mt-4 text-lg text-gray-800 max-md:hidden block">
             <p>
-              <span className="font-semibold text-[#1a1a1a]">support@academy.lancrs.com</span>{" "}
+              <span className="font-semibold text-[#1a1a1a]">academy@lancrs.com</span>{" "}
               <br />
               <span className="text-[#7f7f7f]">For all student questions</span>
             </p>
@@ -82,7 +82,7 @@ export default function Footer() {
 
       <div className="mt-7 text-lg text-gray-800 max-md:block hidden">
         <p>
-          <span className="font-semibold text-[#1a1a1a]">support@academy.lancrs.com</span>{" "}
+          <span className="font-semibold text-[#1a1a1a]">academy@lancrs.com</span>{" "}
           <br />
           <span className="text-[#7f7f7f]">For all student questions</span>
         </p>
@@ -112,7 +112,7 @@ export default function Footer() {
           <a href="#">Regulatory Information</a>
           <a href="#">Referral program</a>
           <a href="#">Privacy policy</a>
-          <a href="#">Manage cookies</a>
+          <a href="/refund-policy">Refund Policy</a>
         </div>
 
         <div className="w-full h-0.5 bg-gray-200 max-md:block hidden mt-9"></div>
