@@ -68,12 +68,12 @@ export default function Footer() {
             About Lancrs Academy
           </h3>
           <ul className="space-y-2 text-[#7f7f7f] text-lg">
-            <li>About us</li>
-            <li>FAQ</li>
-            <li>Support</li>
-            <li>Careers</li>
-            <li>Partnership for Colleges & Universities</li>
-            <li>Contact</li>
+            <li> <a href="/">About us</a></li>
+            <li> <a href="/#faq">FAQ</a> </li>
+            <li> <a href="/#support">Support</a></li>
+            <li> <a href="/#careers">Careers</a> </li>
+            <li> Partnership for Colleges & Universities</li>
+            <li> <a href="/#contact">Contact</a> </li>
           </ul>
         </div>
       </div>

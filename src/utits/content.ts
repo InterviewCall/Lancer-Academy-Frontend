@@ -5,6 +5,7 @@ export const navbarItems = [
     { item: "Reviews", href: "#reviews" },
     { item: "Tuition", href: "#tuition" },
     { item: "FAQ", href: "#faq" },
+    { item: "Refund Policy", href: "/refund-policy" }
   ];
 
 export const courseCurriculam = process.env.NEXT_PUBLIC_COURSE_CURRICULAM;
