@@ -174,6 +174,21 @@ export default function RefundPolicyPage() {
             </p>
           </section>
 
+          <section>
+            <SubHeading>Extension of Clause Completion</SubHeading>
+
+            <p className="mb-4">
+              In cases of incomplete clauses, the team may grant a non-changeable extension of up to 2 additional months, post the screening day, for candidates to fulfill the pending requirements. Upon completion of the pending requirements,
+               candidates will proceed to the 4-month dedicated placement assistance period.
+            </p>
+
+            <p className="mb-4">
+              If candidates still do not secure a job after the 4-month dedicated placement assistance, they may access the 8-month self-paced assistance. However, if they fail to complete the pending clauses
+               within the assigned time (up to 2 additional months), 
+               they will not be eligible for further placement assistance.
+            </p>
+          </section>
+
           <hr className="border-black/10" />
 
           {/* General Terms */}
