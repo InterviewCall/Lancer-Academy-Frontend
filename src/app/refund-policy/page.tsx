@@ -358,8 +358,7 @@ export default function RefundPolicyPage() {
           {/* Footer note */}
           <p className="text-sm text-black/40 border-t border-black/10 pt-8 mb-10">
             This policy should be read alongside any other agreements you may
-            have with InterviewCall and the Terms of Service published on our
-            website. By enrolling in a program, you expressly consent to the
+            have with Lancrs Academy. By enrolling in a program, you expressly consent to the
             terms outlined herein.
             <br />
             <br />© IVYLEAGUE CSFORALL ACADEMY PRIVATE LIMITED. All rights
