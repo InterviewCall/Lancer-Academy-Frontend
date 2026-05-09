@@ -31,7 +31,7 @@ export default function BookACallForm() {
             />
           </div>
           <div className="text-4xl sm:text-5xl mb-10 text-center sm:text-start w-full sm:w-9/10 font-semibold">
-            Book a call with an advisor by April 30th to take 12.5% off your
+            Book a call with an advisor by May 16th to take 12.5% off your
             tuition!
           </div>
           <div className="hidden sm:flex items-start justify-between space-x-5 font-semibold text-lg">
