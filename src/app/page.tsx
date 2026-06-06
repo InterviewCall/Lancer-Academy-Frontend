@@ -180,7 +180,7 @@ export default function Page() {
                 <div>and goals—both tracks</div>
                 <div className="flex items-baseline justify-center gap-2">
                   <span>start at</span>
-                  <span className="text-[#3AA65E]">₹39,999</span>
+                  <span className="text-[#3AA65E]">₹49,999</span>
                   <span className="text-[17px] font-medium text-[#7B8794] max-md:text-[14px]">
                     + GST
                   </span>
