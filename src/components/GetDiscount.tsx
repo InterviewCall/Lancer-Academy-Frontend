@@ -15,7 +15,7 @@ export default function GetDiscount() {
             <Rhombus background="#000000" />
             <Image alt="" src={advisorImage} width={150} height={150} className="h-full w-auto my-10"/>
             <div className="max-md:text-3xl max-md:px-7 text-center">
-                Book a call with an advisor by July 26th and get 12% off your tuition.
+                Book a call with an advisor by August 16th and get 12% off your tuition.
             </div>
             {/* <div>
                 by November 25th and get 12.5% off your
