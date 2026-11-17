@@ -295,7 +295,7 @@ export default function HeroSection() {
           <div className="flex justify-center">
             <Image
               alt=""
-              src={"/Cohort start_2.svg"}
+              src={"/Cohort_Start_21_Nov.svg"}
               width={100}
               height={100}
               className="h-auto md:h-[100%] w-9/10 md:w-[100%]"
